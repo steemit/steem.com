@@ -74,6 +74,7 @@ export default function Header({ variant = 'white' }: HeaderProps) {
       <div 
         id="mobileOverlay" 
         className={`text-white p-lg-3 fixed inset-0 bg-gradient z-50 ${isMobileMenuOpen ? 'block' : 'hidden'}`}
+        style={{ display: isMobileMenuOpen ? 'block' : 'none' }}
       >
         <div className="container">
           <div className="hidden lg:flex hamburger ml-auto mt-3" onClick={closeMobileMenu}>

@@ -18,7 +18,7 @@ export default function Footer() {
                     height={40}
                   />
                 </Link>
-                <p className="d-inline-block translucent mt-md-2 ml-3 mb-0 text-sm">
+                <p className="inline-block translucent md:mt-2 ml-3 mb-0 text-sm">
                   &copy;2018 Steemit Inc.
                 </p>
               </div>

@@ -14,7 +14,7 @@ export default function Home() {
         <section className="bg-landing py-7 py-lg-8 py-xl-10">
           <div className="container mt-7 my-lg-8 my-xl-10">
             <div className="row">
-              <div className="col-12 col-md-6 col-lg-5">
+              <div className="col-12 md:col-6 lg:col-5">
                 <div className="nomargin-container text-white">
                   <h1 className="text-4xl lg:text-5xl font-bold mb-6">
                     <span className="text-nowrap">Powering Communities</span> and Opportunities
@@ -31,10 +31,10 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="d-md-none col-12">
+              <div className="md:hidden col-12">
                 <hr className="my-6"/>
               </div>
-              <div className="col-12 col-md-6 col-lg-5 offset-lg-2 pl-md-5 pl-lg-0">
+              <div className="col-12 md:col-6 lg:col-5 lg:offset-2 pl-md-5 lg:px-0">
                 <Carousel />
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function Home() {
                   Steem flips the model and returns the value to the people who contribute the most. Users become platform stakeholders, maintaining control over their data, and earning cryptocurrency rewards for each contribution they make.
                 </p>
               </div>
-              <div className="col-12 md:col-6 lg:col-5 lg:offset-1 d-flex align-items-center mt-4 md:mt-0">
+              <div className="col-12 md:col-6 lg:col-5 lg:offset-1 flex items-center mt-4 md:mt-0">
                 <div className="bg-dots py-7 text-center w-full">
                   <h1 className="stat-counter text-gradient text-6xl font-bold mb-4">59,595,935</h1>
                   <h4 className="font-normal mx-5 mx-xl-8 text-steem-purple text-xl">
@@ -77,7 +77,7 @@ export default function Home() {
               <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
                 <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
                   <div className="row items-center">
-                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                    <div className="col-3 xl:col-12 flex items-center justify-center">
                       <Image
                         className="img-fluid img-icon mb-xl-3"
                         src="/images/Steem_Wrench.png"
@@ -103,7 +103,7 @@ export default function Home() {
               <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
                 <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
                   <div className="row items-center">
-                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                    <div className="col-3 xl:col-12 flex items-center justify-center">
                       <Image
                         className="img-fluid img-icon mb-xl-3"
                         src="/images/Steem_Lightbulb.png"
@@ -129,7 +129,7 @@ export default function Home() {
               <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
                 <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
                   <div className="row items-center">
-                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                    <div className="col-3 xl:col-12 flex items-center justify-center">
                       <Image
                         className="img-fluid img-icon mb-xl-3"
                         src="/images/Steem_Logo_Translucent.png"
@@ -155,7 +155,7 @@ export default function Home() {
               <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
                 <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
                   <div className="row items-center">
-                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                    <div className="col-3 xl:col-12 flex items-center justify-center">
                       <Image
                         className="img-fluid img-icon mb-xl-3"
                         src="/images/Steemit_Chatbubble.png"
@@ -186,9 +186,9 @@ export default function Home() {
           <div className="container">
             <div className="row items-center justify-between text-center md:text-left">
               <div className="md:col-6">
-                <h2 className="mb-md-0 text-steem-blue text-2xl font-bold">Contact</h2>
+                <h2 className="md:mb-0 text-steem-blue text-2xl font-bold">Contact</h2>
               </div>
-              <div className="md:col-5 lg:col-4 text-md-right">
+              <div className="md:col-5 lg:col-4 md:text-right">
                 <Link href="/contact/" className="btn btn-blue">
                   <i className="fa fa-envelope mr-3">✉</i>Contact Us
                 </Link>

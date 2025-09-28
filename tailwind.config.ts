@@ -19,6 +19,13 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-sans)', 'sans-serif'],
       },
+      screens: {
+        'sm': '576px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1400px',
+      },
     },
   },
   plugins: [require('daisyui')],
