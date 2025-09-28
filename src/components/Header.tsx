@@ -21,7 +21,7 @@ export default function Header({ variant = 'white' }: HeaderProps) {
 
   const isBlueVariant = variant === 'blue';
   const logoColor = isBlueVariant ? 'Steem_Logo_Blue.png' : 'Steem_Logo_White.png';
-  const textColor = isBlueVariant ? 'text-steem-blue' : 'text-white';
+  const textColor = isBlueVariant ? 'text-blue' : 'text-white';
   const hamburgerClass = isBlueVariant ? 'hamburger-blue' : '';
 
   return (
@@ -43,17 +43,17 @@ export default function Header({ variant = 'white' }: HeaderProps) {
                 <div className="menu-primary-container">
                   <ul className="nav d-flex">
                     <li>
-                      <Link href="/developers/" className="hover:opacity-80 transition-opacity">
+                      <Link href="/developers/">
                         Developers
                       </Link>
                     </li>
                     <li>
-                      <Link href="/entrepreneurs/" className="hover:opacity-80 transition-opacity">
+                      <Link href="/entrepreneurs/">
                         Entrepreneurs
                       </Link>
                     </li>
                     <li>
-                      <Link href="/social-users/" className="hover:opacity-80 transition-opacity">
+                      <Link href="/social-users/">
                         Social Users
                       </Link>
                     </li>
@@ -86,17 +86,17 @@ export default function Header({ variant = 'white' }: HeaderProps) {
             <div className="menu-primary-container">
               <ul className="nav nav-mobile mt-8 lg:hidden">
                 <li>
-                  <Link href="/developers/" onClick={closeMobileMenu} className="block py-2 text-white hover:opacity-80">
+                  <Link href="/developers/" onClick={closeMobileMenu} className="block py-2 text-white">
                     Developers
                   </Link>
                 </li>
                 <li>
-                  <Link href="/entrepreneurs/" onClick={closeMobileMenu} className="block py-2 text-white hover:opacity-80">
+                  <Link href="/entrepreneurs/" onClick={closeMobileMenu} className="block py-2 text-white">
                     Entrepreneurs
                   </Link>
                 </li>
                 <li>
-                  <Link href="/social-users/" onClick={closeMobileMenu} className="block py-2 text-white hover:opacity-80">
+                  <Link href="/social-users/" onClick={closeMobileMenu} className="block py-2 text-white">
                     Social Users
                   </Link>
                 </li>

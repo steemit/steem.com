@@ -13,9 +13,9 @@ export default function About() {
           <div className="container mx-auto px-4 mt-7 my-lg-8 my-xl-10">
             <div className="row d-flex align-items-center justify-content-center justify-content-md-start">
               <div className="col-12 col-md-7 col-lg-6 col-xxl-5">
-                <div className="nomargin-container text-steem-offblack">
-                  <h6 className="text-steem-lightblue text-uppercase small font-weight-bold mb-2">The Steem Blockchain</h6>
-                  <h2 className="text-steem-blue text-3xl lg:text-4xl font-weight-bold mb-6">
+                <div className="nomargin-container text-offblack">
+                  <h6 className="text-lightblue text-uppercase small font-weight-bold mb-2">The Steem Blockchain</h6>
+                  <h2 className="text-blue text-3xl lg:text-4xl font-weight-bold mb-6">
                     <span className="text-md-nowrap">Building better communities,</span> <span className="text-md-nowrap">creating rewarding opportunities</span> <span className="text-md-nowrap">and empowering entrepreneurs</span>
                   </h2>
                   <p className="text-lg leading-relaxed">
@@ -41,7 +41,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="row mb-5 md:mb-6">
               <div className="col-12 text-center">
-                <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold">Our story, so far...</h2>
+                <h2 className="text-blue text-3xl lg:text-4xl font-bold">Our story, so far...</h2>
               </div>
             </div>
             <div className="row justify-center">
@@ -58,9 +58,9 @@ export default function About() {
                   </div>
                   <div className="col-9 md:col-7 md:offset-1">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-steem-lightblue text-sm font-bold mb-2">2016</h5>
-                      <h3 className="text-steem-blue text-xl font-bold mb-3">Genesis block</h3>
-                      <p className="text-steem-grey">
+                      <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">Genesis block</h3>
+                      <p className="text-grey">
                         The genesis block of the Steem blockchain was broadcast to the world on 24 March 2016.
                       </p>
                     </div>
@@ -79,9 +79,9 @@ export default function About() {
                   </div>
                   <div className="col-9 md:col-7 md:offset-1">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-steem-lightblue text-sm font-bold mb-2">2016</h5>
-                      <h3 className="text-steem-blue text-xl font-bold mb-3">First app on Steem</h3>
-                      <p className="text-steem-grey">
+                      <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">First app on Steem</h3>
+                      <p className="text-grey">
                         Steemit was the first app to run on Steem, giving people an easy place to earn cryptocurrency rewards by creating and curating content.
                       </p>
                     </div>
@@ -100,9 +100,9 @@ export default function About() {
                   </div>
                   <div className="col-9 md:col-7 md:offset-1">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-steem-lightblue text-sm font-bold mb-2">2016</h5>
-                      <h3 className="text-steem-blue text-xl font-bold mb-3">First payout</h3>
-                      <p className="text-steem-grey">
+                      <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">First payout</h3>
+                      <p className="text-grey">
                         The first rewards payout on 4 July 2016 kickstarted growth and we&apos;ve been scaling up ever since.
                       </p>
                     </div>
@@ -121,9 +121,9 @@ export default function About() {
                   </div>
                   <div className="col-9 md:col-7 md:offset-1">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-steem-lightblue text-sm font-bold mb-2">2017</h5>
-                      <h3 className="text-steem-blue text-xl font-bold mb-3">Improving systems</h3>
-                      <p className="text-steem-grey">
+                      <h5 className="text-lightblue text-sm font-bold mb-2">2017</h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">Improving systems</h3>
+                      <p className="text-grey">
                         2017 our hard work produced over 19 hardforks and other major improvements to the stability and scalability of the blockchain.
                       </p>
                     </div>
@@ -146,7 +146,7 @@ export default function About() {
                     <div className="nomargin-container my-3">
                       <h5 className="translucent text-uppercase text-sm font-bold mb-2">What&apos;s next?</h5>
                       <h3 className="text-2xl font-bold mb-3">A smarter way to grow</h3>
-                      <p className="text-steem-grey">
+                      <p className="text-grey">
                         The next evolution of Steem will begin with the upcoming launch of Smart Media Tokens. Smart Media Tokens will allow anyone to create their own token, similar to STEEM, and use those tokens to fundraise, monetize content, and grow their own social communities.
                       </p>
                     </div>
@@ -162,9 +162,9 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="row mb-5 md:mb-6" style={{marginBottom: '3em !important'}}>
               <div className="col-12 text-center">
-                <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold mb-4">The Team</h2>
+                <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-4">The Team</h2>
                 <p className="text-lg">
-                  Steem is supported by a team of full-time individuals, <a href='https://github.com/steemit/steem/graphs/contributors' target='_blank' className="underline text-steem-blue">open source contributors</a> and community members just like you.
+                  Steem is supported by a team of full-time individuals, <a href='https://github.com/steemit/steem/graphs/contributors' target='_blank' className="underline text-blue">open source contributors</a> and community members just like you.
                 </p>
               </div>
             </div>

@@ -60,7 +60,7 @@ export default function Developers() {
               <div className="lg:col-10">
                 <div className="row justify-center">
                   <div className="md:col-5">
-                    <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">Turnkey Blockchain</h2>
+                    <h2 className="mb-2 text-blue text-3xl font-bold text-md-center">Turnkey Blockchain</h2>
                   </div>
                   <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
                   <div className="md:col-5 mb-3 md:mb-0">
@@ -84,7 +84,7 @@ export default function Developers() {
               <div className="lg:col-10">
                 <div className="row justify-center">
                   <div className="md:col-5">
-                    <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">Turnkey Cryptocurrency</h2>
+                    <h2 className="mb-2 text-blue text-3xl font-bold text-md-center">Turnkey Cryptocurrency</h2>
                   </div>
                   <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
                   <div className="md:col-5 mb-3 md:mb-0">
@@ -105,7 +105,7 @@ export default function Developers() {
               <div className="lg:col-10">
                 <div className="row justify-center">
                   <div className="md:col-5">
-                    <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">Turnkey Userbase & Ecosystem</h2>
+                    <h2 className="mb-2 text-blue text-3xl font-bold text-md-center">Turnkey Userbase & Ecosystem</h2>
                   </div>
                   <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
                   <div className="md:col-5 mb-3 md:mb-0">
@@ -130,7 +130,7 @@ export default function Developers() {
           <div className="container mx-auto px-4">
             <div className="row justify-center">
               <div className="md:col-6 xl:col-5 xxl:col-4 nomargin-container text-center">
-                <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold mb-6">Ready to start developing?</h2>
+                <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">Ready to start developing?</h2>
                 <p className="text-lg mb-6 leading-relaxed">
                   Access our APIs to start developing your own app on the Steem blockchain.
                 </p>
@@ -151,7 +151,7 @@ export default function Developers() {
           <div className="container mx-auto px-4">
             <div className="row items-center justify-between text-center md:text-left">
               <div className="md:col-6">
-                <h2 className="mb-md-0 text-steem-blue text-2xl font-bold">Contact</h2>
+                <h2 className="mb-md-0 text-blue text-2xl font-bold">Contact</h2>
               </div>
               <div className="md:col-5 lg:col-4 text-md-right">
                 <Link href="/contact/" className="btn btn-blue">

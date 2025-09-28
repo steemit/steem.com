@@ -6,6 +6,7 @@ const roboto = Roboto({
   weight: ['300', '400', '700'],
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-roboto',
 });
 
 export const metadata: Metadata = {
@@ -36,8 +37,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://use.typekit.net/qhy4act.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
       </head>
-      <body className={roboto.className}>
+      <body className={`${roboto.className} ${roboto.variable}`}>
         {children}
       </body>
     </html>
