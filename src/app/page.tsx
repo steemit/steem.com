@@ -13,10 +13,10 @@ export default function Home() {
         <div className="content">
           <main className="main">
             {/* Hero Section */}
-            <section className="bg-landing py-7 py-lg-8 py-xl-10">
-              <div className="container mt-7 my-lg-8 my-xl-10">
-                <div className="row">
-                  <div className="col-12 md:col-6 lg:col-5">
+            <section className="bg-landing py-7 lg:py-8 xl:py-10">
+              <div className="container mx-auto px-4 mt-7 lg:my-8 xl:my-10">
+                <div className="flex flex-wrap -mx-4">
+                  <div className="w-full md:w-1/2 lg:w-5/12 px-4">
                     <div className="nomargin-container text-white">
                       <h1 className="text-4xl lg:text-5xl font-bold mb-6">
                         <span className="text-nowrap">
@@ -40,10 +40,10 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="md:hidden col-12">
+                  <div className="md:hidden w-full px-4">
                     <hr className="my-6" />
                   </div>
-                  <div className="col-12 md:col-6 lg:col-5 lg:offset-2 pl-md-5 lg:px-0">
+                  <div className="w-full md:w-1/2 lg:w-5/12 lg:ml-auto px-4 md:pl-5 lg:px-0">
                     <Carousel />
                   </div>
                 </div>
@@ -51,10 +51,10 @@ export default function Home() {
             </section>
 
             {/* Social Media Model Section */}
-            <section className="py-7 py-lg-8 py-xl-10">
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 md:col-6 lg:col-5 xl:col-4 xl:offset-1">
+            <section className="py-7 lg:py-8 xl:py-10">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-wrap -mx-4">
+                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-4/12 xl:ml-1/12 px-4">
                     <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                       <span className="text-nowrap">
                         A new social media model
@@ -79,12 +79,12 @@ export default function Home() {
                       make.
                     </p>
                   </div>
-                  <div className="col-12 md:col-6 lg:col-5 lg:offset-1 flex items-center mt-4 md:mt-0">
+                  <div className="w-full md:w-1/2 lg:w-5/12 lg:ml-auto flex items-center mt-4 md:mt-0 px-4">
                     <div className="bg-dots py-7 text-center w-full">
                       <h1 className="stat-counter text-gradient text-6xl font-bold mb-4">
                         59,595,935
                       </h1>
-                      <h4 className="font-normal mx-5 mx-xl-8 text-purple text-xl">
+                      <h4 className="font-normal mx-5 xl:mx-8 text-purple text-xl">
                         Rewards paid out to Steem users since June
                       </h4>
                     </div>
@@ -95,12 +95,12 @@ export default function Home() {
 
             {/* Target Audience Section */}
             <section className="bg-half">
-              <div className="container">
-                <div className="row justify-center">
-                  <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-wrap justify-center -mx-4">
+                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="row items-center">
-                        <div className="col-3 xl:col-12 flex items-center justify-center">
+                      <div className="flex items-center">
+                        <div className="w-3/12 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steem_Wrench.png"
@@ -109,8 +109,8 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="col-9 xl:col-12">
-                          <div className="text-xl-center">
+                        <div className="w-9/12 xl:w-full">
+                          <div className="xl:text-center">
                             <Link
                               href="/developers/"
                               className="hover-shiftright block"
@@ -132,10 +132,10 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="row items-center">
-                        <div className="col-3 xl:col-12 flex items-center justify-center">
+                      <div className="flex items-center">
+                        <div className="w-3/12 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steem_Lightbulb.png"
@@ -144,8 +144,8 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="col-9 xl:col-12">
-                          <div className="text-xl-center">
+                        <div className="w-9/12 xl:w-full">
+                          <div className="xl:text-center">
                             <Link
                               href="/entrepreneurs/"
                               className="hover-shiftright block"
@@ -167,10 +167,10 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="row items-center">
-                        <div className="col-3 xl:col-12 flex items-center justify-center">
+                      <div className="flex items-center">
+                        <div className="w-3/12 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steem_Logo_Translucent.png"
@@ -179,8 +179,8 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="col-9 xl:col-12">
-                          <div className="text-xl-center">
+                        <div className="w-9/12 xl:w-full">
+                          <div className="xl:text-center">
                             <Link
                               href="/buying-steem-tokens/"
                               className="hover-shiftright block"
@@ -201,10 +201,10 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="row items-center">
-                        <div className="col-3 xl:col-12 flex items-center justify-center">
+                      <div className="flex items-center">
+                        <div className="w-3/12 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steemit_Chatbubble.png"
@@ -213,8 +213,8 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="col-9 xl:col-12">
-                          <div className="text-xl-center">
+                        <div className="w-9/12 xl:w-full">
+                          <div className="xl:text-center">
                             <Link
                               href="/social-users/"
                               className="hover-shiftright block"
@@ -240,9 +240,9 @@ export default function Home() {
 
             {/* Blockchain Technology Section */}
             <section className="bg-offwhite py-6 py-lg-7 py-xl-10">
-              <div className="container">
-                <div className="row justify-center">
-                  <div className="md:col-9 lg:col-7 xl:col-6 text-md-center">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-wrap justify-center -mx-4">
+                  <div className="w-full md:w-9/12 lg:w-7/12 xl:w-6/12 text-center md:text-center px-4">
                     <div className="nomargin-container">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         Welcome to the next generation of blockchain technology
@@ -255,7 +255,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="row mt-4 lg:mt-5 xl:mt-6">
-                  <div className="col-12 md:col-4 my-2 xl:my-0 text-center">
+                  <div className="w-full md:w-1/3 my-2 xl:my-0 text-center px-4">
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
@@ -275,7 +275,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 md:col-4 my-2 xl:my-0 text-center">
+                  <div className="w-full md:w-1/3 my-2 xl:my-0 text-center px-4">
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
@@ -294,7 +294,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 md:col-4 my-2 xl:my-0 text-center">
+                  <div className="w-full md:w-1/3 my-2 xl:my-0 text-center px-4">
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
@@ -321,8 +321,8 @@ export default function Home() {
             {/* Transaction Comparison Section */}
             <section className="py-6 py-lg-7 py-xl-10">
               <div className="container">
-                <div className="row items-end">
-                  <div className="md:col-7 lg:col-6 xl:col-5 xl:offset-1 mb-6 xl:mb-0">
+                <div className="flex flex-wrap items-end -mx-4">
+                  <div className="w-full md:w-7/12 lg:w-6/12 xl:w-5/12 xl:ml-1/12 mb-6 xl:mb-0 px-4">
                     <Image
                       id="transactions_up"
                       className="img-fluid hidden md:block"
@@ -401,7 +401,7 @@ export default function Home() {
                       </figcaption>
                     </figure>
                   </div>
-                  <div className="md:col-5 xl:col-4 xl:offset-1">
+                  <div className="w-full md:w-5/12 xl:w-4/12 xl:ml-1/12 px-4">
                     <div className="nomargin-container pb-md-6 mb-md-3 xl:mb-0 pb-xl-5">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         Steem processes more transactions than Bitcoin and
@@ -425,9 +425,9 @@ export default function Home() {
 
             {/* Top Apps Section */}
             <section className="bg-offwhite py-6 py-lg-7 py-xl-10">
-              <div className="container">
-                <div className="row">
-                  <div className="md:col-5 xl:col-4 xl:offset-1">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-wrap -mx-4">
+                  <div className="w-full md:w-5/12 xl:w-4/12 xl:ml-1/12 px-4">
                     <div className="py-xl-3">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         The top 3<br />
@@ -445,7 +445,7 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="md:col-6 lg:col-5 xl:col-4 md:offset-1 xl:offset-2">
+                  <div className="w-full md:w-6/12 md:ml-1/12 lg:w-5/12 xl:w-4/12 xl:ml-2/12 px-4">
                     <Link
                       href="https://steemit.com/"
                       className="border border-white border-left-0 border-right-0 border-top-0 hover-shiftright flex items-center justify-between py-3"
@@ -501,7 +501,7 @@ export default function Home() {
             <section className="bg-gradient py-5 py-xl-10 md:hidden">
               <div className="container text-white">
                 <div className="row items-center">
-                  <div className="col-12">
+                  <div className="w-full px-4">
                     <div className="row row-tighter">
                       <div className="col-2">
                         <Image
@@ -583,8 +583,8 @@ export default function Home() {
 
             {/* Resources Section */}
             <section className="py-4 pb-6 py-md-6 py-lg-7 py-xl-10 overflow-hidden border border-top-0">
-              <div className="container">
-                <div className="row justify-center">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-wrap justify-center -mx-4">
                   <div className="col-12 offset-3 mb-5 md:hidden">
                     <Image
                       id="dots"

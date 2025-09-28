@@ -36,36 +36,14 @@ html {
 }
 
 /* Bootstrap Grid System */
+/* Container - 简化为Tailwind CSS兼容的样式 */
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
+  max-width: 1200px;
   margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .row {
@@ -367,7 +345,6 @@ h6, .h6 {
 
 .nav-primary {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 400;
 }
 
 .nav-primary a {
@@ -375,8 +352,15 @@ h6, .h6 {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.0666666rem;
   transition: opacity 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .nav-primary a {
+    font-size: 1.1666666rem;
+    font-weight: 600;
+  }
 }
 
 .nav-primary a:hover {
@@ -388,8 +372,15 @@ h6, .h6 {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.0666666rem;
   transition: opacity 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile a {
+    font-size: 1.1666666rem;
+    font-weight: 600;
+  }
 }
 
 .nav-mobile a:hover {
@@ -479,8 +470,12 @@ h6, .h6 {
   border-radius: 12px;
 }
 
+.smaller {
+  font-size: 0.9rem;
+}
+
 .translucent {
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .carousel-vertical {
@@ -636,17 +631,6 @@ h6, .h6 {
   }
 }
 
-/* 修复导航链接样式 */
-.nav-primary a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.3s ease;
-}
-
-.nav-primary a:hover {
-  opacity: 0.8;
-}
 
 /* 修复汉堡菜单动画 */
 .hamburger {
@@ -1027,6 +1011,7 @@ h6, .h6 {
     transform: translateX(100%);
     width: 255px;
     z-index: 1000;
+    padding: 1rem;
   }
 
   #mobileOverlay.state-active {
@@ -1099,47 +1084,66 @@ input[type="submit"] {
 
 .nav-footer > .menu-item > a {
   display: block;
-  margin-left: 0;
+  margin-left: 1rem;
   margin-bottom: 0.25rem;
   color: inherit;
   text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  font-size: 1.0666666rem;
 }
 
 @media (min-width: 768px) {
   .nav-footer > .menu-item > a {
+    font-size: 1.1666666rem;
+    font-weight: 600;
     margin: 0;
   }
 }
 
 @media (min-width: 992px) {
   .nav-footer > .menu-item > a {
+    font-size: 1.1666666rem;
     margin-left: 0.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .nav-footer > .menu-item > a {
-    margin-left: 0.75rem;
+    margin-left: 1.5rem;
   }
 }
 
-@media (min-width: 1440px) {
-  .nav-footer > .menu-item > a {
-    margin-left: 1rem;
+/* sidebar styles: mobile nav-footer link special style*/
+#mobileOverlay .nav-footer > .menu-item > a {
+  margin-left: 0;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .nav-footer > .menu-item::after {
+    background-image: linear-gradient(to left, #11a7f2, white);
+    content: "";
+    display: block;
+    height: 1px;
   }
 }
 
-/* Button styles */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
+/* Mobile footer styles - 与旧网站一致 */
+#mobileFooter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
+
+@media (min-width: 992px) {
+  #mobileFooter {
+    position: static;
+  }
+}
+
 
 .btn-white {
   background: white;
