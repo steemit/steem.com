@@ -60,7 +60,7 @@ export default function Header({ variant = 'white' }: HeaderProps) {
                   </ul>
                 </div>
               </nav>
-              <div className={`hamburger ${hamburgerClass}`} onClick={toggleMobileMenu}>
+              <div className={`hamburger ${hamburgerClass} ${isMobileMenuOpen ? 'state-active' : ''}`} onClick={toggleMobileMenu}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -73,30 +73,29 @@ export default function Header({ variant = 'white' }: HeaderProps) {
       {/* Mobile Overlay */}
       <div 
         id="mobileOverlay" 
-        className={`text-white p-lg-3 fixed inset-0 bg-gradient z-50 ${isMobileMenuOpen ? 'block' : 'hidden'}`}
-        style={{ display: isMobileMenuOpen ? 'block' : 'none' }}
+        className={`text-white p-lg-3 ${isMobileMenuOpen ? 'state-active' : ''}`}
       >
         <div className="container">
-          <div className="hidden lg:flex hamburger ml-auto mt-3" onClick={closeMobileMenu}>
+          <div className="d-none d-lg-flex hamburger ml-auto mt-3" onClick={closeMobileMenu}>
             <span></span>
             <span></span>
             <span></span>
           </div>
           <nav>
             <div className="menu-primary-container">
-              <ul className="nav nav-mobile mt-8 lg:hidden">
-                <li>
-                  <Link href="/developers/" onClick={closeMobileMenu} className="block py-2 text-white">
+              <ul className="nav nav-mobile mt-8 d-lg-none">
+                <li className="menu-item">
+                  <Link href="/developers/" onClick={closeMobileMenu}>
                     Developers
                   </Link>
                 </li>
-                <li>
-                  <Link href="/entrepreneurs/" onClick={closeMobileMenu} className="block py-2 text-white">
+                <li className="menu-item">
+                  <Link href="/entrepreneurs/" onClick={closeMobileMenu}>
                     Entrepreneurs
                   </Link>
                 </li>
-                <li>
-                  <Link href="/social-users/" onClick={closeMobileMenu} className="block py-2 text-white">
+                <li className="menu-item">
+                  <Link href="/social-users/" onClick={closeMobileMenu}>
                     Social Users
                   </Link>
                 </li>
@@ -105,24 +104,24 @@ export default function Header({ variant = 'white' }: HeaderProps) {
           </nav>
           <nav>
             <div className="menu-secondary-container">
-              <ul className="mt-3 nav nav-footer justify-center translucent">
-                <li>
-                  <Link href="/about/" onClick={closeMobileMenu} className="block py-1 text-white hover:opacity-80">
+              <ul className="mt-3 nav nav-footer justify-content-center translucent">
+                <li className="menu-item">
+                  <Link href="/about/" onClick={closeMobileMenu}>
                     About
                   </Link>
                 </li>
-                <li>
-                  <Link href="/brand/" onClick={closeMobileMenu} className="block py-1 text-white hover:opacity-80">
+                <li className="menu-item">
+                  <Link href="/brand/" onClick={closeMobileMenu}>
                     Brand
                   </Link>
                 </li>
-                <li>
-                  <Link href="/faq/" onClick={closeMobileMenu} className="block py-1 text-white hover:opacity-80">
+                <li className="menu-item">
+                  <Link href="/faq/" onClick={closeMobileMenu}>
                     FAQ
                   </Link>
                 </li>
-                <li>
-                  <Link href="/contact/" onClick={closeMobileMenu} className="block py-1 text-white hover:opacity-80">
+                <li className="menu-item">
+                  <Link href="/contact/" onClick={closeMobileMenu}>
                     Contact
                   </Link>
                 </li>
@@ -131,8 +130,8 @@ export default function Header({ variant = 'white' }: HeaderProps) {
           </nav>
         </div>
         <div id="mobileFooter" className="container">
-          <hr className="border border-bottom-0 border-offwhite w-full lg:hidden"/>
-          <div className="row justify-center lg:justify-start text-center lg:text-left">
+          <hr className="border border-bottom-0 border-offwhite w-100 d-lg-none"/>
+          <div className="row justify-content-center justify-content-lg-start text-center text-lg-left">
             <div className="col-8 md:col-3 lg:col-10 mt-lg-5">
               <Link href="https://steemit.com/" target="_blank" onClick={closeMobileMenu}>
                 <Image
@@ -143,7 +142,7 @@ export default function Header({ variant = 'white' }: HeaderProps) {
                   height={40}
                 />
               </Link>
-              <p className="text-sm translucent">Keep updated through our social platform.</p>
+              <p className="smaller translucent">Keep updated through our social platform.</p>
             </div>
           </div>
         </div>

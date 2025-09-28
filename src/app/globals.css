@@ -343,6 +343,23 @@ h6, .h6 {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* 布局结构样式 - 与旧网站一致 */
+.wrap {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
 /* Header字体设置 */
 .banner {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -536,19 +553,39 @@ h6, .h6 {
 .hamburger {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
   cursor: pointer;
-  gap: 4px;
 }
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
+.hamburger > span {
   background: white;
-  transition: 0.3s;
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 1.5rem;
+  margin: 3px 0;
+  transition: 0.5s;
 }
 
-.hamburger-blue span {
-  background: #4BA3F3;
+@media (min-width: 992px) {
+  .hamburger.hamburger-blue > span {
+    background: #161fc8;
+  }
+}
+
+.hamburger.state-active > span:nth-of-type(1) {
+  transform: translateY(8px) rotateZ(45deg);
+}
+
+.hamburger.state-active > span:nth-of-type(2) {
+  transform: rotateZ(45deg);
+}
+
+.hamburger.state-active > span:nth-of-type(3) {
+  transform: translateY(-8px) rotateZ(-45deg);
 }
 
 .nomargin-container {
@@ -585,16 +622,12 @@ h6, .h6 {
   }
 }
 
-/* Banner styles */
+/* Banner styles - 与旧网站一致 */
 .banner {
   position: fixed;
   right: 0;
   left: 0;
   z-index: 2;
-  background: transparent;
-  color: white;
-  padding: 1rem 0;
-  transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -969,25 +1002,36 @@ h6, .h6 {
   transition: 0.5s;
 }
 
-/* Mobile overlay styles */
+/* Mobile overlay styles - 与旧网站一致 */
 #mobileOverlay {
+  background: #11a7f1;
+  opacity: 0;
   position: fixed;
+  pointer-events: none;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #161fc8 0%, #5f00de 100%);
-  z-index: 1000;
-  display: none;
+  transition: 0.5s;
 }
 
-#mobileOverlay.show,
-#mobileOverlay.block {
-  display: block;
+#mobileOverlay.state-active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-#mobileOverlay.hidden {
-  display: none;
+@media (min-width: 992px) {
+  #mobileOverlay {
+    opacity: 1;
+    left: auto;
+    transform: translateX(100%);
+    width: 255px;
+    z-index: 1000;
+  }
+
+  #mobileOverlay.state-active {
+    transform: translateX(0);
+  }
 }
 
 /* Button styles - 与旧网站一致 */
@@ -1048,25 +1092,41 @@ input[type="submit"] {
 }
 
 .nav-footer {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.nav-footer li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.nav-footer a {
-  color: white;
+.nav-footer > .menu-item > a {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 0.25rem;
+  color: inherit;
   text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
 }
 
-.nav-footer a:hover {
-  opacity: 1;
+@media (min-width: 768px) {
+  .nav-footer > .menu-item > a {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-footer > .menu-item > a {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-footer > .menu-item > a {
+    margin-left: 0.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav-footer > .menu-item > a {
+    margin-left: 1rem;
+  }
 }
 
 /* Button styles */
@@ -1206,13 +1266,38 @@ input[type="submit"] {
   }
 }
 
-/* 修复移动端导航样式 */
+/* 移动端导航样式 - 与旧网站一致 */
 .nav-mobile {
-  margin-top: 2rem;
+  display: block;
 }
 
-.nav-mobile li {
-  margin-bottom: 0.5rem;
+.nav-mobile > .menu-item > a {
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-family: "paralucent", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile > .menu-item > a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-mobile > .menu-item > a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-mobile > .menu-item > a {
+    font-size: 2.333333rem;
+  }
 }
 
 /* 修复 Footer 样式 */
