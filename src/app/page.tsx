@@ -1,103 +1,204 @@
-import Image from "next/image";
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Image from 'next/image';
+import Link from 'next/link';
+import Carousel from '@/components/Carousel';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen">
+      <Header />
+      
+      <main className="main">
+        {/* Hero Section */}
+        <section className="bg-landing py-7 py-lg-8 py-xl-10">
+          <div className="container mt-7 my-lg-8 my-xl-10">
+            <div className="row">
+              <div className="col-12 col-md-6 col-lg-5">
+                <div className="nomargin-container text-white">
+                  <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+                    <span className="text-nowrap">Powering Communities</span> and Opportunities
+                  </h1>
+                  <p className="text-lg mb-8 leading-relaxed">
+                    Steem is a social blockchain that grows communities and makes immediate revenue streams possible for users by rewarding them for sharing content. It&apos;s currently the only blockchain that can power real applications via social apps like Steemit.
+                  </p>
+                  <Link 
+                    href="https://signup.steemit.com/" 
+                    className="btn btn-white"
+                    target="_blank"
+                  >
+                    Create an account
+                  </Link>
+                </div>
+              </div>
+              <div className="d-md-none col-12">
+                <hr className="my-6"/>
+              </div>
+              <div className="col-12 col-md-6 col-lg-5 offset-lg-2 pl-md-5 pl-lg-0">
+                <Carousel />
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        {/* Social Media Model Section */}
+        <section className="py-7 py-lg-8 py-xl-10">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 md:col-6 lg:col-5 xl:col-4 xl:offset-1">
+                <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold mb-6">
+                  <span className="text-nowrap">A new social media model</span><br />
+                  <span className="text-nowrap">where contributors get</span><br />
+                  big perks
+                </h2>
+                <p className="text-lg mb-4 leading-relaxed">
+                  Shareholders of social media platforms made billions of dollars from user-generated content. The content creators? They made nothing.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Steem flips the model and returns the value to the people who contribute the most. Users become platform stakeholders, maintaining control over their data, and earning cryptocurrency rewards for each contribution they make.
+                </p>
+              </div>
+              <div className="col-12 md:col-6 lg:col-5 lg:offset-1 d-flex align-items-center mt-4 md:mt-0">
+                <div className="bg-dots py-7 text-center w-full">
+                  <h1 className="stat-counter text-gradient text-6xl font-bold mb-4">59,595,935</h1>
+                  <h4 className="font-normal mx-5 mx-xl-8 text-steem-purple text-xl">
+                    Rewards paid out to Steem users since June
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Target Audience Section */}
+        <section className="bg-half">
+          <div className="container">
+            <div className="row justify-center">
+              <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+                <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
+                  <div className="row items-center">
+                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                      <Image
+                        className="img-fluid img-icon mb-xl-3"
+                        src="/images/Steem_Wrench.png"
+                        alt="Developers icon"
+                        width={60}
+                        height={60}
+                      />
+                    </div>
+                    <div className="col-9 xl:col-12">
+                      <div className="text-xl-center">
+                        <Link href="/developers/" className="hover-shiftright block">
+                          <h5 className="text-xl font-bold mb-2">
+                            For Developers <i className="fa fa-chevron-right ml-2 translucent">→</i>
+                          </h5>
+                          <p className="m-0 text-sm">Find open source code & docs to help you start building.</p>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+                <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
+                  <div className="row items-center">
+                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                      <Image
+                        className="img-fluid img-icon mb-xl-3"
+                        src="/images/Steem_Lightbulb.png"
+                        alt="Entrepreneurs icon"
+                        width={60}
+                        height={60}
+                      />
+                    </div>
+                    <div className="col-9 xl:col-12">
+                      <div className="text-xl-center">
+                        <Link href="/entrepreneurs/" className="hover-shiftright block">
+                          <h5 className="text-xl font-bold mb-2">
+                            For Entrepreneurs <i className="fa fa-chevron-right ml-2 translucent">→</i>
+                          </h5>
+                          <p className="m-0 text-sm">Build apps, monetize content & grow your community.</p>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+                <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
+                  <div className="row items-center">
+                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                      <Image
+                        className="img-fluid img-icon mb-xl-3"
+                        src="/images/Steem_Logo_Translucent.png"
+                        alt="HODLers icon"
+                        width={60}
+                        height={60}
+                      />
+                    </div>
+                    <div className="col-9 xl:col-12">
+                      <div className="text-xl-center">
+                        <Link href="/buying-steem-tokens/" className="hover-shiftright block">
+                          <h5 className="text-xl font-bold mb-2">
+                            For HODLers <i className="fa fa-chevron-right ml-2 translucent">→</i>
+                          </h5>
+                          <p className="m-0 text-sm">Learn about tokens and where to buy & trade.</p>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="col-12 md:col-6 lg:col-5 xl:col-3 bg-pseudoclip my-1 md:my-2 xl:my-0">
+                <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
+                  <div className="row items-center">
+                    <div className="col-3 xl:col-12 d-flex align-items-center justify-center">
+                      <Image
+                        className="img-fluid img-icon mb-xl-3"
+                        src="/images/Steemit_Chatbubble.png"
+                        alt="Social Users icon"
+                        width={60}
+                        height={60}
+                      />
+                    </div>
+                    <div className="col-9 xl:col-12">
+                      <div className="text-xl-center">
+                        <Link href="/social-users/" className="hover-shiftright block">
+                          <h5 className="text-xl font-bold mb-2">
+                            For Social Users <i className="fa fa-chevron-right ml-2 translucent">→</i>
+                          </h5>
+                          <p className="m-0 text-sm">Get paid for good content & grow your following.</p>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-5 bg-white">
+          <div className="container">
+            <div className="row items-center justify-between text-center md:text-left">
+              <div className="md:col-6">
+                <h2 className="mb-md-0 text-steem-blue text-2xl font-bold">Contact</h2>
+              </div>
+              <div className="md:col-5 lg:col-4 text-md-right">
+                <Link href="/contact/" className="btn btn-blue">
+                  <i className="fa fa-envelope mr-3">✉</i>Contact Us
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      
+      <Footer />
     </div>
   );
 }
