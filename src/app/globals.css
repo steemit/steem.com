@@ -539,9 +539,42 @@ p {
 
 .figure-social {
   background: white;
-  border-radius: 12px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative;
+  width: 91.666666666%;
+}
+
+@media (min-width: 992px) {
+  .figure-social {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+.figure-social > div {
   padding: 1rem;
-  margin-bottom: 1rem;
+}
+
+.figure-social > .meta {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .figure-social > .meta {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .figure-social > .meta {
+    width: 62.5%;
+  }
 }
 
 .figure-circle {
@@ -1245,12 +1278,6 @@ input[type="submit"] {
   margin: 0 auto 1rem;
 }
 
-.bg-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .bg-landscape {
   aspect-ratio: 16/9;
   border-radius: 8px;
@@ -1461,11 +1488,33 @@ input[type="submit"] {
   background-repeat: no-repeat;
   height: 200px;
   border-radius: 8px;
-  margin-top: 1rem;
 }
 
-.bg-image.logo {
-  height: 150px;
+.figure-social > .logo {
+  background-size: auto 105%;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  right: -8.333333333%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@media (min-width: 992px) {
+  .figure-social > .logo {
+    border-radius: 0;
+    position: static;
+    height: auto;
+    width: 35%;
+    transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .figure-social > .logo {
+    width: 37.5%;
+  }
 }
 
 /* 修复响应式显示问题 */
