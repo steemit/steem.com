@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer id="footer" className="bg-footer content-info py-4 py-xl-4 text-white">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 md:col-5 lg:col-12 xl:flex items-center justify-between mb-4 lg:mb-0">
+    <footer id="footer" className="bg-footer content-info py-5 xl:py-5 text-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full md:w-5/12 lg:w-full xl:flex xl:items-center xl:justify-between mb-4 lg:mb-0 px-4">
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center">
                 <Link href="/" className="brand">
@@ -18,110 +18,118 @@ export default function Footer() {
                     height={40}
                   />
                 </Link>
-                <p className="inline-block translucent md:mt-2 ml-3 mb-0 text-sm">
+                <p className="inline-block translucent ml-4 text-xl">
                   &copy;2018 Steemit Inc.
                 </p>
               </div>
               <div className="menu-footer-container">
                 <ul className="nav-footer hidden lg:flex items-center mt-2">
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://steemit.com/@steemitblog"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="Steem Blog on Steemit.com"
                     >
                       Blog
-                    </Link>
+                    </a>
                   </li>
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://www.reddit.com/r/steemit/"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="Steemit on Reddit.com"
                     >
                       Reddit
-                    </Link>
+                    </a>
                   </li>
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://twitter.com/steemit"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="Official Twitter Steemit profile"
                     >
                       Twitter
-                    </Link>
+                    </a>
                   </li>
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://www.facebook.com/steemit/"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="Official Facebook Steemit profile"
                     >
                       Facebook
-                    </Link>
+                    </a>
                   </li>
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://steemit.com/"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="Steemit.com, social blogging platform"
                     >
                       Steemit
-                    </Link>
+                    </a>
                   </li>
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://steemdb.io/"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="SteemDB"
                     >
                       Block explorer
-                    </Link>
+                    </a>
                   </li>
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://developers.steem.io/"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="Official Steem developer portal"
                     >
                       Developers
-                    </Link>
+                    </a>
                   </li>
-                  <li>
-                    <Link
+                  <li className="menu-item">
+                    <a
                       href="https://github.com/steemit"
                       target="_blank"
-                      className="text-white hover:opacity-100 transition-opacity"
+                      rel="noopener noreferrer"
+                      className="text-white hover:opacity-100 transition-opacity no-underline"
                       title="Official Github Steemit profile"
                     >
                       Github
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="lg:hidden col-6 md:col-3 md:offset-1">
+          <div className="lg:hidden w-6/12 md:w-3/12 md:ml-4 px-4">
             <div className="menu-primary-container">
               <ul className="nav-footer">
-                <li>
+                <li className="menu-item">
                   <Link href="/developers/" className="text-white hover:opacity-100 transition-opacity">
                     Developers
                   </Link>
                 </li>
-                <li>
+                <li className="menu-item">
                   <Link href="/entrepreneurs/" className="text-white hover:opacity-100 transition-opacity">
                     Entrepreneurs
                   </Link>
                 </li>
-                <li>
+                <li className="menu-item">
                   <Link href="/social-users/" className="text-white hover:opacity-100 transition-opacity">
                     Social Users
                   </Link>
@@ -129,48 +137,52 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="lg:hidden col-6 md:col-3">
+          <div className="lg:hidden w-6/12 md:w-3/12 px-4">
             <div className="menu-social-container">
               <ul className="nav-footer">
-                <li>
-                  <Link
+                <li className="menu-item">
+                  <a
                     href="https://www.reddit.com/r/steemit/"
                     target="_blank"
-                    className="text-white hover:opacity-100 transition-opacity"
+                    rel="noopener noreferrer"
+                    className="text-white hover:opacity-100 transition-opacity no-underline"
                     title="Steemit on Reddit.com"
                   >
                     Reddit
-                  </Link>
+                  </a>
                 </li>
-                <li>
-                  <Link
+                <li className="menu-item">
+                  <a
                     href="https://twitter.com/steemit"
                     target="_blank"
-                    className="text-white hover:opacity-100 transition-opacity"
+                    rel="noopener noreferrer"
+                    className="text-white hover:opacity-100 transition-opacity no-underline"
                     title="Official Twitter Steemit profile"
                   >
                     Twitter
-                  </Link>
+                  </a>
                 </li>
-                <li>
-                  <Link
+                <li className="menu-item">
+                  <a
                     href="https://www.facebook.com/steemit/"
                     target="_blank"
-                    className="text-white hover:opacity-100 transition-opacity"
+                    rel="noopener noreferrer"
+                    className="text-white hover:opacity-100 transition-opacity no-underline"
                     title="Official Facebook Steemit profile"
                   >
                     Facebook
-                  </Link>
+                  </a>
                 </li>
-                <li>
-                  <Link
+                <li className="menu-item">
+                  <a
                     href="https://github.com/steemit"
                     target="_blank"
-                    className="text-white hover:opacity-100 transition-opacity"
+                    rel="noopener noreferrer"
+                    className="text-white hover:opacity-100 transition-opacity no-underline"
                     title="Official Github Steemit profile"
                   >
                     Github
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

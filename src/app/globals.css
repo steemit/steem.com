@@ -1087,7 +1087,12 @@ input[type="submit"] {
 
 /* Footer styles */
 .bg-footer {
-  background: #1F2937;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAABXCAYAAADvXR4QAAADtUlEQVR4nO3YSY7TQABAUQqJM3FR7gs7RDoVu77tOCzeW7TUSk0euiP98fPHr9/f4D9x/mUcb1jzurXOzR+H5985r80ZN+3TxtdreNfaq2P7ms9/J3fs38btn/HeezkWxly952zsdc/uU89jbVz733B83Py6rnm3jn8f7Y/r7+P++PPfn4/jr3pnjl/rw5yx9rezvc/4eqTFefvzl+/F0b0Xrv9pjfH3x5rx7zo7815+PF7+uvlcVo+5ck1PH78+03x+WX8ydjp9+917/GxlzdX1LljrneuUNWb359W9PjN/9vxnz/zlHgvXuDI3n+3MuY6eaTJv5V4dOc/K8/t6f46cJV3j1j3/wPVdseZsXr1nV6y5su4V7/BdZ/3kuleuPZ23sPbp/8vH9xiLe3yfbAsAAAAAwAZhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAgElYBAAAAACJhFQAAAAAg+gPBuzkccjCt8wAAAABJRU5ErkJggg==);
+  background-size: cover;
+}
+
+#footer p {
+  margin-bottom: 0 !important;
 }
 
 .nav-footer {
@@ -1104,12 +1109,12 @@ input[type="submit"] {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-  font-size: 1.0666666rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
   .nav-footer > .menu-item > a {
-    font-size: 1.1666666rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 0;
   }
@@ -1117,7 +1122,7 @@ input[type="submit"] {
 
 @media (min-width: 992px) {
   .nav-footer > .menu-item > a {
-    font-size: 1.1666666rem;
+    font-size: 1rem;
     margin-left: 0.5rem;
   }
 }
@@ -1284,14 +1289,6 @@ input[type="submit"] {
   overflow: hidden;
 }
 
-@media (min-width: 992px) {
-  .nav-footer > .menu-item::after {
-    background-image: linear-gradient(to left, #11a7f2, white);
-    content: "";
-    display: block;
-    height: 1px;
-  }
-}
 
 /* Mobile footer styles - 与旧网站一致 */
 #mobileFooter {

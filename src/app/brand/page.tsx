@@ -534,14 +534,14 @@ export default function BrandPage() {
                           Plus 4 more variants
                         </p>
                         <p className="mb-1 small">
-                          <a
+                          <Link
                             className="a-underline text-lightblue text-underline"
                             href="https://fonts.google.com/specimen/Raleway"
                             target="_blank"
                             rel="noopener"
                           >
                             Implement via Google Fonts
-                          </a>
+                          </Link>
                         </p>
                       </div>
                       <div className="col-md-6 my-4">
