@@ -14,7 +14,7 @@ export default function Home() {
           <main className="main">
             {/* Hero Section */}
             <section className="bg-landing py-7 lg:py-8 xl:py-10">
-              <div className="container mx-auto px-4 mt-7 lg:my-8 xl:my-10">
+              <div className="container mx-auto px-4 lg:my-8 xl:my-10">
                 <div className="flex flex-row -mx-4">
                   <div className="w-full md:w-6/12 lg:w-5/12 px-4">
                     <div className="nomargin-container text-white">

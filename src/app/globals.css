@@ -1132,6 +1132,16 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.btn,
+.comment-form input[type="submit"],
+input[type="submit"] {
+  border-radius: 2.5rem;
+  color: #161fc8 !important;
+  font-size: 1.166666666rem;
+  font-weight: 600;
+  padding: 0.75rem 2.5rem;
+}
+
 .btn-white {
   background: white;
   color: #161fc8;
