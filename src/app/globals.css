@@ -167,9 +167,9 @@ html {
 
 .align-items-center { align-items: center; }
 .justify-content-between { justify-content: space-between; }
-.text-center { text-align: center !important; }
-.text-left { text-align: left !important; }
-.text-right { text-align: right !important; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
 @media (min-width: 768px) {
   .text-md-left { text-align: left; }
@@ -1381,12 +1381,6 @@ input[type="submit"] {
 }
 
 
-.bg-wave {
-  background: url(/images/steemit_bg_wave.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 .btn-white {
   background: white;
   color: #4BA3F3;
@@ -1811,15 +1805,15 @@ input[type="submit"] {
 
 /* 修复文本对齐 */
 .text-left {
-  text-align: left !important;
+  text-align: left;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 
 /* 修复字体权重 */
