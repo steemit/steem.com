@@ -11,8 +11,8 @@ export default function About() {
         {/* Hero Section */}
         <section className="bg-wave py-7 lg:py-8 xl:py-10">
           <div className="container mx-auto px-4 mt-7 my-lg-8 my-xl-10">
-            <div className="row d-flex align-items-center justify-content-center justify-content-md-start">
-              <div className="col-12 col-md-7 col-lg-6 col-xxl-5">
+            <div className="flex flex-wrap items-center justify-center md:justify-start">
+              <div className="w-full md:w-7/12 lg:w-1/2 2xl:w-5/12">
                 <div className="nomargin-container text-offblack">
                   <h6 className="text-lightblue text-uppercase small font-weight-bold mb-2">The Steem Blockchain</h6>
                   <h2 className="text-blue text-3xl lg:text-4xl font-weight-bold mb-6">
@@ -23,7 +23,7 @@ export default function About() {
                   </p>
                 </div>
               </div>
-              <div className="col-6 col-md-3 col-xl-2 offset-md-1 offset-lg-2 offset-xxl-3 nomargin-container">
+              <div className="w-1/2 md:w-1/4 xl:w-1/6 2xl:w-1/5 md:ml-auto lg:ml-1/6 2xl:ml-1/4 nomargin-container">
                 <Image
                   className="img-fluid mt-4 md:mt-0"
                   src="/images/Steem_Icon_CoinFalling.png"
@@ -39,15 +39,15 @@ export default function About() {
         {/* Story Section */}
         <section className="py-7 py-lg-8 py-xl-10 bg-offwhite">
           <div className="container mx-auto px-4">
-            <div className="row mb-5 md:mb-6">
-              <div className="col-12 text-center">
+            <div className="flex flex-wrap mb-5 md:mb-6">
+              <div className="w-full text-center">
                 <h2 className="text-blue text-3xl lg:text-4xl font-bold">Our story, so far...</h2>
               </div>
             </div>
-            <div className="row justify-center">
-              <div className="md:col-10 lg:col-8 xl:col-7">
-                <div className="border-rounded box-shadow row items-md-center bg-white p-md-4 mb-4">
-                  <div className="col-3 md:col-4 text-center">
+            <div className="flex flex-wrap justify-center">
+              <div className="w-full md:w-10/12 lg:w-2/3 xl:w-7/12">
+                <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
+                  <div className="w-1/4 md:w-1/3 text-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_GenesisBlock.png"
@@ -56,7 +56,7 @@ export default function About() {
                       height={100}
                     />
                   </div>
-                  <div className="col-9 md:col-7 md:offset-1">
+                  <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
                       <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
                       <h3 className="text-blue text-xl font-bold mb-3">Genesis block</h3>
@@ -67,8 +67,8 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="border-rounded box-shadow row items-md-center bg-white p-md-4 mb-4">
-                  <div className="col-3 md:col-4 text-center">
+                <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
+                  <div className="w-1/4 md:w-1/3 text-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_FirstApp.png"
@@ -77,7 +77,7 @@ export default function About() {
                       height={100}
                     />
                   </div>
-                  <div className="col-9 md:col-7 md:offset-1">
+                  <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
                       <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
                       <h3 className="text-blue text-xl font-bold mb-3">First app on Steem</h3>
@@ -88,8 +88,8 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="border-rounded box-shadow row items-md-center bg-white p-md-4 mb-4">
-                  <div className="col-3 md:col-4 text-center">
+                <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
+                  <div className="w-1/4 md:w-1/3 text-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_Lightblue.png"
@@ -98,7 +98,7 @@ export default function About() {
                       height={100}
                     />
                   </div>
-                  <div className="col-9 md:col-7 md:offset-1">
+                  <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
                       <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
                       <h3 className="text-blue text-xl font-bold mb-3">First payout</h3>
@@ -109,8 +109,8 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="border-rounded box-shadow row items-md-center bg-white p-md-4 mb-4">
-                  <div className="col-3 md:col-4 text-center">
+                <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
+                  <div className="w-1/4 md:w-1/3 text-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_Wrench.png"
@@ -119,7 +119,7 @@ export default function About() {
                       height={100}
                     />
                   </div>
-                  <div className="col-9 md:col-7 md:offset-1">
+                  <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
                       <h5 className="text-lightblue text-sm font-bold mb-2">2017</h5>
                       <h3 className="text-blue text-xl font-bold mb-3">Improving systems</h3>
@@ -132,8 +132,8 @@ export default function About() {
 
                 <hr className="border my-5"/>
                 
-                <div className="border-rounded box-shadow row items-center bg-gradient p-3 md:p-4 mb-4 text-white">
-                  <div className="md:col-4 text-center">
+                <div className="border-rounded box-shadow flex flex-wrap items-center bg-gradient p-3 md:p-4 mb-4 text-white">
+                  <div className="w-full md:w-1/3 text-center">
                     <Image
                       className="img-fluid img-icon-about my-4 md:my-0"
                       src="/images/Steem_Icon_SMT-White.png"
@@ -142,7 +142,7 @@ export default function About() {
                       height={100}
                     />
                   </div>
-                  <div className="md:col-7 md:offset-1">
+                  <div className="w-full md:w-7/12 md:ml-auto">
                     <div className="nomargin-container my-3">
                       <h5 className="translucent text-uppercase text-sm font-bold mb-2">What&apos;s next?</h5>
                       <h3 className="text-2xl font-bold mb-3">A smarter way to grow</h3>
@@ -160,8 +160,8 @@ export default function About() {
         {/* Team Section */}
         <section className="py-7 py-lg-8 py-xl-10">
           <div className="container mx-auto px-4">
-            <div className="row mb-5 md:mb-6" style={{marginBottom: '3em !important'}}>
-              <div className="col-12 text-center">
+            <div className="flex flex-wrap mb-5 md:mb-6" style={{marginBottom: '3em !important'}}>
+              <div className="w-full text-center">
                 <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-4">The Team</h2>
                 <p className="text-lg">
                   Steem is supported by a team of full-time individuals, <a href='https://github.com/steemit/steem/graphs/contributors' target='_blank' className="underline text-blue">open source contributors</a> and community members just like you.

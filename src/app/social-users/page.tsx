@@ -13,7 +13,7 @@ export default function SocialUsers() {
         <section className="bg-page-landing py-7 lg:py-8 xl:py-10">
           <div className="container mx-auto px-4 mt-5 md:mt-7 mb-md-5 my-lg-8 my-xl-10">
             <div className="row items-center">
-              <div className="col-12 md:col-6 lg:col-5 xl:col-4">
+              <div className="w-full md:w-1/2 lg:w-5/12 xl:w-1/3">
                 <div className="nomargin-container text-white">
                   <h6 className="translucent text-uppercase text-sm font-bold mb-2">Social Users</h6>
                   <h2 className="text-3xl lg:text-4xl font-bold mb-6">Get paid for your content</h2>
@@ -21,7 +21,7 @@ export default function SocialUsers() {
                     Everyone who contributes content on a Steem-based app has the same opportunity to earn money from the rewards pool. Steem apps enable creators to earn money for pursuing their passions via shared content.
                   </p>
                   <div className="row justify-center md:hidden mt-5">
-                    <div className="col-9">
+                    <div className="w-3/4">
                       <Image
                         className="img-fluid"
                         src="/images/Steem_Landing_ForSocialUsers.png"
@@ -40,7 +40,7 @@ export default function SocialUsers() {
                   </Link>
                 </div>
               </div>
-              <div className="col-12 md:col-5 lg:col-4 xl:col-3 md:offset-1 lg:offset-2 xl:offset-3 nomargin-container">
+              <div className="w-full md:w-5/12 lg:w-1/3 xl:w-1/4 md:ml-auto lg:ml-1/6 xl:ml-1/4 nomargin-container">
                 <Image
                   className="img-fluid hidden md:block"
                   src="/images/Steem_Landing_ForSocialUsers.png"
@@ -57,16 +57,16 @@ export default function SocialUsers() {
         <section className="bg-developers py-7 py-lg-8 py-xl-10">
           <div className="container mx-auto px-4">
             <div className="row justify-center">
-              <div className="lg:col-10">
+              <div className="w-full lg:w-10/12">
                 <div className="row justify-center">
-                  <div className="md:col-5">
+                  <div className="w-full md:w-5/12">
                     <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">Earn Rewards</h2>
                   </div>
                   <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
-                  <div className="md:col-5 mb-3 md:mb-0">
+                  <div className="w-full md:w-5/12 mb-3 md:mb-0">
                     <h3 className="text-2xl font-bold text-white">Get paid for creating and curating quality content</h3>
                   </div>
-                  <div className="md:col-6 md:offset-1 nomargin-container">
+                  <div className="w-full md:w-1/2 md:ml-auto nomargin-container">
                     <p className="text-lg text-white leading-relaxed mb-4">
                       On Steem-based platforms, every user has the opportunity to earn cryptocurrency rewards for their contributions. Whether you&apos;re creating original content, curating posts, or engaging with the community, your participation is valued and rewarded.
                     </p>
@@ -77,20 +77,20 @@ export default function SocialUsers() {
                 </div>
               </div>
 
-              <div className="lg:col-10">
+              <div className="w-full lg:w-10/12">
                 <hr className="border border-steem-offblack w-full my-5 md:my-6 lg:my-7 xl:my-8"/>
               </div>
 
-              <div className="lg:col-10">
+              <div className="w-full lg:w-10/12">
                 <div className="row justify-center">
-                  <div className="md:col-5">
+                  <div className="w-full md:w-5/12">
                     <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">Own Your Data</h2>
                   </div>
                   <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
-                  <div className="md:col-5 mb-3 md:mb-0">
+                  <div className="w-full md:w-5/12 mb-3 md:mb-0">
                     <h3 className="text-2xl font-bold text-white">Your content, your data, your control</h3>
                   </div>
-                  <div className="md:col-6 md:offset-1 nomargin-container">
+                  <div className="w-full md:w-1/2 md:ml-auto nomargin-container">
                     <p className="text-lg text-white leading-relaxed">
                       Unlike traditional social media platforms, Steem gives you complete control over your content and data. Your posts are stored on the blockchain, making them permanent and censorship-resistant. You can also export your content and take it with you to other Steem-based platforms.
                     </p>
@@ -98,20 +98,20 @@ export default function SocialUsers() {
                 </div>
               </div>
 
-              <div className="lg:col-10">
+              <div className="w-full lg:w-10/12">
                 <hr className="border border-steem-offblack w-full my-5 md:my-6 lg:my-7 xl:my-8"/>
               </div>
 
-              <div className="lg:col-10">
+              <div className="w-full lg:w-10/12">
                 <div className="row justify-center">
-                  <div className="md:col-5">
+                  <div className="w-full md:w-5/12">
                     <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">Community Driven</h2>
                   </div>
                   <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
-                  <div className="md:col-5 mb-3 md:mb-0">
+                  <div className="w-full md:w-5/12 mb-3 md:mb-0">
                     <h3 className="text-2xl font-bold text-white">Be part of a decentralized community that values your input</h3>
                   </div>
-                  <div className="md:col-6 md:offset-1 nomargin-container">
+                  <div className="w-full md:w-1/2 md:ml-auto nomargin-container">
                     <p className="text-lg text-white leading-relaxed mb-4">
                       Steem communities are governed by their users through a decentralized consensus mechanism. This means that the community itself decides what content is valuable and deserves rewards, rather than algorithms or corporate interests.
                     </p>
@@ -129,7 +129,7 @@ export default function SocialUsers() {
         <section className="py-7 py-lg-8 py-xl-10 bg-offwhite">
           <div className="container mx-auto px-4">
             <div className="row justify-center">
-              <div className="md:col-6 xl:col-5 xxl:col-4 nomargin-container text-center">
+              <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 nomargin-container text-center">
                 <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold mb-6">Popular Steem Apps</h2>
                 <p className="text-lg mb-8 leading-relaxed">
                   Discover the most popular applications built on the Steem blockchain.
@@ -172,7 +172,7 @@ export default function SocialUsers() {
         <section className="py-7 py-lg-8 py-xl-10">
           <div className="container mx-auto px-4">
             <div className="row justify-center">
-              <div className="md:col-6 xl:col-5 xxl:col-4 nomargin-container text-center">
+              <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 nomargin-container text-center">
                 <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold mb-6">Ready to start earning?</h2>
                 <p className="text-lg mb-6 leading-relaxed">
                   Join the Steem community and start earning rewards for your content today.
@@ -193,10 +193,10 @@ export default function SocialUsers() {
         <section className="py-5 bg-white">
           <div className="container mx-auto px-4">
             <div className="row items-center justify-between text-center md:text-left">
-              <div className="md:col-6">
+              <div className="w-full md:w-1/2">
                 <h2 className="mb-md-0 text-steem-blue text-2xl font-bold">Contact</h2>
               </div>
-              <div className="md:col-5 lg:col-4 text-md-right">
+              <div className="w-full md:w-5/12 lg:w-1/3 text-md-right">
                 <Link href="/contact/" className="btn btn-blue">
                   <i className="fa fa-envelope mr-3">✉</i>Contact Us
                 </Link>

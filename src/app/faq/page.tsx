@@ -10,13 +10,13 @@ export default function FAQ() {
           <main className="main">
             <section className="bg-wave py-7 lg:py-8 xl:py-10">
               <div id="faq" className="container">
-                <div className="row">
-                  <div className="col-12">
+                <div className="flex flex-wrap">
+                  <div className="w-full">
                     <h2 id="faq_title" className="text-blue m-0 pt-3">FAQ</h2>
                   </div>
                 </div>
-                <div className="row">
-              <div className="col-lg-5 col-xl-4 position-relative">
+                <div className="flex flex-wrap">
+              <div className="w-full lg:w-5/12 xl:w-1/3 relative">
                 <div id="questions" className="scroll-container">
                   <h3 className="text-lightblue mt-4 mt-md-5 mb-3">
                     <a href="#Blockchain">Blockchain</a>
@@ -285,7 +285,7 @@ export default function FAQ() {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-6 col-xl-7 offset-lg-1">
+              <div className="w-full lg:w-7/12 xl:w-2/3 lg:ml-auto">
                 <div id="answers" className="scroll-container">
                   <h3 id="Blockchain" className="text-lightblue mt-4 mt-md-5 mb-3">
                     Blockchain

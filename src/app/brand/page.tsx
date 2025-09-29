@@ -12,11 +12,11 @@ export default function BrandPage() {
           <main className="main">
             <section className="bg-wave py-7 lg:py-8 xl:py-10">
               <div className="container mt-5 mt-md-7 mb-md-5 my-lg-8 my-xl-10">
-                <div className="row align-items-center justify-center justify-md-start">
-                  <div className="col-12 col-md-7 col-lg-6 col-xl-5">
+                <div className="flex flex-wrap items-center justify-center md:justify-start">
+                  <div className="w-full md:w-7/12 lg:w-1/2 xl:w-5/12">
                     <div className="nomargin-container text-offblack">
                       <h2 className="text-blue">
-                        Brand Assets – we made this for the community
+                        Brand Assets - we made this for the community
                       </h2>
                       <p>
                         We see a world where people get paid for their content
@@ -38,7 +38,7 @@ export default function BrandPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="col-12 col-md-3 col-xl-4 offset-md-1 offset-lg-2 nomargin-container">
+                  <div className="w-full md:w-1/4 xl:w-1/3 md:ml-auto lg:ml-1/6 nomargin-container">
                     <Image
                       className="img-fluid fullwidth mt-4 mt-md-0"
                       src="/images/icon-army-dark-1.png"
@@ -303,8 +303,8 @@ export default function BrandPage() {
                       Assets
                     </h2>
                     <p className="small mt-4">Background textures:</p>
-                    <div className="row">
-                      <div className="col-6 col-md-4">
+                    <div className="flex flex-wrap">
+                      <div className="w-1/2 md:w-1/3">
                         <div
                           className="bg-image bg-landscape box-shadow border-rounded"
                           style={{
@@ -313,7 +313,7 @@ export default function BrandPage() {
                           }}
                         ></div>
                       </div>
-                      <div className="col-6 col-md-4">
+                      <div className="w-1/2 md:w-1/3">
                         <div
                           className="bg-image bg-landscape box-shadow border-rounded"
                           style={{
@@ -324,8 +324,8 @@ export default function BrandPage() {
                       </div>
                     </div>
                     <p className="small mt-4">Icons:</p>
-                    <div className="row">
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                    <div className="flex flex-wrap">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -336,7 +336,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -347,7 +347,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -358,7 +358,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -369,7 +369,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -380,7 +380,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -391,7 +391,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -402,7 +402,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -413,7 +413,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -424,7 +424,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -435,7 +435,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -446,7 +446,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -457,7 +457,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -468,7 +468,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -479,7 +479,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -490,7 +490,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="col-4 col-md-3 col-lg-2 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"

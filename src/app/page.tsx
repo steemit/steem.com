@@ -505,8 +505,8 @@ export default function Home() {
               <div className="container text-white">
                 <div className="row items-center">
                   <div className="w-full px-4">
-                    <div className="row row-tighter">
-                      <div className="col-2">
+                    <div className="flex flex-wrap justify-center gap-2">
+                      <div className="w-1/6 flex justify-center">
                         <Image
                           className="img-fluid"
                           src="/images/smt_circle@3x.png"
@@ -515,7 +515,7 @@ export default function Home() {
                           height={50}
                         />
                       </div>
-                      <div className="col-2">
+                      <div className="w-1/6 flex justify-center">
                         <Image
                           className="img-fluid"
                           src="/images/smt_triangle@3x.png"
@@ -524,7 +524,7 @@ export default function Home() {
                           height={50}
                         />
                       </div>
-                      <div className="col-2">
+                      <div className="w-1/6 flex justify-center">
                         <Image
                           className="img-fluid"
                           src="/images/smt_square@3x.png"
@@ -533,7 +533,7 @@ export default function Home() {
                           height={50}
                         />
                       </div>
-                      <div className="col-2">
+                      <div className="w-1/6 flex justify-center">
                         <Image
                           className="img-fluid"
                           src="/images/smt_diamond@3x.png"
@@ -542,7 +542,7 @@ export default function Home() {
                           height={50}
                         />
                       </div>
-                      <div className="col-2">
+                      <div className="w-1/6 flex justify-center">
                         <Image
                           className="img-fluid"
                           src="/images/smt_penta@3x.png"
@@ -551,7 +551,7 @@ export default function Home() {
                           height={50}
                         />
                       </div>
-                      <div className="col-2">
+                      <div className="w-1/6 flex justify-center">
                         <Image
                           className="img-fluid"
                           src="/images/smt_hex@3x.png"
@@ -562,7 +562,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 mt-4">
+                  <div className="w-full mt-4">
                     <h2 className="text-3xl font-bold mb-4">
                       Smart Media Tokens will revolutionize web applications.
                     </h2>
@@ -588,7 +588,7 @@ export default function Home() {
             <section className="py-4 pb-6 py-md-6 py-lg-7 py-xl-10 overflow-hidden border border-top-0">
               <div className="container mx-auto px-4">
                 <div className="flex flex-wrap justify-center -mx-4">
-                  <div className="col-12 offset-3 mb-5 md:hidden">
+                  <div className="w-full ml-1/4 mb-5 md:hidden">
                     <Image
                       id="dots"
                       className="img-fluid"
@@ -598,7 +598,7 @@ export default function Home() {
                       height={100}
                     />
                   </div>
-                  <div className="md:col-6 xl:col-5 xxl:col-4 text-md-center">
+                  <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 text-center md:text-center">
                     <div className="nomargin-container">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         Go down the rabbit hole
@@ -610,8 +610,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="row justify-around xl:justify-center text-center mt-xl-5">
-                  <div className="md:col-4 xl:col-3 mt-5 xl:mt-0 mx-xl-3 flex flex-col justify-between">
+                <div className="flex flex-wrap justify-around xl:justify-center text-center mt-5 xl:mt-5">
+                  <div className="w-full md:w-1/3 xl:w-1/4 mt-5 xl:mt-0 mx-3 flex flex-col justify-between">
                     <div>
                       <figure className="figure-circle">
                         <Image
@@ -639,7 +639,7 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="md:col-4 xl:col-3 mt-5 xl:mt-0 mx-xl-3 flex flex-col justify-between">
+                  <div className="w-full md:w-1/3 xl:w-1/4 mt-5 xl:mt-0 mx-3 flex flex-col justify-between">
                     <div>
                       <figure className="figure-circle">
                         <Image
@@ -668,7 +668,7 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="md:col-4 xl:col-3 mt-5 xl:mt-0 mx-xl-3 flex flex-col justify-between">
+                  <div className="w-full md:w-1/3 xl:w-1/4 mt-5 xl:mt-0 mx-3 flex flex-col justify-between">
                     <div>
                       <figure className="figure-circle">
                         <Image
@@ -704,13 +704,13 @@ export default function Home() {
             {/* Contact Section */}
             <section className="py-5 bg-white">
               <div className="container">
-                <div className="row items-center justify-between text-center md:text-left">
-                  <div className="md:col-6">
+                <div className="flex flex-wrap items-center justify-between text-center md:text-left">
+                  <div className="w-full md:w-1/2">
                     <h2 className="md:mb-0 text-blue text-2xl font-bold">
                       Contact
                     </h2>
                   </div>
-                  <div className="md:col-5 lg:col-4 md:text-right">
+                  <div className="w-full md:w-5/12 lg:w-1/3 md:text-right">
                     <Link href="/contact/" className="btn btn-blue">
                       <i className="fa fa-envelope mr-3">✉</i>Contact Us
                     </Link>
