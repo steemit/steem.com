@@ -444,7 +444,9 @@ h6, .h6 {
 }
 
 .bg-wave {
-  background: linear-gradient(135deg, #F9FAFB 0%, #E5E7EB 100%);
+  background: url(/images/steemit_bg_wave.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .bg-half {
@@ -747,10 +749,6 @@ p {
 
 
 
-/* 修复背景渐变效果 */
-.bg-gradient {
-  background: linear-gradient(135deg, #161fc8 0%, #5f00de 100%);
-}
 
 /* 修复文本渐变效果 */
 .text-gradient {
@@ -1228,17 +1226,8 @@ input[type="submit"] {
 }
 
 /* Brand page specific styles */
-.bg-wave {
-  background: linear-gradient(135deg, #f5f5f5 0%, #e9ecef 100%);
-}
 
-.bg-gradient {
-  background: linear-gradient(135deg, #11a7f2 0%, #171fc9 100%);
-}
 
-.bg-offwhite {
-  background-color: #f8f9fa;
-}
 
 .nomargin-container {
   margin: 0;
