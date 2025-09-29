@@ -24,7 +24,7 @@ export default function Home() {
                         </span>{" "}
                         and Opportunities
                       </h1>
-                      <p className="text-lg mb-8 leading-relaxed">
+                      <p className="text-lg mb-2 leading-relaxed">
                         Steem is a social blockchain that grows communities and
                         makes immediate revenue streams possible for users by
                         rewarding them for sharing content. It&apos;s currently

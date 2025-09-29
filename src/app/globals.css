@@ -282,16 +282,6 @@ body {
   color: #1F2937;
 }
 
-/* 标题字体设置 - 与旧网站一致 */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-}
-
 /* 全局标题字体设置 */
 h1,
 h2,
@@ -313,7 +303,7 @@ h6,
 
 h1, .h1 {
   font-size: 1.8666666rem;
-  margin-bottom: 1.125rem;
+  margin-bottom: 0.5rem;
   line-height: 1.1;
 }
 
@@ -755,15 +745,7 @@ p {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 修复卡片悬停效果 */
-.figure-social {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.figure-social:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
 
 /* 修复背景渐变效果 */
 .bg-gradient {
