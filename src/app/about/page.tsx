@@ -11,8 +11,8 @@ export default function About() {
         {/* Hero Section */}
         <section className="bg-wave py-7 lg:py-8 xl:py-10">
           <div className="container mx-auto px-4 mt-7 my-lg-8 my-xl-10">
-            <div className="flex flex-wrap items-center justify-center md:justify-start">
-              <div className="w-full md:w-7/12 lg:w-1/2 2xl:w-5/12">
+            <div className="flex flex-col md:flex-row items-center justify-center">
+              <div className="w-full md:w-6/12 lg:w-1/2 2xl:w-5/12">
                 <div className="nomargin-container text-offblack">
                   <h6 className="text-lightblue text-uppercase small font-weight-bold mb-2">
                     The Steem Blockchain
@@ -41,7 +41,7 @@ export default function About() {
                   </p>
                 </div>
               </div>
-              <div className="w-1/2 md:w-1/4 xl:w-1/6 2xl:w-1/5 md:ml-auto lg:ml-1/6 2xl:ml-1/4 nomargin-container">
+              <div className="w-full md:w-6/12 lg:w-1/2 xl:w-1/2 2xl:w-1/2 nomargin-container flex items-center justify-center">
                 <Image
                   className="img-fluid mt-4 md:mt-0"
                   src="/images/Steem_Icon_CoinFalling.png"
