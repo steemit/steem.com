@@ -1457,7 +1457,7 @@ input[type="submit"] {
 }
 
 .carousel-vertical figure.slide-up {
-  animation: slideUp 1s ease-in-out forwards;
+  animation: slideUp 1s ease-in-out;
 }
 
 .carousel-vertical figure.slide-in {
@@ -1467,7 +1467,7 @@ input[type="submit"] {
 }
 
 .carousel-vertical figure.slide-move {
-  animation: slideMove 1s ease-in-out forwards;
+  animation: slideMove 1s ease-in-out;
 }
 
 .carousel-vertical figure.hidden {
@@ -1502,14 +1502,14 @@ input[type="submit"] {
   }
   to {
     opacity: 0;
-    transform: translateY(-120px);
+    transform: translateY(-108px);
   }
 }
 
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(120px);
+    transform: translateY(108px);
   }
   to {
     opacity: 1;
@@ -1522,7 +1522,7 @@ input[type="submit"] {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-120px);
+    transform: translateY(-108px);
   }
 }
 
