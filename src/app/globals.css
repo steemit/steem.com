@@ -1484,6 +1484,21 @@ input[type="submit"] {
   animation: slideIn 1s ease-in-out forwards;
 }
 
+.carousel-vertical figure.slide-move {
+  animation: slideMove 1s ease-in-out forwards;
+}
+
+.carousel-vertical figure.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 滑动时，第4个figure应该显示并参与滑动 */
+.carousel-vertical figure.slide-move.hidden {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* 为所有figure添加平滑过渡 */
 .carousel-vertical figure {
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
@@ -1517,6 +1532,15 @@ input[type="submit"] {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120px);
   }
 }
 

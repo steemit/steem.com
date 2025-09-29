@@ -56,16 +56,18 @@ export default function Carousel() {
     },
   ];
 
-  // 获取当前显示的figures（只显示3个）
+  // 获取当前显示的figures（显示3个，预加载1个）
   const getVisibleFigures = () => {
     const visibleFigures = [];
-    for (let i = 0; i < visible; i++) {
+    // 渲染4个figure：前3个可见 + 第4个预加载（隐藏）
+    for (let i = 0; i < visible + 1; i++) {
       const figureIndex = (currentIndex + i) % figures.length;
       visibleFigures.push({
         ...figures[figureIndex],
         displayIndex: i,
         isFirst: i === 0,
         isLast: i === visible - 1,
+        isPreload: i === visible, // 第4个是预加载的
         animationClass: getAnimationClass(i)
       });
     }
@@ -75,15 +77,24 @@ export default function Carousel() {
   // 获取动画类名
   const getAnimationClass = (displayIndex: number) => {
     if (initialLoad) {
-      return 'fade-in';
+      // 初始加载时，只有前3个figure淡入，第4个隐藏
+      if (displayIndex < visible) {
+        return 'fade-in';
+      }
+      return 'hidden';
     }
     
     if (animationPhase === 'sliding') {
       if (displayIndex === 0) {
-        return 'slide-up'; // 第一个figure向上滑出
-      } else if (displayIndex === visible - 1) {
-        return 'slide-in'; // 最后一个figure从下方滑入
+        return 'slide-up'; // 第一个figure向上滑出并淡出
+      } else {
+        return 'slide-move'; // 其他figure（包括第4个）都向上滑动
       }
+    }
+    
+    // 非滑动状态下，第4个figure隐藏
+    if (displayIndex === visible) {
+      return 'hidden';
     }
     
     return '';
