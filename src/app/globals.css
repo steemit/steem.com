@@ -293,7 +293,27 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 1.8666666rem;
+  margin-bottom: 1.125rem;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 2.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
 }
 
 h2, .h2 {
@@ -607,6 +627,30 @@ p {
 
 .text-nowrap {
   white-space: nowrap;
+}
+
+/* Bootstrap offset equivalent for Tailwind */
+.lg\:ml-2 {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .lg\:ml-2 {
+    margin-left: 16.666667%;
+  }
+}
+
+/* Bootstrap py-xl-10 equivalent for Tailwind */
+.xl\:py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  .xl\:py-10 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
 
 .text-md-nowrap {
