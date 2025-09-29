@@ -167,9 +167,9 @@ html {
 
 .align-items-center { align-items: center; }
 .justify-content-between { justify-content: space-between; }
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
 
 @media (min-width: 768px) {
   .text-md-left { text-align: left; }
@@ -1811,15 +1811,15 @@ input[type="submit"] {
 
 /* 修复文本对齐 */
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 
 /* 修复字体权重 */
