@@ -1805,6 +1805,29 @@ input[type="submit"] {
   text-align: right;
 }
 
+/* Menu item 分隔线样式 - 从旧网站移植，只在header内的nav下生效 */
+@media (min-width: 992px) {
+  header nav .menu-item {
+    margin-bottom: 0.25rem;
+  }
+  
+  header nav .menu-item > a {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  header nav .menu-item::after {
+    background-image: -webkit-gradient(linear, right top, left top, from(#11a7f2), to(white));
+    background-image: -webkit-linear-gradient(right, #11a7f2, white);
+    background-image: -o-linear-gradient(right, #11a7f2, white);
+    background-image: linear-gradient(to left, #11a7f2, white);
+    content: "";
+    display: block;
+    height: 1px;
+  }
+}
+
 /* 修复字体权重 */
 .font-normal {
   font-weight: 400;
