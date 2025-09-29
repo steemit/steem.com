@@ -57,17 +57,17 @@ export default function About() {
         {/* Story Section */}
         <section className="py-7 py-lg-8 py-xl-10 bg-offwhite">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap mb-5 md:mb-6">
+            <div className="flex flex-col mb-5 md:mb-6">
               <div className="w-full text-center">
                 <h2 className="text-blue text-3xl lg:text-4xl font-bold">
                   Our story, so far...
                 </h2>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center">
-              <div className="w-full md:w-10/12 lg:w-2/3 xl:w-7/12">
-                <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
-                  <div className="w-1/4 md:w-1/3 text-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="md:w-10/12 lg:w-2/3 xl:w-7/12">
+                <div className="border-rounded box-shadow flex flex-row items-center md:items-center bg-white p-4 mb-4">
+                  <div className="w-1/4 md:w-1/3 text-center flex items-center justify-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_GenesisBlock.png"
@@ -93,7 +93,7 @@ export default function About() {
                 </div>
 
                 <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
-                  <div className="w-1/4 md:w-1/3 text-center">
+                  <div className="w-1/4 md:w-1/3 text-center flex items-center justify-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_FirstApp.png"
@@ -120,7 +120,7 @@ export default function About() {
                 </div>
 
                 <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
-                  <div className="w-1/4 md:w-1/3 text-center">
+                  <div className="w-1/4 md:w-1/3 text-center flex items-center justify-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_Lightblue.png"
@@ -146,7 +146,7 @@ export default function About() {
                 </div>
 
                 <div className="border-rounded box-shadow flex flex-wrap items-center md:items-center bg-white p-4 mb-4">
-                  <div className="w-1/4 md:w-1/3 text-center">
+                  <div className="w-1/4 md:w-1/3 text-center flex items-center justify-center">
                     <Image
                       className="img-fluid img-icon-about mt-4 md:mt-0"
                       src="/images/Steem_Icon_Wrench.png"
@@ -172,7 +172,7 @@ export default function About() {
                   </div>
                 </div>
 
-                <hr className="border my-5" />
+                <hr className="border my-10 mx-auto" />
 
                 <div className="border-rounded box-shadow flex flex-wrap items-center bg-gradient p-3 md:p-4 mb-4 text-white">
                   <div className="w-full md:w-1/3 text-center">
