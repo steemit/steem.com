@@ -531,12 +531,6 @@ p {
   opacity: 0.75;
 }
 
-.carousel-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .figure-social {
   background: white;
   border-radius: 100px;
@@ -1471,6 +1465,7 @@ input[type="submit"] {
 /* 轮播组件样式 - 参考原始网站 */
 .carousel-vertical {
   position: relative;
+  height: 360px;
 }
 
 .carousel-vertical figure {
