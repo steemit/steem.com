@@ -22,10 +22,10 @@ export default function BrandPage() {
                         We see a world where people get paid for their content
                         and attention. A future where digital content is
                         monetized without resorting to advertising or selling
-                        user data. We&apos;re busy building that world by creating
-                        new token-based economic models. We use tokens to
-                        transparently align incentives between all parties in a
-                        social platform—from the founders to the end users.
+                        user data. We&apos;re busy building that world by
+                        creating new token-based economic models. We use tokens
+                        to transparently align incentives between all parties in
+                        a social platform—from the founders to the end users.
                       </p>
                       <p>
                         <a

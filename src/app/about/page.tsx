@@ -1,12 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Image from 'next/image';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function About() {
   return (
     <div className="min-h-screen">
       <Header variant="blue" />
-      
+
       <main className="main">
         {/* Hero Section */}
         <section className="bg-wave py-7 lg:py-8 xl:py-10">
@@ -14,12 +14,30 @@ export default function About() {
             <div className="flex flex-wrap items-center justify-center md:justify-start">
               <div className="w-full md:w-7/12 lg:w-1/2 2xl:w-5/12">
                 <div className="nomargin-container text-offblack">
-                  <h6 className="text-lightblue text-uppercase small font-weight-bold mb-2">The Steem Blockchain</h6>
+                  <h6 className="text-lightblue text-uppercase small font-weight-bold mb-2">
+                    The Steem Blockchain
+                  </h6>
                   <h2 className="text-blue text-3xl lg:text-4xl font-weight-bold mb-6">
-                    <span className="text-md-nowrap">Building better communities,</span> <span className="text-md-nowrap">creating rewarding opportunities</span> <span className="text-md-nowrap">and empowering entrepreneurs</span>
+                    <span className="text-md-nowrap">
+                      Building better communities,
+                    </span>{" "}
+                    <span className="text-md-nowrap">
+                      creating rewarding opportunities
+                    </span>{" "}
+                    <span className="text-md-nowrap">
+                      and empowering entrepreneurs
+                    </span>
                   </h2>
                   <p className="text-lg leading-relaxed">
-                    We see a world where people get paid for their content and attention — a future where digital content is monetized without the necessity for advertising or selling user data, and communities have the same fundraising capabilities online as they do in everyday life. That&apos;s why we&apos;re building new token-based economic models on the Steem blockchain that create opportunities for people to bridge their passions with success via cryptocurrency rewards.
+                    We see a world where people get paid for their content and
+                    attention — a future where digital content is monetized
+                    without the necessity for advertising or selling user data,
+                    and communities have the same fundraising capabilities
+                    online as they do in everyday life. That&apos;s why
+                    we&apos;re building new token-based economic models on the
+                    Steem blockchain that create opportunities for people to
+                    bridge their passions with success via cryptocurrency
+                    rewards.
                   </p>
                 </div>
               </div>
@@ -41,7 +59,9 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap mb-5 md:mb-6">
               <div className="w-full text-center">
-                <h2 className="text-blue text-3xl lg:text-4xl font-bold">Our story, so far...</h2>
+                <h2 className="text-blue text-3xl lg:text-4xl font-bold">
+                  Our story, so far...
+                </h2>
               </div>
             </div>
             <div className="flex flex-wrap justify-center">
@@ -58,10 +78,15 @@ export default function About() {
                   </div>
                   <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
-                      <h3 className="text-blue text-xl font-bold mb-3">Genesis block</h3>
+                      <h5 className="text-lightblue text-sm font-bold mb-2">
+                        2016
+                      </h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">
+                        Genesis block
+                      </h3>
                       <p className="text-grey">
-                        The genesis block of the Steem blockchain was broadcast to the world on 24 March 2016.
+                        The genesis block of the Steem blockchain was broadcast
+                        to the world on 24 March 2016.
                       </p>
                     </div>
                   </div>
@@ -79,10 +104,16 @@ export default function About() {
                   </div>
                   <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
-                      <h3 className="text-blue text-xl font-bold mb-3">First app on Steem</h3>
+                      <h5 className="text-lightblue text-sm font-bold mb-2">
+                        2016
+                      </h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">
+                        First app on Steem
+                      </h3>
                       <p className="text-grey">
-                        Steemit was the first app to run on Steem, giving people an easy place to earn cryptocurrency rewards by creating and curating content.
+                        Steemit was the first app to run on Steem, giving people
+                        an easy place to earn cryptocurrency rewards by creating
+                        and curating content.
                       </p>
                     </div>
                   </div>
@@ -100,10 +131,15 @@ export default function About() {
                   </div>
                   <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-lightblue text-sm font-bold mb-2">2016</h5>
-                      <h3 className="text-blue text-xl font-bold mb-3">First payout</h3>
+                      <h5 className="text-lightblue text-sm font-bold mb-2">
+                        2016
+                      </h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">
+                        First payout
+                      </h3>
                       <p className="text-grey">
-                        The first rewards payout on 4 July 2016 kickstarted growth and we&apos;ve been scaling up ever since.
+                        The first rewards payout on 4 July 2016 kickstarted
+                        growth and we&apos;ve been scaling up ever since.
                       </p>
                     </div>
                   </div>
@@ -121,17 +157,23 @@ export default function About() {
                   </div>
                   <div className="w-3/4 md:w-7/12 md:ml-auto">
                     <div className="small-container nomargin-container my-3">
-                      <h5 className="text-lightblue text-sm font-bold mb-2">2017</h5>
-                      <h3 className="text-blue text-xl font-bold mb-3">Improving systems</h3>
+                      <h5 className="text-lightblue text-sm font-bold mb-2">
+                        2017
+                      </h5>
+                      <h3 className="text-blue text-xl font-bold mb-3">
+                        Improving systems
+                      </h3>
                       <p className="text-grey">
-                        2017 our hard work produced over 19 hardforks and other major improvements to the stability and scalability of the blockchain.
+                        2017 our hard work produced over 19 hardforks and other
+                        major improvements to the stability and scalability of
+                        the blockchain.
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <hr className="border my-5"/>
-                
+                <hr className="border my-5" />
+
                 <div className="border-rounded box-shadow flex flex-wrap items-center bg-gradient p-3 md:p-4 mb-4 text-white">
                   <div className="w-full md:w-1/3 text-center">
                     <Image
@@ -144,10 +186,18 @@ export default function About() {
                   </div>
                   <div className="w-full md:w-7/12 md:ml-auto">
                     <div className="nomargin-container my-3">
-                      <h5 className="translucent text-uppercase text-sm font-bold mb-2">What&apos;s next?</h5>
-                      <h3 className="text-2xl font-bold mb-3">A smarter way to grow</h3>
+                      <h5 className="translucent text-uppercase text-sm font-bold mb-2">
+                        What&apos;s next?
+                      </h5>
+                      <h3 className="text-2xl font-bold mb-3">
+                        A smarter way to grow
+                      </h3>
                       <p className="text-grey">
-                        The next evolution of Steem will begin with the upcoming launch of Smart Media Tokens. Smart Media Tokens will allow anyone to create their own token, similar to STEEM, and use those tokens to fundraise, monetize content, and grow their own social communities.
+                        The next evolution of Steem will begin with the upcoming
+                        launch of Smart Media Tokens. Smart Media Tokens will
+                        allow anyone to create their own token, similar to
+                        STEEM, and use those tokens to fundraise, monetize
+                        content, and grow their own social communities.
                       </p>
                     </div>
                   </div>
@@ -160,18 +210,31 @@ export default function About() {
         {/* Team Section */}
         <section className="py-7 py-lg-8 py-xl-10">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap mb-5 md:mb-6" style={{marginBottom: '3em !important'}}>
+            <div
+              className="flex flex-wrap mb-5 md:mb-6"
+              style={{ marginBottom: "3em !important" }}
+            >
               <div className="w-full text-center">
-                <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-4">The Team</h2>
+                <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-4">
+                  The Team
+                </h2>
                 <p className="text-lg">
-                  Steem is supported by a team of full-time individuals, <a href='https://github.com/steemit/steem/graphs/contributors' target='_blank' className="underline text-blue">open source contributors</a> and community members just like you.
+                  Steem is supported by a team of full-time individuals,{" "}
+                  <a
+                    href="https://github.com/steemit/steem/graphs/contributors"
+                    target="_blank"
+                    className="underline text-blue"
+                  >
+                    open source contributors
+                  </a>{" "}
+                  and community members just like you.
                 </p>
               </div>
             </div>
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

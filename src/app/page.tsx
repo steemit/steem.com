@@ -80,7 +80,7 @@ export default function Home() {
                       make.
                     </p>
                   </div>
-                  
+
                   {/* Right statistics */}
                   <div className="flex-1 lg:max-w-md xl:max-w-lg flex items-center justify-center">
                     <div className="bg-dots py-7 text-center w-full">
