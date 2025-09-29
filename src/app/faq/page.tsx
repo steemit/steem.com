@@ -8,7 +8,7 @@ export default function FAQ() {
       <div className="wrap" role="document">
         <div className="content">
           <main className="main">
-            <section className="bg-wave pt-7 pt-lg-8 pt-xl-10">
+            <section className="bg-wave pt-20">
               <div id="faq" className="container">
                 <div className="row">
                   <div className="col-12">
@@ -381,10 +381,10 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      On a technical level, the two networks rely on the same model of a blockchain, but are built upon different technologies and codebase. Steem is based on a new state-of-the-art blockchain technology called Graphene, which uses "witnesses" instead of "miners" to produce blocks.
+                      On a technical level, the two networks rely on the same model of a blockchain, but are built upon different technologies and codebase. Steem is based on a new state-of-the-art blockchain technology called Graphene, which uses &quot;witnesses&quot; instead of &quot;miners&quot; to produce blocks.
                     </p>
                     <p>
-                      The "delegated proof of stake" model of using witnesses instead of miners allows for greater efficiency in block production. With BTC, 100% of the new coins that are created are allocated to block producers (miners). With the Steem blockchain, only 10% of the new coins are paid to block producers (witnesses). The other 90% of new STEEM coins are awarded to content producers, curators, and Steem Power holders.
+                      The &quot;delegated proof of stake&quot; model of using witnesses instead of miners allows for greater efficiency in block production. With BTC, 100% of the new coins that are created are allocated to block producers (miners). With the Steem blockchain, only 10% of the new coins are paid to block producers (witnesses). The other 90% of new STEEM coins are awarded to content producers, curators, and Steem Power holders.
                     </p>
                   </div>
 
@@ -459,7 +459,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      New STEEM tokens are created through the blockchain's inflation mechanism. The inflation rate starts at 9.5% per year and decreases by 0.5% each year until it reaches 0.95% per year. These new tokens are distributed to content creators, curators, witnesses, and Steem Power holders.
+                      New STEEM tokens are created through the blockchain&apos;s inflation mechanism. The inflation rate starts at 9.5% per year and decreases by 0.5% each year until it reaches 0.95% per year. These new tokens are distributed to content creators, curators, witnesses, and Steem Power holders.
                     </p>
                   </div>
 
@@ -513,7 +513,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      Yes, you can promote and sell goods and services on Steemit by creating posts about them. However, you should comply with Steemit's terms of service and avoid spam or misleading content.
+                      Yes, you can promote and sell goods and services on Steemit by creating posts about them. However, you should comply with Steemit&apos;s terms of service and avoid spam or misleading content.
                     </p>
                   </div>
 
@@ -522,7 +522,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      MVEST stands for "Mega VESTS" and represents 1,000,000 VESTS. VESTS (Voting Equivalent Steem) is the internal representation of Steem Power used by the blockchain for calculations.
+                      MVEST stands for &quot;Mega VESTS&quot; and represents 1,000,000 VESTS. VESTS (Voting Equivalent Steem) is the internal representation of Steem Power used by the blockchain for calculations.
                     </p>
                   </div>
 
@@ -580,7 +580,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      No, STEEM and SBD tokens are not insured. Users are responsible for securing their own accounts and keys. It's important to use strong passwords and keep your keys secure.
+                      No, STEEM and SBD tokens are not insured. Users are responsible for securing their own accounts and keys. It&apos;s important to use strong passwords and keep your keys secure.
                     </p>
                   </div>
 
@@ -589,7 +589,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      If you lose your password or keys, there is no way to recover your account. This is why it's crucial to securely store your keys and consider using a password manager.
+                      If you lose your password or keys, there is no way to recover your account. This is why it&apos;s crucial to securely store your keys and consider using a password manager.
                     </p>
                   </div>
 
@@ -607,7 +607,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      The master password is a long, random string to ensure maximum security. It's generated using cryptographic methods to make it virtually impossible to guess or brute force.
+                      The master password is a long, random string to ensure maximum security. It&apos;s generated using cryptographic methods to make it virtually impossible to guess or brute force.
                     </p>
                   </div>
 
@@ -651,7 +651,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      The Steem Whitepaper is the official technical document that describes the Steem blockchain's design, consensus mechanism, token economics, and technical specifications. It serves as the blueprint for the platform.
+                      The Steem Whitepaper is the official technical document that describes the Steem blockchain&apos;s design, consensus mechanism, token economics, and technical specifications. It serves as the blueprint for the platform.
                     </p>
                   </div>
 
@@ -673,7 +673,7 @@ export default function FAQ() {
                   </p>
                   <div className="small-container">
                     <p>
-                      Steem witnesses are block producers responsible for creating new blocks on the blockchain. They are elected by the community and play a crucial role in maintaining the network's security and efficiency.
+                      Steem witnesses are block producers responsible for creating new blocks on the blockchain. They are elected by the community and play a crucial role in maintaining the network&apos;s security and efficiency.
                     </p>
                   </div>
                 </div>

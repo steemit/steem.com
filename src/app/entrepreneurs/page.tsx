@@ -92,7 +92,7 @@ export default function Entrepreneurs() {
                   </div>
                   <div className="md:col-6 md:offset-1 nomargin-container">
                     <p className="text-lg text-white leading-relaxed">
-                      Steem's reward system naturally encourages community growth and engagement. Users are incentivized to create quality content, curate good posts, and participate actively in the community. This creates a self-reinforcing cycle of growth that benefits both entrepreneurs and their users.
+                      Steem&apos;s reward system naturally encourages community growth and engagement. Users are incentivized to create quality content, curate good posts, and participate actively in the community. This creates a self-reinforcing cycle of growth that benefits both entrepreneurs and their users.
                     </p>
                   </div>
                 </div>

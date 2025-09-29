@@ -10,7 +10,7 @@ export default function BrandPage() {
       <div className="wrap" role="document">
         <div className="content">
           <main className="main">
-            <section className="bg-wave py-7 py-lg-8 py-xl-10">
+            <section className="bg-wave pt-20">
               <div className="container mt-5 mt-md-7 mb-md-5 my-lg-8 my-xl-10">
                 <div className="row align-items-center justify-center justify-md-start">
                   <div className="col-12 col-md-7 col-lg-6 col-xl-5">
@@ -22,7 +22,7 @@ export default function BrandPage() {
                         We see a world where people get paid for their content
                         and attention. A future where digital content is
                         monetized without resorting to advertising or selling
-                        user data. We're busy building that world by creating
+                        user data. We&apos;re busy building that world by creating
                         new token-based economic models. We use tokens to
                         transparently align incentives between all parties in a
                         social platform—from the founders to the end users.

@@ -28,13 +28,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('daisyui')],
-  daisyui: {
-    themes: false, // 禁用默认主题，使用自定义样式
-    base: false, // 禁用基础样式
-    styled: true, // 启用组件样式
-    utils: true, // 启用工具类
-  },
+  plugins: [],
 }
 
 export default config

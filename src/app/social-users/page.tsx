@@ -68,7 +68,7 @@ export default function SocialUsers() {
                   </div>
                   <div className="md:col-6 md:offset-1 nomargin-container">
                     <p className="text-lg text-white leading-relaxed mb-4">
-                      On Steem-based platforms, every user has the opportunity to earn cryptocurrency rewards for their contributions. Whether you're creating original content, curating posts, or engaging with the community, your participation is valued and rewarded.
+                      On Steem-based platforms, every user has the opportunity to earn cryptocurrency rewards for their contributions. Whether you&apos;re creating original content, curating posts, or engaging with the community, your participation is valued and rewarded.
                     </p>
                     <p className="text-lg text-white leading-relaxed">
                       The more valuable your content is to the community, the more rewards you can earn. This creates a fair and transparent system where quality content rises to the top.

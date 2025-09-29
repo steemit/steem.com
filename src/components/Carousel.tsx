@@ -101,7 +101,7 @@ export default function Carousel() {
   };
 
   // 获取figure的样式类名
-  const getFigureClassName = (figure: any) => {
+  const getFigureClassName = (figure: { animationClass?: string }) => {
     let className = "figure-social flex box-shadow";
     
     if (figure.animationClass) {
