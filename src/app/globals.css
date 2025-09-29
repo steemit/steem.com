@@ -292,6 +292,25 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 
+/* 全局标题字体设置 */
+h1,
+h2,
+h3,
+.gform_wrapper h3.gform_title,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.nav-mobile > .menu-item > a,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "paralucent", sans-serif;
+  font-weight: 600;
+}
+
 h1, .h1 {
   font-size: 1.8666666rem;
   margin-bottom: 1.125rem;
