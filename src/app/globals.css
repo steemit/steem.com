@@ -1466,6 +1466,58 @@ input[type="submit"] {
 .carousel-vertical {
   position: relative;
   height: 360px;
+  overflow: hidden;
+}
+
+.carousel-vertical figure.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.carousel-vertical figure.slide-up {
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+.carousel-vertical figure.slide-in {
+  opacity: 0;
+  transform: translateY(120px);
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+/* 为所有figure添加平滑过渡 */
+.carousel-vertical figure {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .carousel-vertical figure {
