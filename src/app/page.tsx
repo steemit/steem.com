@@ -53,8 +53,9 @@ export default function Home() {
             {/* Social Media Model Section */}
             <section className="py-7 lg:py-8 xl:py-10">
               <div className="container mx-auto px-4">
-                <div className="flex flex-wrap -mx-4">
-                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-4/12 xl:ml-1/12 px-4">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+                  {/* Left text content */}
+                  <div className="flex-1 lg:max-w-lg xl:max-w-xl">
                     <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                       <span className="text-nowrap">
                         A new social media model
@@ -79,7 +80,9 @@ export default function Home() {
                       make.
                     </p>
                   </div>
-                  <div className="w-full md:w-1/2 lg:w-5/12 lg:ml-auto flex items-center mt-4 md:mt-0 px-4">
+                  
+                  {/* Right statistics */}
+                  <div className="flex-1 lg:max-w-md xl:max-w-lg flex items-center justify-center">
                     <div className="bg-dots py-7 text-center w-full">
                       <h1 className="stat-counter text-gradient text-6xl font-bold mb-4">
                         59,595,935

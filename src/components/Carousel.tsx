@@ -10,13 +10,13 @@ export default function Carousel() {
   const [initialLoad, setInitialLoad] = useState(true);
   const [animationPhase, setAnimationPhase] = useState<'idle' | 'sliding'>('idle');
 
-  // 动画参数
+  // Animation parameters
   const fadeTime = 1000;
   const fadeTimeDelay = 500;
   const interval = 4000;
   const visible = 3;
 
-  // figures数据
+  // Figures data
   const figures = [
     {
       id: 0,
@@ -56,10 +56,10 @@ export default function Carousel() {
     },
   ];
 
-  // 获取当前显示的figures（显示3个，预加载1个）
+  // Get currently visible figures (show 3, preload 1)
   const getVisibleFigures = () => {
     const visibleFigures = [];
-    // 渲染4个figure：前3个可见 + 第4个预加载（隐藏）
+    // Render 4 figures: first 3 visible + 4th preloaded (hidden)
     for (let i = 0; i < visible + 1; i++) {
       const figureIndex = (currentIndex + i) % figures.length;
       visibleFigures.push({
@@ -67,17 +67,17 @@ export default function Carousel() {
         displayIndex: i,
         isFirst: i === 0,
         isLast: i === visible - 1,
-        isPreload: i === visible, // 第4个是预加载的
+        isPreload: i === visible, // 4th is preloaded
         animationClass: getAnimationClass(i)
       });
     }
     return visibleFigures;
   };
 
-  // 获取动画类名
+  // Get animation class name
   const getAnimationClass = (displayIndex: number) => {
     if (initialLoad) {
-      // 初始加载时，只有前3个figure淡入，第4个隐藏
+      // During initial load, only first 3 figures fade in, 4th is hidden
       if (displayIndex < visible) {
         return 'fade-in';
       }
@@ -86,13 +86,13 @@ export default function Carousel() {
     
     if (animationPhase === 'sliding') {
       if (displayIndex === 0) {
-        return 'slide-up'; // 第一个figure向上滑出并淡出
+        return 'slide-up'; // First figure slides up and fades out
       } else {
-        return 'slide-move'; // 其他figure（包括第4个）都向上滑动
+        return 'slide-move'; // Other figures (including 4th) slide up
       }
     }
     
-    // 非滑动状态下，第4个figure隐藏
+    // In non-sliding state, 4th figure is hidden
     if (displayIndex === visible) {
       return 'hidden';
     }
@@ -100,7 +100,7 @@ export default function Carousel() {
     return '';
   };
 
-  // 获取figure的样式类名
+  // Get figure style class name
   const getFigureClassName = (figure: { animationClass?: string }) => {
     let className = "figure-social flex box-shadow";
     
@@ -111,31 +111,31 @@ export default function Carousel() {
     return className;
   };
 
-  // 初始加载动画
+  // Initial load animation
   useEffect(() => {
     if (initialLoad) {
-      // 依次淡入前3个figure
+      // Fade in first 3 figures sequentially
       for (let i = 0; i < visible; i++) {
         setTimeout(() => {
-          // CSS动画会自动处理淡入效果
+          // CSS animation will handle fade-in effect automatically
         }, i * fadeTimeDelay);
       }
       
-      // 初始加载完成后开始轮播
+      // Start carousel after initial load completes
       setTimeout(() => {
         setInitialLoad(false);
       }, visible * fadeTimeDelay + fadeTime);
     }
   }, [initialLoad, fadeTime, fadeTimeDelay, visible]);
 
-  // 轮播循环
+  // Carousel loop
   useEffect(() => {
     if (!initialLoad && !isAnimating) {
       const timer = setInterval(() => {
         setIsAnimating(true);
         setAnimationPhase('sliding');
         
-        // 滑动动画完成后更新索引（模拟DOM移动）
+        // Update index after slide animation completes (simulate DOM movement)
         setTimeout(() => {
           setCurrentIndex((prev) => (prev + 1) % figures.length);
           setIsAnimating(false);

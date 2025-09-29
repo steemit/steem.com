@@ -31,7 +31,7 @@ html {
 }
 
 /* Bootstrap Grid System */
-/* Container - 简化为Tailwind CSS兼容的样式 */
+/* Container - Simplified for Tailwind CSS compatibility */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -277,7 +277,7 @@ body {
   color: #1F2937;
 }
 
-/* 全局标题字体设置 */
+/* Global heading font settings */
 h1,
 h2,
 h3,
@@ -340,12 +340,12 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-/* 等宽字体设置 - 与旧网站一致 */
+/* Monospace font settings - consistent with original website */
 .text-monospace {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/* 布局结构样式 - 与旧网站一致 */
+/* Layout structure styles - consistent with original website */
 .wrap {
   position: relative;
   width: 100%;
@@ -362,7 +362,7 @@ h6, .h6 {
   width: 100%;
 }
 
-/* Header字体设置 */
+/* Header font settings */
 .banner {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -709,7 +709,7 @@ p {
   }
 }
 
-/* Banner styles - 与旧网站一致 */
+/* Banner styles - consistent with original website */
 .banner {
   position: fixed;
   right: 0;
@@ -724,7 +724,7 @@ p {
 }
 
 
-/* 修复汉堡菜单动画 */
+/* Fix hamburger menu animation */
 .hamburger {
   transition: transform 0.3s ease;
 }
@@ -733,7 +733,7 @@ p {
   transform: scale(1.1);
 }
 
-/* 修复按钮悬停效果 */
+/* Fix button hover effects */
 .btn {
   transition: all 0.3s ease;
 }
@@ -746,7 +746,7 @@ p {
 
 
 
-/* 修复文本渐变效果 */
+/* Fix text gradient effects */
 .text-gradient {
   background: linear-gradient(135deg, #161fc8 0%, #5f00de 100%);
   -webkit-background-clip: text;
@@ -754,7 +754,7 @@ p {
   background-clip: text;
 }
 
-/* 修复统计数字样式 */
+/* Fix statistics counter styles */
 .stat-counter {
   font-size: 3.75rem;
   font-weight: 700;
@@ -768,7 +768,7 @@ p {
   }
 }
 
-/* 修复图标样式 */
+/* Fix icon styles */
 .img-icon {
   width: 60px;
   height: 60px;
@@ -779,7 +779,7 @@ p {
   transform: scale(1.1);
 }
 
-/* 修复链接样式 */
+/* Fix link styles */
 .hover-shiftright {
   transition: transform 0.3s ease;
 }
@@ -788,7 +788,7 @@ p {
   transform: translateX(8px);
 }
 
-/* 修复背景图片样式 */
+/* Fix background image styles */
 .bg-dots {
   background-image: url('/images/backgrounds/steemit_bg_gradient.png');
   background-repeat: no-repeat;
@@ -798,7 +798,7 @@ p {
   padding: 2rem;
 }
 
-/* 修复半透明背景样式 */
+/* Fix translucent background styles */
 .bg-pseudoclip {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -806,7 +806,7 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* 修复半背景样式 */
+/* Fix half background styles */
 .bg-half {
   position: relative;
   overflow: hidden;
@@ -835,7 +835,7 @@ p {
   }
 }
 
-/* 添加缺失的样式类 */
+/* Add missing style classes */
 .bg-offwhite {
   background-color: var(--steem-offwhite);
 }
@@ -898,7 +898,7 @@ p {
   }
 }
 
-/* 添加更多缺失的样式类 */
+/* Add more missing style classes */
 .border-steem-offblack {
   border-color: var(--steem-offblack);
 }
@@ -1066,7 +1066,7 @@ p {
   transition: 0.5s;
 }
 
-/* Mobile overlay styles - 与旧网站一致 */
+/* Mobile overlay styles - consistent with original website */
 #mobileOverlay {
   background: #11a7f1;
   opacity: 0;
@@ -1099,7 +1099,7 @@ p {
   }
 }
 
-/* Button styles - 与旧网站一致 */
+/* Button styles - consistent with original website */
 .btn,
 .comment-form input[type="submit"],
 input[type="submit"] {
@@ -1216,7 +1216,7 @@ input[type="submit"] {
   color: white;
 }
 
-/* Mobile footer paragraph styles - 与旧网站一致 */
+/* Mobile footer paragraph styles - consistent with original website */
 #mobileOverlay #mobileFooter p {
   color: white;
 }
@@ -1351,7 +1351,7 @@ input[type="submit"] {
 }
 
 
-/* Mobile footer styles - 与旧网站一致 */
+/* Mobile footer styles - consistent with original website */
 #mobileFooter {
   position: absolute;
   bottom: 0;
@@ -1439,7 +1439,7 @@ input[type="submit"] {
   }
 }
 
-/* 轮播组件样式 - 参考原始网站 */
+/* Carousel component styles - based on original website */
 .carousel-vertical {
   position: relative;
   height: 360px;
@@ -1470,13 +1470,13 @@ input[type="submit"] {
   pointer-events: none;
 }
 
-/* 滑动时，第4个figure应该显示并参与滑动 */
+/* When sliding, the 4th figure should be visible and participate in sliding */
 .carousel-vertical figure.slide-move.hidden {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* 为所有figure添加平滑过渡 */
+/* Add smooth transitions for all figures */
 .carousel-vertical figure {
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
@@ -1529,7 +1529,7 @@ input[type="submit"] {
   margin-bottom: 0;
 }
 
-/* 背景图片样式 */
+/* Background image styles */
 .bg-image {
   background-size: cover;
   background-position: center;
@@ -1565,7 +1565,7 @@ input[type="submit"] {
   }
 }
 
-/* 修复响应式显示问题 */
+/* Fix responsive display issues */
 @media (max-width: 1023px) {
   .d-lg-none {
     display: none !important;
@@ -1590,7 +1590,7 @@ input[type="submit"] {
   }
 }
 
-/* 移动端导航样式 - 与旧网站一致 */
+/* Mobile navigation styles - consistent with original website */
 .nav-mobile {
   display: block;
 }
@@ -1624,7 +1624,7 @@ input[type="submit"] {
   }
 }
 
-/* 修复 Footer 样式 */
+/* Fix Footer styles */
 .menu-footer-container {
   display: flex;
   align-items: center;
@@ -1635,12 +1635,12 @@ input[type="submit"] {
   align-items: center;
 }
 
-/* 修复按钮图标样式 */
+/* Fix button icon styles */
 .btn i {
   margin-right: 0.5rem;
 }
 
-/* 修复文本样式 */
+/* Fix text styles */
 .text-sm {
   font-size: 0.875rem;
 }
@@ -1669,7 +1669,7 @@ input[type="submit"] {
   font-size: 3.75rem;
 }
 
-/* 修复间距样式 */
+/* Fix spacing styles */
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1736,7 +1736,7 @@ input[type="submit"] {
   margin-right: 2rem;
 }
 
-/* 修复内边距样式 */
+/* Fix padding styles */
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1762,7 +1762,7 @@ input[type="submit"] {
   padding-bottom: 1.25rem;
 }
 
-/* 修复 Flexbox 样式 */
+/* Fix Flexbox styles */
 .items-center {
   align-items: center;
 }
@@ -1783,12 +1783,12 @@ input[type="submit"] {
   justify-content: flex-end;
 }
 
-/* 修复宽度样式 */
+/* Fix width styles */
 .w-full {
   width: 100%;
 }
 
-/* 修复文本对齐 */
+/* Fix text alignment */
 .text-left {
   text-align: left;
 }
@@ -1801,7 +1801,7 @@ input[type="submit"] {
   text-align: right;
 }
 
-/* Menu item 分隔线样式 - 从旧网站移植，只在header内的nav下生效 */
+/* Menu item separator styles - migrated from original website, only effective under header nav */
 @media (min-width: 992px) {
   header nav .menu-item {
     margin-bottom: 0.25rem;
@@ -1824,7 +1824,7 @@ input[type="submit"] {
   }
 }
 
-/* 修复字体权重 */
+/* Fix font weights */
 .font-normal {
   font-weight: 400;
 }
@@ -1833,7 +1833,7 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-/* 修复透明度 */
+/* Fix opacity */
 .opacity-80 {
   opacity: 0.8;
 }
@@ -1842,12 +1842,12 @@ input[type="submit"] {
   opacity: 1;
 }
 
-/* 修复过渡效果 */
+/* Fix transition effects */
 .transition-opacity {
   transition: opacity 0.3s ease;
 }
 
-/* 修复边框样式 */
+/* Fix border styles */
 .border {
   border: 1px solid;
 }
@@ -1860,7 +1860,7 @@ input[type="submit"] {
   border-color: var(--steem-offwhite);
 }
 
-/* 修复圆角样式 */
+/* Fix border radius styles */
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1873,7 +1873,7 @@ input[type="submit"] {
   border-radius: 0.75rem;
 }
 
-/* 修复阴影样式 */
+/* Fix shadow styles */
 .shadow {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -1882,7 +1882,7 @@ input[type="submit"] {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* 修复隐藏/显示样式 */
+/* Fix hide/show styles */
 .hidden {
   display: none;
 }
@@ -1899,7 +1899,7 @@ input[type="submit"] {
   display: flex;
 }
 
-/* 响应式隐藏/显示 - 移动端优先 */
+/* Responsive hide/show - mobile first */
 @media (max-width: 767px) {
   .md\:hidden {
     display: none !important;
