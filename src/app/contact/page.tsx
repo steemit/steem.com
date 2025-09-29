@@ -6,10 +6,10 @@ export default function Contact() {
   return (
     <>
       <Header variant="blue" />
-      <div className="wrap" role="document">
+      <div className="wrap">
         <div className="content">
           <main className="main">
-            <section className="bg-wave pt-20">
+            <section className="bg-wave py-7 lg:py-8 xl:py-10">
               <div className="container mt-5 mt-md-7 mb-md-5 my-lg-8 my-xl-10">
                 <div className="row justify-content-center">
                   <div className="col-md-8 col-lg-6 col-xl-4"> 

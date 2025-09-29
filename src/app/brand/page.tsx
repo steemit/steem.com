@@ -10,7 +10,7 @@ export default function BrandPage() {
       <div className="wrap" role="document">
         <div className="content">
           <main className="main">
-            <section className="bg-wave pt-20">
+            <section className="bg-wave py-7 lg:py-8 xl:py-10">
               <div className="container mt-5 mt-md-7 mb-md-5 my-lg-8 my-xl-10">
                 <div className="row align-items-center justify-center justify-md-start">
                   <div className="col-12 col-md-7 col-lg-6 col-xl-5">

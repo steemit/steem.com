@@ -10,7 +10,7 @@ export default function SocialUsers() {
       
       <main className="main">
         {/* Hero Section */}
-        <section className="bg-page-landing py-7 py-lg-8 py-xl-10">
+        <section className="bg-page-landing py-7 lg:py-8 xl:py-10">
           <div className="container mx-auto px-4 mt-5 md:mt-7 mb-md-5 my-lg-8 my-xl-10">
             <div className="row items-center">
               <div className="col-12 md:col-6 lg:col-5 xl:col-4">

@@ -9,7 +9,7 @@ export default function About() {
       
       <main className="main">
         {/* Hero Section */}
-        <section className="bg-wave pt-20">
+        <section className="bg-wave py-7 lg:py-8 xl:py-10">
           <div className="container mx-auto px-4 mt-7 my-lg-8 my-xl-10">
             <div className="row d-flex align-items-center justify-content-center justify-content-md-start">
               <div className="col-12 col-md-7 col-lg-6 col-xxl-5">
