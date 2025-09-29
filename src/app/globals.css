@@ -1381,6 +1381,12 @@ input[type="submit"] {
 }
 
 
+.bg-wave {
+  background: url(/images/steemit_bg_wave.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 .btn-white {
   background: white;
   color: #4BA3F3;
