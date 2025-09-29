@@ -1,7 +1,31 @@
+"use client";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useState, useEffect } from "react";
 
 export default function FAQ() {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  // 监听滚动事件
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setShowBackToTop(scrollTop > 300); // 滚动超过300px时显示按钮
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // 返回顶部函数
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <Header variant="blue" />
@@ -17,7 +41,7 @@ export default function FAQ() {
                     </h2>
                   </div>
                 </div>
-                <div className="flex flex-wrap">
+                <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
                   <div className="w-full lg:w-5/12 xl:w-1/3 relative">
                     <div id="questions" className="scroll-container">
                       <h3 className="text-lightblue mt-4 mt-md-5 mb-3">
@@ -321,7 +345,7 @@ export default function FAQ() {
                       </ul>
                     </div>
                   </div>
-                  <div className="w-full lg:w-7/12 xl:w-2/3 lg:ml-auto">
+                  <div className="w-full lg:w-7/12 xl:w-2/3">
                     <div id="answers" className="scroll-container">
                       <h3
                         id="Blockchain"
@@ -1008,6 +1032,30 @@ export default function FAQ() {
         </div>
       </div>
       <Footer />
+      
+      {/* 返回顶部按钮 */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="back-to-top"
+          aria-label="返回顶部"
+          title="返回顶部"
+        >
+          <svg
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+        </button>
+      )}
     </>
   );
 }

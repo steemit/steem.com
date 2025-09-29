@@ -12,7 +12,7 @@ export default function BrandPage() {
           <main className="main">
             <section className="bg-wave py-7 lg:py-8 xl:py-10">
               <div className="container mt-5 mt-md-7 mb-md-5 my-lg-8 my-xl-10">
-                <div className="flex flex-wrap items-center justify-center md:justify-start">
+                <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-8">
                   <div className="w-full md:w-7/12 lg:w-1/2 xl:w-5/12">
                     <div className="nomargin-container text-offblack">
                       <h2 className="text-blue">
@@ -58,15 +58,15 @@ export default function BrandPage() {
               className="bg-gradient py-7 py-lg-8 py-xl-10 text-white transition"
             >
               <div className="container">
-                <div className="row justify-center">
-                  <div className="col-lg-10">
+                <div className="flex flex-wrap justify-center">
+                  <div className="w-full lg:w-10/12">
                     <h2
                       id="Steem_Title"
                       className="text-center text-md-left transition"
                     >
                       Logos
                     </h2>
-                    <div className="row justify-center my-md-5 my-lg-6 my-xl-7 my-xxl-8">
+                    <div className="flex flex-wrap justify-center my-md-5 my-lg-6 my-xl-7 my-xxl-8">
                       <div className="col-md-8 col-lg-6">
                         <figure className="my-5">
                           <svg
@@ -111,8 +111,8 @@ export default function BrandPage() {
                       </div>
                     </div>
                     <div className="d-flex justify-center">
-                      <button className="arrow arrow-prev mx-3 transition"></button>
-                      <button className="arrow arrow-next mx-3 transition"></button>
+                      <button className="arflex flex-wrap arflex flex-wrap-prev mx-3 transition"></button>
+                      <button className="arflex flex-wrap arflex flex-wrap-next mx-3 transition"></button>
                     </div>
                   </div>
                 </div>
@@ -121,12 +121,12 @@ export default function BrandPage() {
 
             <section className="py-7 py-lg-8 py-xl-10">
               <div className="container">
-                <div className="row justify-center">
-                  <div className="col-lg-10">
+                <div className="flex flex-wrap justify-center">
+                  <div className="w-full lg:w-10/12">
                     <h2 className="text-blue text-center text-md-left mb-md-4">
                       Colors
                     </h2>
-                    <div className="row">
+                    <div className="flex flex-wrap">
                       <div className="col-md-6 col-lg-4 my-4">
                         <div className="d-flex justify-center justify-md-start">
                           <div
@@ -297,8 +297,8 @@ export default function BrandPage() {
 
             <section className="bg-offwhite py-7 py-lg-8 py-xl-10">
               <div className="container">
-                <div className="row justify-center">
-                  <div className="col-lg-10 mb-4">
+                <div className="flex flex-wrap justify-center">
+                  <div className="w-full lg:w-10/12 mb-4">
                     <h2 className="text-blue text-center text-md-left">
                       Assets
                     </h2>
@@ -509,10 +509,10 @@ export default function BrandPage() {
 
             <section className="py-7 py-lg-8 py-xl-10 text-center text-md-left">
               <div className="container">
-                <div className="row justify-center">
-                  <div className="col-lg-10">
+                <div className="flex flex-wrap justify-center">
+                  <div className="w-full lg:w-10/12">
                     <h2 className="text-blue">Fonts</h2>
-                    <div className="row">
+                    <div className="flex flex-wrap">
                       <div className="col-md-6 my-4">
                         <p className="small text-grey">Headings</p>
                         <div className="my-4">
@@ -583,7 +583,7 @@ export default function BrandPage() {
 
             <section className="bg-offwhite py-5 py-md-6 py-lg-7 py-xl-10 overflow-hidden">
               <div className="container">
-                <div className="row justify-center text-center">
+                <div className="flex flex-wrap justify-center text-center">
                   <div className="col-md-4 col-xl-3">
                     <div>
                       <figure className="figure-circle bg-white">
@@ -619,7 +619,7 @@ export default function BrandPage() {
 
             <section className="py-5 bg-white">
               <div className="container">
-                <div className="row align-items-center justify-between text-center text-md-left">
+                <div className="flex flex-wrap align-items-center justify-between text-center text-md-left">
                   <div className="col-md-6">
                     <h2 className="mb-md-0 text-blue">Contact</h2>
                   </div>
