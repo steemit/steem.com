@@ -13,7 +13,7 @@ export default function Carousel() {
   // 动画参数
   const fadeTime = 1000;
   const fadeTimeDelay = 500;
-  const interval = 3000;
+  const interval = 4000;
   const visible = 3;
 
   // figures数据
