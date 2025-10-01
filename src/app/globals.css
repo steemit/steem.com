@@ -298,7 +298,7 @@ h6,
 
 h1, .h1 {
   font-size: 1.8666666rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.125rem;
   line-height: 1.1;
 }
 
@@ -320,16 +320,48 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
-  font-size: 2rem;
+h2, .h2, .nav-mobile > .menu-item > a {
+  font-size: 1.666666rem;
+  margin-bottom: 1.125rem;
 }
 
-h3, .h3 {
-  font-size: 1.75rem;
+@media (min-width: 768px) {
+  h2, .h2, .nav-mobile > .menu-item > a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h2, .h2, .nav-mobile > .menu-item > a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2, .h2, .nav-mobile > .menu-item > a {
+    font-size: 2.333333rem;
+  }
+}
+
+h3, .gform_wrapper h3.gform_title, .h3 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  h3, .gform_wrapper h3.gform_title, .h3 {
+    font-size: 1.666666rem;
+  }
 }
 
 h4, .h4 {
   font-size: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  h4,
+  .h4 {
+    font-size: 1.666666rem;
+  }
 }
 
 h5, .h5 {
@@ -337,6 +369,61 @@ h5, .h5 {
 }
 
 h6, .h6 {
+  font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+  h5,
+  .h5 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h6,
+  .h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Display styles - matching original website */
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* Lead text style */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Meta text style - for carousel figure metadata */
+.meta-text {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.meta-text .small {
   font-size: 1rem;
 }
 
@@ -412,7 +499,10 @@ h6, .h6 {
 }
 
 .bg-gradient {
-  background: var(--steem-gradient);
+  background-image: url('/images/backgrounds/steemit_bg_gradient.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .text-gradient {
@@ -2162,9 +2252,7 @@ input[type="submit"] {
 
 .back-to-top:focus {
   outline: none;
-  ring: 2px;
-  ring-color: var(--steem-blue);
-  ring-offset: 2px;
+  box-shadow: 0 0 0 2px var(--steem-blue);
 }
 
 .back-to-top svg {

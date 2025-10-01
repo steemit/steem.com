@@ -174,14 +174,14 @@ export default function About() {
 
                 <hr className="border my-10 mx-auto" />
 
-                <div className="border-rounded box-shadow flex flex-wrap items-center bg-gradient p-3 md:p-4 mb-4 text-white">
-                  <div className="w-full md:w-1/3 text-center">
+                <div className="border-rounded box-shadow flex flex-row items-center bg-gradient p-3 md:p-4 mb-4 text-white">
+                  <div className="w-full md:w-1/4 flex items-center justify-center">
                     <Image
-                      className="img-fluid img-icon-about my-4 md:my-0"
+                      className="img-fluid img-icon-about my-8 md:my-0"
                       src="/images/Steem_Icon_SMT-White.png"
                       alt="SMT"
-                      width={100}
-                      height={100}
+                      width={120}
+                      height={120}
                     />
                   </div>
                   <div className="w-full md:w-7/12 md:ml-auto">
@@ -192,7 +192,7 @@ export default function About() {
                       <h3 className="text-2xl font-bold mb-3">
                         A smarter way to grow
                       </h3>
-                      <p className="text-grey">
+                      <p>
                         The next evolution of Steem will begin with the upcoming
                         launch of Smart Media Tokens. Smart Media Tokens will
                         allow anyone to create their own token, similar to
