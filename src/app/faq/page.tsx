@@ -7,18 +7,18 @@ import { useState, useEffect } from "react";
 export default function FAQ() {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-  // 监听滚动事件
+  // handle scroll event
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      setShowBackToTop(scrollTop > 300); // 滚动超过300px时显示按钮
+      setShowBackToTop(scrollTop > 300); // scroll more than 300px to show button
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 返回顶部函数
+  // scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -1033,13 +1033,13 @@ export default function FAQ() {
       </div>
       <Footer />
       
-      {/* 返回顶部按钮 */}
+      {/* back to top button */}
       {showBackToTop && (
         <button
           onClick={scrollToTop}
           className="back-to-top"
-          aria-label="返回顶部"
-          title="返回顶部"
+          aria-label="back to top"
+          title="back to top"
         >
           <svg
             fill="none"

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -303,8 +305,8 @@ export default function BrandPage() {
                       Assets
                     </h2>
                     <p className="small mt-4">Background textures:</p>
-                    <div className="flex flex-wrap">
-                      <div className="w-1/2 md:w-1/3">
+                    <div className="flex flex-row">
+                      <div className="md:w-1/4">
                         <div
                           className="bg-image bg-landscape box-shadow border-rounded"
                           style={{
@@ -313,7 +315,7 @@ export default function BrandPage() {
                           }}
                         ></div>
                       </div>
-                      <div className="w-1/2 md:w-1/3">
+                      <div className="md:w-1/4">
                         <div
                           className="bg-image bg-landscape box-shadow border-rounded"
                           style={{
@@ -325,7 +327,7 @@ export default function BrandPage() {
                     </div>
                     <p className="small mt-4">Icons:</p>
                     <div className="flex flex-wrap">
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -336,7 +338,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -347,7 +349,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -358,7 +360,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -369,7 +371,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -380,7 +382,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -391,7 +393,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -402,7 +404,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -413,7 +415,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -424,7 +426,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -435,7 +437,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -446,7 +448,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -457,7 +459,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -468,7 +470,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -479,7 +481,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -490,7 +492,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-3">
+                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -507,13 +509,13 @@ export default function BrandPage() {
               </div>
             </section>
 
-            <section className="py-7 py-lg-8 py-xl-10 text-center text-md-left">
+            <section className="py-7 py-lg-8 py-xl-10 text-md-left">
               <div className="container">
-                <div className="flex flex-wrap justify-center">
+                <div className="flex flex-col justify-center">
                   <div className="w-full lg:w-10/12">
                     <h2 className="text-blue">Fonts</h2>
-                    <div className="flex flex-wrap">
-                      <div className="col-md-6 my-4">
+                    <div className="flex flex-row">
+                      <div className="w-full md:w-1/2 my-4">
                         <p className="small text-grey">Headings</p>
                         <div className="my-4">
                           <h2 className="mb-2 font-weight-700">
@@ -544,7 +546,7 @@ export default function BrandPage() {
                           </Link>
                         </p>
                       </div>
-                      <div className="col-md-6 my-4">
+                      <div className="w-full md:w-1/2 my-4">
                         <p className="small text-grey">Body</p>
                         <div className="my-4">
                           <h2 className="mb-2 text-roboto">Roboto</h2>
@@ -581,10 +583,10 @@ export default function BrandPage() {
               </div>
             </section>
 
-            <section className="bg-offwhite py-5 py-md-6 py-lg-7 py-xl-10 overflow-hidden">
-              <div className="container">
+            <section className="bg-offwhite py-5 md:py-6 lg:py-7 xl:py-10 overflow-hidden">
+              <div className="container mx-auto px-4">
                 <div className="flex flex-wrap justify-center text-center">
-                  <div className="col-md-4 col-xl-3">
+                  <div className="w-full md:w-1/3 xl:w-1/4">
                     <div>
                       <figure className="figure-circle bg-white">
                         <Image
@@ -593,8 +595,7 @@ export default function BrandPage() {
                           alt="Steem File"
                           width={0}
                           height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                          style={{ height: "auto" }}
                         />
                       </figure>
                       <h3>Complete Package</h3>
@@ -606,7 +607,7 @@ export default function BrandPage() {
                     <div>
                       <a
                         href="/wp-content/uploads/2018/10/Steem-Logos-and-Usage-Guide.zip"
-                        className="btn btn-blue mx-md-3 mx-lg-4"
+                        className="btn btn-blue mx-2 lg:mx-4"
                         download
                       >
                         Download .zip
@@ -619,7 +620,7 @@ export default function BrandPage() {
 
             <section className="py-5 bg-white">
               <div className="container">
-                <div className="flex flex-wrap align-items-center justify-between text-center text-md-left">
+                <div className="flex flex-wrap align-items-center justify-between text-md-left">
                   <div className="col-md-6">
                     <h2 className="mb-md-0 text-blue">Contact</h2>
                   </div>

@@ -1226,36 +1226,12 @@ input[type="submit"] {
 .comment-form input[type="submit"],
 input[type="submit"] {
   border-radius: 2.5rem;
-  color: #161fc8 !important;
+  color: #161fc8;
   font-size: 1.166666666rem;
   font-weight: 600;
   padding: 0.75rem 2.5rem;
 }
 
-.btn-white {
-  background: white;
-  color: #161fc8;
-  transition: 0.5s;
-}
-
-.btn-white:hover,
-.btn-white:focus {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.btn-blue {
-  background: var(--steem-blue);
-  color: white;
-  border: 1px solid var(--steem-blue);
-  transition: 0.5s;
-}
-
-.btn-blue:hover,
-.btn-blue:focus {
-  background: #0d47a1;
-  color: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
 
 /* Footer styles */
 .bg-footer {
@@ -1330,8 +1306,8 @@ input[type="submit"] {
 }
 
 .img-profile {
-  width: 60px;
-  height: 60px;
+  width: 60px !important;
+  height: 60px !important;
   display: inline-block;
 }
 
@@ -1346,7 +1322,7 @@ input[type="submit"] {
 }
 
 .bg-landscape {
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3; /* 从16/9改为4/3，使图片更小更方 */
   border-radius: 8px;
 }
 
@@ -1355,7 +1331,7 @@ input[type="submit"] {
 }
 
 .bg-icon {
-  background-size: contain;
+  background-size: 60%; /* 从contain改为80%，使图标更小 */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1462,24 +1438,51 @@ input[type="submit"] {
 }
 
 
+/* Button base styles - using Tailwind CSS classes */
+.btn {
+  @apply inline-block px-8 py-3 font-medium text-center rounded-full transition-colors duration-200;
+}
+
 .btn-white {
   background: white;
-  color: #4BA3F3;
+  color: var(--steem-blue);
+  border: 1px solid var(--steem-blue);
 }
 
 .btn-white:hover {
-  background: #F3F4F6;
-  transform: translateY(-2px);
+  background: #f8f9fa;
+  color: var(--steem-blue);
+}
+
+/* Ensure links inside white buttons have correct colors */
+.btn-white a,
+.btn-white a:hover,
+.btn-white a:visited,
+.btn-white a:active,
+.btn-white a:focus {
+  color: var(--steem-blue) !important;
+  text-decoration: none;
 }
 
 .btn-blue {
-  background: #4BA3F3;
+  background: var(--steem-blue);
   color: white;
+  border: 1px solid var(--steem-blue);
 }
 
 .btn-blue:hover {
-  background: #3B82F6;
-  transform: translateY(-2px);
+  background: #0d47a1;
+  color: white;
+}
+
+/* Ensure links inside buttons have correct colors */
+.btn-blue a,
+.btn-blue a:hover,
+.btn-blue a:visited,
+.btn-blue a:active,
+.btn-blue a:focus {
+  color: white !important;
+  text-decoration: none;
 }
 
 /* Responsive utilities */
@@ -1630,7 +1633,7 @@ input[type="submit"] {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 150px; /* 从200px减少到150px */
   border-radius: 8px;
 }
 
