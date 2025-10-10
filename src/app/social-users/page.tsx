@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactSection from "@/components/ContactSection";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,48 +15,38 @@ export default function SocialUsers() {
         {/* Hero Section */}
         <section className="bg-page-landing py-7 lg:py-8 xl:py-10">
           <div className="container mx-auto px-4 mt-5 md:mt-7 mb-md-5 my-lg-8 my-xl-10">
-            <div className="row items-center">
+            <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2 lg:w-5/12 xl:w-1/3">
                 <div className="nomargin-container text-white">
                   <h6 className="translucent text-uppercase text-sm font-bold mb-2">
                     Social Users
                   </h6>
                   <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                    Get paid for your content
+                    Create, share, curate
                   </h2>
                   <p className="text-lg mb-6 leading-relaxed">
-                    Everyone who contributes content on a Steem-based app has
-                    the same opportunity to earn money from the rewards pool.
-                    Steem apps enable creators to earn money for pursuing their
-                    passions via shared content.
+                    Here&apos;s why Steem is a great place for social users to create, share, and curate content on the Steem blockchain for their community.
                   </p>
-                  <div className="row justify-center md:hidden mt-5">
+                  <div className="flex justify-center md:hidden mt-5">
                     <div className="w-3/4">
                       <Image
                         className="img-fluid"
                         src="/images/Steem_Landing_ForSocialUsers.png"
                         alt="Steem for Social Users"
-                        width={400}
-                        height={300}
+                        width={300}
+                        height={200}
                       />
                     </div>
                   </div>
-                  <Link
-                    href="https://steemit.com/"
-                    className="btn btn-white mt-4"
-                    target="_blank"
-                  >
-                    Start Earning
-                  </Link>
                 </div>
               </div>
-              <div className="w-full md:w-5/12 lg:w-1/3 xl:w-1/4 md:ml-auto lg:ml-1/6 xl:ml-1/4 nomargin-container">
+              <div className="w-full md:w-5/12 lg:w-1/3 xl:w-1/4 md:ml-auto lg:ml-1/6 xl:ml-1/4 nomargin-container flex justify-center">
                 <Image
                   className="img-fluid hidden md:block"
                   src="/images/Steem_Landing_ForSocialUsers.png"
                   alt="Steem for Social Users"
-                  width={500}
-                  height={400}
+                  width={300}
+                  height={200}
                 />
               </div>
             </div>
@@ -245,23 +236,7 @@ export default function SocialUsers() {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="py-5 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="row items-center justify-between text-center md:text-left">
-              <div className="w-full md:w-1/2">
-                <h2 className="mb-md-0 text-steem-blue text-2xl font-bold">
-                  Contact
-                </h2>
-              </div>
-              <div className="w-full md:w-5/12 lg:w-1/3 text-md-right">
-                <Link href="/contact/" className="btn btn-blue">
-                  <i className="fa fa-envelope mr-3">✉</i>Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactSection />
       </main>
 
       <Footer />

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactSection from "@/components/ContactSection";
 
 export default function BrandPage() {
   // Color theme state
@@ -704,20 +705,7 @@ export default function BrandPage() {
               </div>
             </section>
 
-            <section className="py-5 bg-white">
-              <div className="container">
-                <div className="flex flex-wrap align-items-center justify-between text-md-left">
-                  <div className="col-md-6">
-                    <h2 className="mb-md-0 text-blue">Contact</h2>
-                  </div>
-                  <div className="col-md-5 col-lg-4 text-md-right">
-                    <Link href="/contact/" className="btn btn-blue">
-                      <i className="fa fa-envelope mr-3"></i>Contact Us
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <ContactSection />
           </main>
           <Footer />
         </div>

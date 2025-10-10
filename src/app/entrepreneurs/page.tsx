@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactSection from "@/components/ContactSection";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -187,23 +188,7 @@ export default function Entrepreneurs() {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="py-5 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap items-center justify-between text-center md:text-left">
-              <div className="w-full md:w-1/2">
-                <h2 className="mb-md-0 text-steem-blue text-2xl font-bold">
-                  Contact
-                </h2>
-              </div>
-              <div className="w-full md:w-5/12 lg:w-1/3 text-center md:text-right">
-                <Link href="/contact/" className="btn btn-blue">
-                  <i className="fa fa-envelope mr-3">✉</i>Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactSection />
       </main>
 
       <Footer />
