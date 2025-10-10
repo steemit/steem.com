@@ -9,7 +9,7 @@ import StatCounter from "@/components/StatCounter";
 import ContactSection from "@/components/ContactSection";
 import ResourcesSection from "@/components/ResourcesSection";
 import Icon from "@/components/Icon";
-import TopAppsSection from "@/components/TopSection";
+import TopSection from "@/components/TopSection";
 
 export default function Home() {
   return (
@@ -389,7 +389,7 @@ export default function Home() {
                         than 324 Steem-based apps.
                       </p>
                       <Link
-                        href="/wp-content/uploads/2025/07/whitepaper20250711.pdf"
+                        href="/steem-whitepaper.pdf?t=20250711"
                         className="btn btn-blue"
                       >
                         Learn More
@@ -400,7 +400,7 @@ export default function Home() {
               </div>
             </section>
 
-            <TopAppsSection
+            <TopSection
               title="The top 3 Steem-based apps"
               subtitle="Steem-based apps get a boost from the 1 million users already plugged into the Steem blockchain."
               apps={[
@@ -434,19 +434,19 @@ export default function Home() {
                 {
                   title: "Steem Bluepaper",
                   description: "A high level overview of the Steem blockchain.",
-                  href: "/steem-bluepaper.pdf",
+                  href: "/steem-bluepaper.pdf?t=20250711",
                   alt: "Steem Bluepaper"
                 },
                 {
                   title: "Steem Whitepaper",
                   description: "A technical explanation of how the Steem blockchain works.",
-                  href: "/steem-whitepaper.pdf",
+                  href: "/steem-whitepaper.pdf?t=20250711",
                   alt: "Steem Whitepaper"
                 },
                 {
                   title: "SMT Whitepaper",
                   description: "A technical paper on the proposed Smart Media Tokens protocol.",
-                  href: "/smt-whitepaper.pdf",
+                  href: "/smt-whitepaper.pdf?t=20250711",
                   alt: "SMT Whitepaper"
                 }
               ]}
