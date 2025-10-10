@@ -2262,3 +2262,30 @@ input[type="submit"] {
   width: 1.5rem;
   height: 1.5rem;
 }
+
+/* Arrow icon buttons for color theme switching */
+.arrow-icon {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-icon svg {
+  transition: all 0.3s ease;
+}
+
+.arrow-icon:hover svg {
+  transform: scale(1.1);
+}

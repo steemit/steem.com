@@ -1,11 +1,49 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function BrandPage() {
+  // Color theme state
+  const [currentTheme, setCurrentTheme] = useState(0);
+  
+  // Color themes data - matching original website
+  const themes = [
+    {
+      colorValue: "#FFFFFF", // 白色logo和文字
+      backgroundValue: "", // 使用bg-gradient背景图片
+      borderColor: "#FFFFFF", // 白色标题
+      arrowColor: "", // 默认箭头颜色
+      iconColor: "white"
+    },
+    {
+      colorValue: "#171FC9", // 深蓝色logo和文字
+      backgroundValue: "#FFFFFF", // 纯白色背景
+      borderColor: "#171FC9", // 深蓝色标题
+      arrowColor: "#11A7F2", // 蓝色箭头
+      iconColor: "#11A7F2"
+    },
+    {
+      colorValue: "#212529", // 黑色logo和文字
+      backgroundValue: "#F2F2F2", // rgb(242, 242, 242)背景
+      borderColor: "#171FC9", // 深蓝色标题
+      arrowColor: "#11A7F2", // 蓝色箭头
+      iconColor: "#11A7F2"
+    }
+  ];
+
+  const handlePrevTheme = () => {
+    setCurrentTheme(prev => prev === 0 ? themes.length - 1 : prev - 1);
+  };
+
+  const handleNextTheme = () => {
+    setCurrentTheme(prev => prev === themes.length - 1 ? 0 : prev + 1);
+  };
+
+  const currentThemeData = themes[currentTheme];
   return (
     <>
       <Header variant="blue" />
@@ -57,7 +95,12 @@ export default function BrandPage() {
 
             <section
               id="Steem_Background"
-              className="bg-gradient py-7 py-lg-8 py-xl-10 text-white transition"
+              className={`py-7 py-lg-8 py-xl-10 text-white transition ${
+                currentTheme === 0 ? 'bg-gradient' : ''
+              }`}
+              style={{ 
+                background: currentTheme !== 0 ? currentThemeData.backgroundValue : undefined 
+              }}
             >
               <div className="container">
                 <div className="flex flex-wrap justify-center">
@@ -65,6 +108,7 @@ export default function BrandPage() {
                     <h2
                       id="Steem_Title"
                       className="text-center text-md-left transition"
+                      style={{ color: currentThemeData.borderColor }}
                     >
                       Logos
                     </h2>
@@ -82,7 +126,7 @@ export default function BrandPage() {
                             xmlSpace="preserve"
                           >
                             <style type="text/css">
-                              {`.path-steem{fill:white;}`}
+                              {`.path-steem{fill:${currentThemeData.colorValue};}`}
                             </style>
                             <path
                               className="path-steem"
@@ -112,9 +156,51 @@ export default function BrandPage() {
                         </figure>
                       </div>
                     </div>
-                    <div className="d-flex justify-center">
-                      <button className="arflex flex-wrap arflex flex-wrap-prev mx-3 transition"></button>
-                      <button className="arflex flex-wrap arflex flex-wrap-next mx-3 transition"></button>
+                    <div className="flex justify-center">
+                      <button 
+                        className="arrow-icon mx-3 transition" 
+                        onClick={handlePrevTheme}
+                        style={{ 
+                          borderColor: currentThemeData.arrowColor || "white",
+                          color: currentThemeData.iconColor
+                        }}
+                        aria-label="Previous theme"
+                      >
+                        <svg 
+                          width="16" 
+                          height="16" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        >
+                          <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                      </button>
+                      <button 
+                        className="arrow-icon mx-3 transition" 
+                        onClick={handleNextTheme}
+                        style={{ 
+                          borderColor: currentThemeData.arrowColor || "white",
+                          color: currentThemeData.iconColor
+                        }}
+                        aria-label="Next theme"
+                      >
+                        <svg 
+                          width="16" 
+                          height="16" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        >
+                          <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
