@@ -7,6 +7,7 @@ import Link from "next/link";
 import Carousel from "@/components/Carousel";
 import StatCounter from "@/components/StatCounter";
 import ContactSection from "@/components/ContactSection";
+import ResourcesSection from "@/components/ResourcesSection";
 import Icon from "@/components/Icon";
 
 export default function Home() {
@@ -466,113 +467,30 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Resources Section */}
-            <section className="py-12 lg:py-14 xl:py-20">
-              <div className="container mx-auto px-4">
-                <div className="grid grid-cols-12 place-items-center mb-8">
-                  <div className="col-span-12 md:col-span-6 xl:col-span-4 xl:col-start-5 text-center">
-                    <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
-                      Go down the rabbit hole
-                    </h2>
-                    <p className="text-lg leading-relaxed">
-                      Learn about the features and technology underpinning the
-                      Steem blockchain.
-                    </p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="text-center flex flex-col justify-between">
-                    <div>
-                      <figure className="figure-circle">
-                        <Image
-                          className="img-fluid img-icon"
-                          src="/images/Steem_File.png"
-                          alt="Steem Bluepaper"
-                          width={0}
-                          height={60}
-                          style={{ width: 'auto' }}
-                        />
-                      </figure>
-                      <h3 className="text-blue text-xl font-bold mb-3">
-                        Steem Bluepaper
-                      </h3>
-                      <p className="px-4 md:px-3 lg:px-4 xl:px-0 text-grey">
-                        A high level overview of the Steem blockchain.
-                      </p>
-                    </div>
-                    <div className="mt-4">
-                      <Link
-                        href="/steem-bluepaper.pdf"
-                        className="btn btn-blue"
-                        download
-                      >
-                        Download PDF
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="text-center flex flex-col justify-between">
-                    <div>
-                      <figure className="figure-circle">
-                        <Image
-                          className="img-fluid img-icon"
-                          src="/images/Steem_File.png"
-                          alt="Steem Whitepaper"
-                          width={0}
-                          height={60}
-                          style={{ width: 'auto' }}
-                        />
-                      </figure>
-                      <h3 className="text-blue text-xl font-bold mb-3">
-                        Steem Whitepaper
-                      </h3>
-                      <p className="px-4 md:px-3 lg:px-4 xl:px-0 text-grey">
-                        A technical explanation of how the Steem blockchain
-                        works.
-                      </p>
-                    </div>
-                    <div className="mt-4">
-                      <Link
-                        href="/steem-whitepaper.pdf"
-                        className="btn btn-blue"
-                        download
-                      >
-                        Download PDF
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="text-center flex flex-col justify-between">
-                    <div>
-                      <figure className="figure-circle">
-                        <Image
-                          className="img-fluid img-icon"
-                          src="/images/Steem_File.png"
-                          alt="SMT Whitepaper"
-                          width={0}
-                          height={60}
-                          style={{ width: 'auto' }}
-                        />
-                      </figure>
-                      <h3 className="text-blue text-xl font-bold mb-3">
-                        SMT Whitepaper
-                      </h3>
-                      <p className="px-4 md:px-3 lg:px-4 xl:px-0 text-grey">
-                        A technical paper on the proposed Smart Media Tokens
-                        protocol.
-                      </p>
-                    </div>
-                    <div className="mt-4">
-                      <Link
-                        href="/smt-whitepaper.pdf"
-                        className="btn btn-blue"
-                        download
-                      >
-                        Download PDF
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <ResourcesSection
+              title="Go down the rabbit hole"
+              subtitle="Learn about the features and technology underpinning the Steem blockchain."
+              resources={[
+                {
+                  title: "Steem Bluepaper",
+                  description: "A high level overview of the Steem blockchain.",
+                  href: "/steem-bluepaper.pdf",
+                  alt: "Steem Bluepaper"
+                },
+                {
+                  title: "Steem Whitepaper",
+                  description: "A technical explanation of how the Steem blockchain works.",
+                  href: "/steem-whitepaper.pdf",
+                  alt: "Steem Whitepaper"
+                },
+                {
+                  title: "SMT Whitepaper",
+                  description: "A technical paper on the proposed Smart Media Tokens protocol.",
+                  href: "/smt-whitepaper.pdf",
+                  alt: "SMT Whitepaper"
+                }
+              ]}
+            />
 
             <ContactSection />
           </main>
