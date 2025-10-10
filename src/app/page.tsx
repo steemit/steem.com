@@ -9,7 +9,7 @@ import StatCounter from "@/components/StatCounter";
 import ContactSection from "@/components/ContactSection";
 import ResourcesSection from "@/components/ResourcesSection";
 import Icon from "@/components/Icon";
-import TopAppsSection from "@/components/TopAppsSection";
+import TopAppsSection from "@/components/TopSection";
 
 export default function Home() {
   return (
