@@ -525,7 +525,8 @@ h6, .h6 {
 }
 
 .bg-developers {
-  background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+  background-color: #ffffff;
+  position: relative;
 }
 
 .bg-wave {

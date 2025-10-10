@@ -84,7 +84,7 @@ export default function Entrepreneurs() {
                   </p>
                   <Link 
                     href="http://blocktivity.info/" 
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 hidden md:inline-block"
+                    className="btn btn-blue md:inline-block"
                     target="_blank"
                   >
                     View more Steem statistics
@@ -127,6 +127,13 @@ export default function Entrepreneurs() {
                     <i className="fa fa-angle-right text-lightblue"></i>
                   </Link>
                 </div>
+                <Link 
+                  href="http://blocktivity.info/" 
+                  className="btn btn-blue mt-4 md:hidden"
+                  target="_blank"
+                >
+                  View more Steem statistics
+                </Link>
               </div>
             </div>
           </div>
