@@ -89,9 +89,7 @@ export default function Developers() {
                 </div>
 
                 {/* Divider */}
-                <div className="w-full">
-                  <hr className="border border-gray-600 w-full my-8 md:my-12 lg:my-16 xl:my-20" />
-                </div>
+                <hr className="border-t border-gray-200 mb-12" />
 
                 {/* Turnkey Cryptocurrency */}
                 <div className="flex flex-col lg:flex-row lg:items-start gap-8 mb-12">
@@ -112,9 +110,7 @@ export default function Developers() {
                 </div>
 
                 {/* Divider */}
-                <div className="w-full">
-                  <hr className="border border-gray-600 w-full my-8 md:my-12 lg:my-16 xl:my-20" />
-                </div>
+                <hr className="border-t border-gray-200 mb-12" />
 
                 {/* Turnkey Userbase & Ecosystem */}
                 <div className="flex flex-col lg:flex-row lg:items-start gap-8">
