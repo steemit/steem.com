@@ -81,7 +81,7 @@ jobs:
           - Images and other static resources
           
           ### Installation:
-          1. Download the `steem-clone-build.zip` file
+          1. Download the `steem-com-build.zip` file
           2. Extract the contents to your web server
           3. Configure your web server to serve the static files
           
@@ -99,6 +99,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./steem-clone-build.zip
-        asset_name: steem-clone-build.zip
+        asset_path: ./steem-com-build.zip
+        asset_name: steem-com-build.zip
         asset_content_type: application/zip
