@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
+import TopAppsSection from "@/components/TopAppsSection";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
@@ -70,75 +71,32 @@ export default function Entrepreneurs() {
           </div>
         </section>
 
-        {/* Top Apps Section */}
-        <section className="bg-offwhite py-12 lg:py-16 xl:py-20">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col lg:flex-row gap-12">
-              <div className="w-full lg:w-5/12 xl:w-1/3">
-                <div className="py-8">
-                  <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
-                    The top 3<br />
-                    Steem-based apps
-                  </h2>
-                  <p className="text-lg mb-6 leading-relaxed">
-                    Steem-based apps get a boost from the 1 million users already plugged into the Steem blockchain.
-                  </p>
-                  <Link 
-                    href="http://blocktivity.info/" 
-                    className="btn btn-blue md:inline-block"
-                    target="_blank"
-                  >
-                    View more Steem statistics
-                  </Link>
-                </div>
-              </div>
-              <div className="w-full lg:w-6/12 xl:w-1/3">
-                <div className="space-y-0">
-                  <Link 
-                    href="https://steemit.com/" 
-                    className="flex items-center justify-between py-3 border-b border-gray-200 hover:translate-x-2 transition-transform"
-                    target="_blank"
-                  >
-                    <div>
-                      <h3 className="text-blue text-xl font-normal mb-0">1. Steemit</h3>
-                      <p className="text-gray-600 mb-0">Social blogging platform</p>
-                    </div>
-                    <Icon name="angle-right" className="text-lightblue" />
-                  </Link>
-                  <Link 
-                    href="https://www.steempro.com/" 
-                    className="flex items-center justify-between py-3 border-b border-gray-200 hover:translate-x-2 transition-transform"
-                    target="_blank"
-                  >
-                    <div>
-                      <h3 className="text-blue text-xl font-normal mb-0">2. SteemPro</h3>
-                      <p className="text-gray-600 mb-0">Steem-based app</p>
-                    </div>
-                    <Icon name="angle-right" className="text-lightblue" />
-                  </Link>
-                  <Link 
-                    href="https://hari-raid.h4lab.com/" 
-                    className="flex items-center justify-between py-3 border-b border-gray-200 hover:translate-x-2 transition-transform"
-                    target="_blank"
-                  >
-                    <div>
-                      <h3 className="text-blue text-xl font-normal mb-0">3. HARI RAID</h3>
-                      <p className="text-gray-600 mb-0">Steem-based Tap2Earn game</p>
-                    </div>
-                    <Icon name="angle-right" className="text-lightblue" />
-                  </Link>
-                </div>
-                <Link 
-                  href="http://blocktivity.info/" 
-                  className="btn btn-blue mt-4 md:hidden"
-                  target="_blank"
-                >
-                  View more Steem statistics
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <TopAppsSection
+          title="The top 3 Steem-based apps"
+          subtitle="Steem-based apps get a boost from the 1 million users already plugged into the Steem blockchain."
+          apps={[
+            {
+              title: "Steemit",
+              description: "Social blogging platform",
+              href: "https://steemit.com/",
+              rank: 1
+            },
+            {
+              title: "SteemPro",
+              description: "Steem-based app",
+              href: "https://www.steempro.com/",
+              rank: 2
+            },
+            {
+              title: "HARI RAID",
+              description: "Steem-based Tap2Earn game",
+              href: "https://hari-raid.h4lab.com/",
+              rank: 3
+            }
+          ]}
+          statsLink="http://blocktivity.info/"
+          statsLinkText="View more Steem statistics"
+        />
 
         {/* Case Study Section */}
         <section className="bg-gradient py-12 lg:py-16 xl:py-20 text-white">
