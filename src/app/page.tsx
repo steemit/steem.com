@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Carousel from "@/components/Carousel";
 import StatCounter from "@/components/StatCounter";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
             {/* Hero Section */}
             <section className="bg-landing py-7 lg:py-8 xl:py-10">
               <div className="container mx-auto px-4 lg:my-8 xl:my-10">
-                <div className="flex flex-row -mx-4">
-                  <div className="w-full md:w-6/12 lg:w-5/12 px-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="order-1">
                     <div className="nomargin-container text-white">
                       <h1>
                         <span className="text-nowrap">
@@ -43,10 +44,10 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="md:hidden w-full px-4">
+                  <div className="order-2 md:hidden">
                     <hr className="my-6" />
                   </div>
-                  <div className="w-full md:w-6/12 lg:w-5/12 lg:ml-2 px-4 md:pl-5 lg:px-0">
+                  <div className="order-3 md:order-2">
                     <Carousel />
                   </div>
                 </div>
@@ -56,8 +57,8 @@ export default function Home() {
             {/* Social Media Model Section */}
             <section className="py-7 lg:py-8 xl:py-10">
               <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-1/3 xl:ml-1/4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div className="order-1">
                     <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                       <span className="whitespace-nowrap">A new social media model</span><br />
                       <span className="whitespace-nowrap">where contributors get</span><br />
@@ -70,7 +71,7 @@ export default function Home() {
                       Steem flips the model and returns the value to the people who contribute the most. Users become platform stakeholders, maintaining control over their data, and earning cryptocurrency rewards for each contribution they make.
                     </p>
                   </div>
-                  <div className="w-full md:w-1/2 lg:w-5/12 lg:ml-1/12 flex items-center mt-4 md:mt-0">
+                  <div className="order-2 flex items-center">
                     <div className="bg-dots py-7 text-center w-full">
                       <h1 className="display-1 stat-counter text-gradient mb-4">
                         <StatCounter target={59595935} />
@@ -224,21 +225,19 @@ export default function Home() {
             {/* Blockchain Technology Section */}
             <section className="bg-offwhite py-6 py-lg-7 py-xl-10">
               <div className="container mx-auto px-4">
-                <div className="flex flex-wrap justify-center -mx-4">
-                  <div className="w-full md:w-9/12 lg:w-7/12 xl:w-6/12 text-center md:text-center px-4">
-                    <div className="nomargin-container">
-                      <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
-                        Welcome to the next generation of blockchain technology
-                      </h2>
-                      <p className="text-lg leading-relaxed">
-                        Unlike most blockchains that are too slow and expensive
-                        to be used for apps, Steem is fast, free, and scalable.
-                      </p>
-                    </div>
+                <div className="grid grid-cols-12 place-items-center my-18">
+                  <div className="col-span-12 md:col-span-9 md:col-start-2 lg:col-span-7 lg:col-start-3 xl:col-span-6 xl:col-start-4 text-center">
+                    <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
+                      Welcome to the next generation of blockchain technology
+                    </h2>
+                    <p className="text-lg leading-relaxed">
+                      Unlike most blockchains that are too slow and expensive
+                      to be used for apps, Steem is fast, free, and scalable.
+                    </p>
                   </div>
                 </div>
-                <div className="row mt-4 lg:mt-5 xl:mt-6">
-                  <div className="w-full md:w-1/3 my-2 xl:my-0 text-center px-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 lg:mt-5 xl:mt-6">
+                  <div className="text-center">
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
@@ -258,7 +257,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="w-full md:w-1/3 my-2 xl:my-0 text-center px-4">
+                  <div className="text-center">
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
@@ -277,7 +276,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="w-full md:w-1/3 my-2 xl:my-0 text-center px-4">
+                  <div className="text-center">
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
@@ -304,8 +303,8 @@ export default function Home() {
             {/* Transaction Comparison Section */}
             <section className="py-6 py-lg-7 py-xl-10">
               <div className="container">
-                <div className="flex flex-wrap items-end -mx-4">
-                  <div className="w-full md:w-7/12 lg:w-6/12 xl:w-5/12 xl:ml-1/12 mb-6 xl:mb-0 px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
+                  <div className="order-1">
                     <Image
                       id="transactions_up"
                       className="img-fluid hidden md:block"
@@ -384,7 +383,7 @@ export default function Home() {
                       </figcaption>
                     </figure>
                   </div>
-                  <div className="w-full md:w-5/12 xl:w-4/12 xl:ml-1/12 px-4">
+                  <div className="order-2">
                     <div className="nomargin-container pb-md-6 mb-md-3 xl:mb-0 pb-xl-5">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         Steem processes more transactions than Bitcoin and
@@ -409,8 +408,8 @@ export default function Home() {
             {/* Top Apps Section */}
             <section className="bg-offwhite py-6 py-lg-7 py-xl-10">
               <div className="container mx-auto px-4">
-                <div className="flex flex-wrap">
-                  <div className="w-full md:w-5/12 xl:w-4/12 xl:ml-1/12 px-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="order-1">
                     <div className="py-xl-3">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         The top 3<br />
@@ -428,7 +427,7 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="w-full md:w-6/12 md:ml-1/12 lg:w-5/12 xl:w-4/12 xl:ml-2/12 px-4">
+                  <div className="order-2">
                     <Link
                       href="https://steemit.com/"
                       className="border border-white border-left-0 border-right-0 border-top-0 hover-shiftright flex items-center justify-between py-3"
@@ -483,83 +482,79 @@ export default function Home() {
             {/* SMT Section - Mobile Only */}
             <section className="bg-gradient py-5 py-xl-10 md:hidden">
               <div className="container text-white">
-                <div className="row items-center">
-                  <div className="w-full px-4">
-                    <div className="flex flex-wrap justify-center gap-2">
-                      <div className="w-1/6 flex justify-center">
-                        <Image
-                          className="img-fluid"
-                          src="/images/smt_circle@3x.png"
-                          alt="SMT Circle"
-                          width={50}
-                          height={50}
-                        />
-                      </div>
-                      <div className="w-1/6 flex justify-center">
-                        <Image
-                          className="img-fluid"
-                          src="/images/smt_triangle@3x.png"
-                          alt="SMT Triangle"
-                          width={50}
-                          height={50}
-                        />
-                      </div>
-                      <div className="w-1/6 flex justify-center">
-                        <Image
-                          className="img-fluid"
-                          src="/images/smt_square@3x.png"
-                          alt="SMT Square"
-                          width={50}
-                          height={50}
-                        />
-                      </div>
-                      <div className="w-1/6 flex justify-center">
-                        <Image
-                          className="img-fluid"
-                          src="/images/smt_diamond@3x.png"
-                          alt="SMT Diamond"
-                          width={50}
-                          height={50}
-                        />
-                      </div>
-                      <div className="w-1/6 flex justify-center">
-                        <Image
-                          className="img-fluid"
-                          src="/images/smt_penta@3x.png"
-                          alt="SMT Pentagon"
-                          width={50}
-                          height={50}
-                        />
-                      </div>
-                      <div className="w-1/6 flex justify-center">
-                        <Image
-                          className="img-fluid"
-                          src="/images/smt_hex@3x.png"
-                          alt="SMT Hexagon"
-                          width={50}
-                          height={50}
-                        />
-                      </div>
-                    </div>
+                <div className="grid grid-cols-6 gap-2 justify-center items-center">
+                  <div className="flex justify-center">
+                    <Image
+                      className="img-fluid"
+                      src="/images/smt_circle@3x.png"
+                      alt="SMT Circle"
+                      width={50}
+                      height={50}
+                    />
                   </div>
-                  <div className="w-full mt-4">
-                    <h2 className="text-3xl font-bold mb-4">
-                      Smart Media Tokens will revolutionize web applications.
-                    </h2>
-                    <p className="text-lg mb-6 leading-relaxed">
-                      A Smart Media Token (SMT) is a native digital asset on the
-                      Steem blockchain. SMTs are STEEM-like cryptocurrency
-                      tokens that can be integrated it into web applications and
-                      used to create incentives to entice your users to
-                      participate in, and grow, your platform.
-                    </p>
-                    <Link
-                      href="https://smt.steem.io/"
-                      className="btn btn-white"
-                    >
-                      Learn More
-                    </Link>
+                  <div className="flex justify-center">
+                    <Image
+                      className="img-fluid"
+                      src="/images/smt_triangle@3x.png"
+                      alt="SMT Triangle"
+                      width={50}
+                      height={50}
+                    />
                   </div>
+                  <div className="flex justify-center">
+                    <Image
+                      className="img-fluid"
+                      src="/images/smt_square@3x.png"
+                      alt="SMT Square"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className="flex justify-center">
+                    <Image
+                      className="img-fluid"
+                      src="/images/smt_diamond@3x.png"
+                      alt="SMT Diamond"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className="flex justify-center">
+                    <Image
+                      className="img-fluid"
+                      src="/images/smt_penta@3x.png"
+                      alt="SMT Pentagon"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className="flex justify-center">
+                    <Image
+                      className="img-fluid"
+                      src="/images/smt_hex@3x.png"
+                      alt="SMT Hexagon"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <h2 className="text-3xl font-bold mb-4">
+                    Smart Media Tokens will revolutionize web applications.
+                  </h2>
+                  <p className="text-lg mb-6 leading-relaxed">
+                    A Smart Media Token (SMT) is a native digital asset on the
+                    Steem blockchain. SMTs are STEEM-like cryptocurrency
+                    tokens that can be integrated it into web applications and
+                    used to create incentives to entice your users to
+                    participate in, and grow, your platform.
+                  </p>
+                  <Link
+                    href="https://smt.steem.io/"
+                    className="btn btn-white"
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </div>
             </section>
@@ -567,18 +562,8 @@ export default function Home() {
             {/* Resources Section */}
             <section className="py-4 pb-6 py-md-6 py-lg-7 py-xl-10 overflow-hidden border border-top-0">
               <div className="container mx-auto px-4">
-                <div className="flex flex-wrap justify-center -mx-4">
-                  <div className="w-full ml-1/4 mb-5 md:hidden">
-                    <Image
-                      id="dots"
-                      className="img-fluid"
-                      src="/images/steemit_bg_dots_lg.png"
-                      alt="Dots"
-                      width={200}
-                      height={100}
-                    />
-                  </div>
-                  <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 text-center md:text-center">
+                <div className="flex justify-center">
+                  <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 text-center">
                     <div className="nomargin-container">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         Go down the rabbit hole
@@ -590,8 +575,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-wrap justify-around xl:justify-center text-center mt-5 xl:mt-5">
-                  <div className="w-full md:w-1/3 xl:w-1/4 mt-5 xl:mt-0 mx-3 flex flex-col justify-between">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 xl:mt-5">
+                  <div className="text-center flex flex-col justify-between">
                     <div>
                       <figure className="figure-circle">
                         <Image
@@ -611,15 +596,15 @@ export default function Home() {
                     </div>
                     <div>
                       <Link
-                        href="/wp-content/uploads/2018/10/steem-bluepaper-1.pdf"
-                        className="btn btn-blue mx-md-3 mx-lg-4"
+                        href="/steem-bluepaper.pdf"
+                        className="btn btn-blue"
                         download
                       >
                         Download PDF
                       </Link>
                     </div>
                   </div>
-                  <div className="w-full md:w-1/3 xl:w-1/4 mt-5 xl:mt-0 mx-3 flex flex-col justify-between">
+                  <div className="text-center flex flex-col justify-between">
                     <div>
                       <figure className="figure-circle">
                         <Image
@@ -640,15 +625,15 @@ export default function Home() {
                     </div>
                     <div>
                       <Link
-                        href="/wp-content/uploads/2025/07/whitepaper20250711.pdf"
-                        className="btn btn-blue mx-md-3 mx-lg-4"
+                        href="/steem-whitepaper.pdf"
+                        className="btn btn-blue"
                         download
                       >
                         Download PDF
                       </Link>
                     </div>
                   </div>
-                  <div className="w-full md:w-1/3 xl:w-1/4 mt-5 xl:mt-0 mx-3 flex flex-col justify-between">
+                  <div className="text-center flex flex-col justify-between">
                     <div>
                       <figure className="figure-circle">
                         <Image
@@ -669,8 +654,8 @@ export default function Home() {
                     </div>
                     <div>
                       <Link
-                        href="/wp-content/uploads/2018/11/smt-whitepaper-nov-3-2018.pdf"
-                        className="btn btn-blue mx-md-3 mx-lg-4"
+                        href="/smt-whitepaper.pdf"
+                        className="btn btn-blue"
                         download
                       >
                         Download PDF
@@ -681,23 +666,7 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Contact Section */}
-            <section className="py-5 bg-white">
-              <div className="container">
-                <div className="flex flex-wrap items-center justify-between text-center md:text-left">
-                  <div className="w-full md:w-1/2">
-                    <h2 className="md:mb-0 text-blue text-2xl font-bold">
-                      Contact
-                    </h2>
-                  </div>
-                  <div className="w-full md:w-5/12 lg:w-1/3 md:text-right">
-                    <Link href="/contact/" className="btn btn-blue">
-                      <i className="fa fa-envelope mr-3">✉</i>Contact Us
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <ContactSection />
           </main>
         </div>
       </div>
