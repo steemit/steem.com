@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const roboto = Roboto({
   weight: ['300', '400', '700'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
   variable: '--font-roboto',
 });
 
@@ -38,23 +39,23 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://use.typekit.net/qhy4act.css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
-        
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9ZPVZV9X5"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-Y9ZPVZV9X5');
-            `,
-          }}
-        />
       </head>
       <body className={`${roboto.className} ${roboto.variable}`}>
         {children}
+        
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Y9ZPVZV9X5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Y9ZPVZV9X5');
+          `}
+        </Script>
       </body>
     </html>
   );
