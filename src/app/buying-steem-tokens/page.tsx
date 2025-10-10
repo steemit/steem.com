@@ -6,7 +6,6 @@ import ContactSection from "@/components/ContactSection";
 import TopSection from "@/components/TopSection";
 import Image from "next/image";
 import Link from "next/link";
-import Icon from "@/components/Icon";
 
 export default function BuyingSteemTokens() {
   return (
@@ -68,7 +67,7 @@ export default function BuyingSteemTokens() {
                     Steem enables social networks to be placed on a blockchain with cryptocurrency so users can get paid for contributing good content.
                   </p>
                   <p className="text-lg leading-relaxed">
-                    The Steem Blockchain contains three unique tokens with three different attributes. Whether you want to increase your social app influence, HODL wisely, or zero in on cash, there's a Steem token for you.
+                    The Steem Blockchain contains three unique tokens with three different attributes. Whether you want to increase your social app influence, HODL wisely, or zero in on cash, there&apos;s a Steem token for you.
                   </p>
                 </div>
               </div>

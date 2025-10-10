@@ -6,7 +6,6 @@ import ContactSection from "@/components/ContactSection";
 import TopAppsSection from "@/components/TopSection";
 import Image from "next/image";
 import Link from "next/link";
-import Icon from "@/components/Icon";
 
 export default function Entrepreneurs() {
   return (

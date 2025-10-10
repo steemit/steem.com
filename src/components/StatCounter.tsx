@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 
 interface StatCounterProps {
   target: number;
@@ -13,29 +13,7 @@ export default function StatCounter({ target, duration = 2000, className = "" }:
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true);
-          animateCount();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
-      }
-    };
-  }, [isVisible]);
-
-  const animateCount = () => {
+  const animateCount = useCallback(() => {
     const startAt = Math.floor(4 * target / 5);
     const increment = (target - startAt) / (duration / 16); // 60fps
     let current = startAt;
@@ -51,7 +29,28 @@ export default function StatCounter({ target, duration = 2000, className = "" }:
     }, 16);
 
     return () => clearInterval(timer);
-  };
+  }, [target, duration]);
+
+  useEffect(() => {
+    const element = elementRef.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+          animateCount();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(element);
+
+    return () => {
+      observer.unobserve(element);
+    };
+  }, [isVisible, animateCount]);
 
   return (
     <div ref={elementRef} className={className}>
