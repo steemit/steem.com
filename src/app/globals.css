@@ -2289,3 +2289,8 @@ input[type="submit"] {
 .arrow-icon:hover svg {
   transform: scale(1.1);
 }
+
+/* Dark gradient background */
+.bg-gradient-dark {
+  background-image: linear-gradient(77deg, #333, #5e5e5e);
+}
