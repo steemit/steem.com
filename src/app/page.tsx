@@ -10,6 +10,7 @@ import ContactSection from "@/components/ContactSection";
 import ResourcesSection from "@/components/ResourcesSection";
 import Icon from "@/components/Icon";
 import TopSection from "@/components/TopSection";
+import TransactionComparison from "@/components/TransactionComparison";
 
 export default function Home() {
   return (
@@ -75,7 +76,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="order-2 flex items-center">
-                    <div className="bg-dots py-7 text-center w-full">
+                    <div className="bg-dots py-24 text-center w-full">
                       <h1 className="display-1 stat-counter text-gradient mb-4">
                         <StatCounter target={59595935} />
                       </h1>
@@ -299,86 +300,10 @@ export default function Home() {
             <section className="py-12 lg:py-14 xl:py-20">
               <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
-                  <div className="order-1">
-                    <Image
-                      id="transactions_up"
-                      className="img-fluid hidden md:block"
-                      src="/images/Steem_Arrow.png"
-                      alt="Transaction comparison"
-                      width={200}
-                      height={100}
-                    />
-                    <figure
-                      id="transactions"
-                      className="flex items-end m-0 pb-4 xl:pb-5"
-                    >
-                      <div
-                        className="blockchain flex items-center"
-                        data-blockchain="Steem"
-                      >
-                        <span className="line"></span>
-                        <Image
-                          className="img-fluid mr-3"
-                          src="/images/Steem_Icon_Blue-e1537216818812.png"
-                          alt="Steem"
-                          width={40}
-                          height={40}
-                        />
-                        <div className="text">
-                          <h3 className="m-0 text-xl font-bold">Steem</h3>
-                          <h3 className="m-0 font-light text-roboto text-grey text-tx text-2xl">
-                            1,169,182
-                          </h3>
-                        </div>
-                      </div>
-                      <div
-                        className="blockchain flex items-center"
-                        data-blockchain="Ethereum"
-                      >
-                        <span className="line"></span>
-                        <Image
-                          className="img-fluid mr-3"
-                          src="/images/Ethereum_Icon-e1537216851935.png"
-                          alt="Ethereum"
-                          width={40}
-                          height={40}
-                        />
-                        <div className="text">
-                          <h3 className="m-0 text-xl font-bold">Ethereum</h3>
-                          <h3 className="m-0 font-light text-roboto text-grey text-tx text-2xl">
-                            545,224
-                          </h3>
-                        </div>
-                      </div>
-                      <div
-                        className="blockchain flex items-center"
-                        data-blockchain="Bitcoin"
-                      >
-                        <span className="line"></span>
-                        <Image
-                          className="img-fluid mr-3"
-                          src="/images/Bitcoin_Icon-e1537216865628.png"
-                          alt="Bitcoin"
-                          width={40}
-                          height={40}
-                        />
-                        <div className="text">
-                          <h3 className="m-0 text-xl font-bold">Bitcoin</h3>
-                          <h3 className="m-0 font-light text-roboto text-grey text-tx text-2xl">
-                            530,125
-                          </h3>
-                        </div>
-                      </div>
-                      <figcaption>
-                        <p className="text-sm text-grey">
-                          <i>
-                            Total transactions<sup>(TX)</sup> - Live 24h
-                          </i>
-                        </p>
-                      </figcaption>
-                    </figure>
+                  <div>
+                    <TransactionComparison />
                   </div>
-                  <div className="order-2">
+                  <div>
                     <div className="nomargin-container pb-md-6 mb-md-3 xl:mb-0 pb-xl-5">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         Steem processes more transactions than Bitcoin and
