@@ -86,12 +86,12 @@ export default function Home() {
 
             {/* Target Audience Section */}
             <section className="bg-half">
-              <div className="container mx-auto px-4">
-                <div className="flex flex-wrap justify-center -mx-4">
-                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
+              <div className="container">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 justify-center">
+                  <div className="bg-pseudoclip my-1 md:my-2 xl:my-0">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="flex items-center">
-                        <div className="w-3/12 xl:w-full flex items-center justify-center">
+                      <div className="flex items-center xl:flex-col xl:text-center">
+                        <div className="w-1/4 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steem_Wrench.png"
@@ -100,33 +100,31 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="w-9/12 xl:w-full">
-                          <div className="xl:text-center">
-                            <Link
-                              href="/developers/"
-                              className="hover-shiftright block"
-                            >
-                              <h5 className="text-xl font-bold mb-2">
-                                For Developers{" "}
-                                <i className="fa fa-chevron-right ml-2 translucent">
-                                  →
-                                </i>
-                              </h5>
-                              <p className="m-0 text-sm">
-                                Find open source code & docs to help you start
-                                building.
-                              </p>
-                            </Link>
-                          </div>
+                        <div className="w-3/4 xl:w-full">
+                          <Link
+                            href="/developers/"
+                            className="block"
+                          >
+                            <h5 className="text-xl font-bold mb-2">
+                              For Developers{" "}
+                              <i className="fa fa-chevron-right ml-2 translucent">
+                                →
+                              </i>
+                            </h5>
+                            <p className="m-0 text-sm">
+                              Find open source code & docs to help you start
+                              building.
+                            </p>
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
+                  <div className="bg-pseudoclip my-1 md:my-2 xl:my-0">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="flex items-center">
-                        <div className="w-3/12 xl:w-full flex items-center justify-center">
+                      <div className="flex items-center xl:flex-col xl:text-center">
+                        <div className="w-1/4 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steem_Lightbulb.png"
@@ -135,33 +133,31 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="w-9/12 xl:w-full">
-                          <div className="xl:text-center">
-                            <Link
-                              href="/entrepreneurs/"
-                              className="hover-shiftright block"
-                            >
-                              <h5 className="text-xl font-bold mb-2">
-                                For Entrepreneurs{" "}
-                                <i className="fa fa-chevron-right ml-2 translucent">
-                                  →
-                                </i>
-                              </h5>
-                              <p className="m-0 text-sm">
-                                Build apps, monetize content & grow your
-                                community.
-                              </p>
-                            </Link>
-                          </div>
+                        <div className="w-3/4 xl:w-full">
+                          <Link
+                            href="/entrepreneurs/"
+                            className="block"
+                          >
+                            <h5 className="text-xl font-bold mb-2">
+                              For Entrepreneurs{" "}
+                              <i className="fa fa-chevron-right ml-2 translucent">
+                                →
+                              </i>
+                            </h5>
+                            <p className="m-0 text-sm">
+                              Build apps, monetize content & grow your
+                              community.
+                            </p>
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
+                  <div className="bg-pseudoclip my-1 md:my-2 xl:my-0">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="flex items-center">
-                        <div className="w-3/12 xl:w-full flex items-center justify-center">
+                      <div className="flex items-center xl:flex-col xl:text-center">
+                        <div className="w-1/4 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steem_Logo_Translucent.png"
@@ -170,32 +166,30 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="w-9/12 xl:w-full">
-                          <div className="xl:text-center">
-                            <Link
-                              href="/buying-steem-tokens/"
-                              className="hover-shiftright block"
-                            >
-                              <h5 className="text-xl font-bold mb-2">
-                                For HODLers{" "}
-                                <i className="fa fa-chevron-right ml-2 translucent">
-                                  →
-                                </i>
-                              </h5>
-                              <p className="m-0 text-sm">
-                                Learn about tokens and where to buy & trade.
-                              </p>
-                            </Link>
-                          </div>
+                        <div className="w-3/4 xl:w-full">
+                          <Link
+                            href="/buying-steem-tokens/"
+                            className="block"
+                          >
+                            <h5 className="text-xl font-bold mb-2">
+                              For HODLers{" "}
+                              <i className="fa fa-chevron-right ml-2 translucent">
+                                →
+                              </i>
+                            </h5>
+                            <p className="m-0 text-sm">
+                              Learn about tokens and where to buy & trade.
+                            </p>
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-3/12 bg-pseudoclip my-1 md:my-2 xl:my-0 px-4">
+                  <div className="bg-pseudoclip my-1 md:my-2 xl:my-0">
                     <div className="text-white px-3 lg:px-4 py-4 lg:py-5">
-                      <div className="flex items-center">
-                        <div className="w-3/12 xl:w-full flex items-center justify-center">
+                      <div className="flex items-center xl:flex-col xl:text-center">
+                        <div className="w-1/4 xl:w-full flex items-center justify-center">
                           <Image
                             className="img-fluid img-icon mb-xl-3"
                             src="/images/Steemit_Chatbubble.png"
@@ -204,23 +198,21 @@ export default function Home() {
                             height={60}
                           />
                         </div>
-                        <div className="w-9/12 xl:w-full">
-                          <div className="xl:text-center">
-                            <Link
-                              href="/social-users/"
-                              className="hover-shiftright block"
-                            >
-                              <h5 className="text-xl font-bold mb-2">
-                                For Social Users{" "}
-                                <i className="fa fa-chevron-right ml-2 translucent">
-                                  →
-                                </i>
-                              </h5>
-                              <p className="m-0 text-sm">
-                                Get paid for good content & grow your following.
-                              </p>
-                            </Link>
-                          </div>
+                        <div className="w-3/4 xl:w-full">
+                          <Link
+                            href="/social-users/"
+                            className="block"
+                          >
+                            <h5 className="text-xl font-bold mb-2">
+                              For Social Users{" "}
+                              <i className="fa fa-chevron-right ml-2 translucent">
+                                →
+                              </i>
+                            </h5>
+                            <p className="m-0 text-sm">
+                              Get paid for good content & grow your following.
+                            </p>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -313,7 +305,7 @@ export default function Home() {
             <section className="py-6 py-lg-7 py-xl-10">
               <div className="container">
                 <div className="flex flex-wrap items-end -mx-4">
-                  <div className="w-full md:w-7/12 lg:w-6/12 xl:w-5/12 xl:ml-1/12 mb-6 xl:mb-0 px-4">
+                  <div className="w-full md:w-7/12 lg:w-6/12 xl:w-5/12 xl:ml-1/12 mb-6 xl:mb-0 px-8">
                     <Image
                       id="transactions_up"
                       className="img-fluid hidden md:block"
@@ -417,7 +409,7 @@ export default function Home() {
             {/* Top Apps Section */}
             <section className="bg-offwhite py-6 py-lg-7 py-xl-10">
               <div className="container mx-auto px-4">
-                <div className="flex flex-wrap -mx-4">
+                <div className="flex flex-wrap">
                   <div className="w-full md:w-5/12 xl:w-4/12 xl:ml-1/12 px-4">
                     <div className="py-xl-3">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
