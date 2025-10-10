@@ -568,7 +568,7 @@ h6, .h6 {
 }
 
 .bg-dots {
-  background-image: url('/images/backgrounds/steemit_bg_gradient.png');
+  background-image: url('/images/steemit_bg_dots_lg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -883,16 +883,6 @@ p {
 
 .hover-shiftright:hover {
   transform: translateX(8px);
-}
-
-/* Fix background image styles */
-.bg-dots {
-  background-image: url('/images/backgrounds/steemit_bg_gradient.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: 12px;
-  padding: 2rem;
 }
 
 /* Fix translucent background styles */

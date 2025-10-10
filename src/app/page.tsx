@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import Carousel from "@/components/Carousel";
+import StatCounter from "@/components/StatCounter";
 
 export default function Home() {
   return (
@@ -55,42 +56,27 @@ export default function Home() {
             {/* Social Media Model Section */}
             <section className="py-7 lg:py-8 xl:py-10">
               <div className="container mx-auto px-4">
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-                  {/* Left text content */}
-                  <div className="flex-1 lg:max-w-lg xl:max-w-xl">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="w-full md:w-1/2 lg:w-5/12 xl:w-1/3 xl:ml-1/4">
                     <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
-                      <span className="text-nowrap">
-                        A new social media model
-                      </span>
-                      <br />
-                      <span className="text-nowrap">
-                        where contributors get
-                      </span>
-                      <br />
+                      <span className="whitespace-nowrap">A new social media model</span><br />
+                      <span className="whitespace-nowrap">where contributors get</span><br />
                       big perks
                     </h2>
                     <p className="text-lg mb-4 leading-relaxed">
-                      Shareholders of social media platforms made billions of
-                      dollars from user-generated content. The content creators?
-                      They made nothing.
+                      Shareholders of social media platforms made billions of dollars from user-generated content. The content creators? They made nothing.
                     </p>
                     <p className="text-lg leading-relaxed">
-                      Steem flips the model and returns the value to the people
-                      who contribute the most. Users become platform
-                      stakeholders, maintaining control over their data, and
-                      earning cryptocurrency rewards for each contribution they
-                      make.
+                      Steem flips the model and returns the value to the people who contribute the most. Users become platform stakeholders, maintaining control over their data, and earning cryptocurrency rewards for each contribution they make.
                     </p>
                   </div>
-
-                  {/* Right statistics */}
-                  <div className="flex-1 lg:max-w-md xl:max-w-lg flex items-center justify-center">
+                  <div className="w-full md:w-1/2 lg:w-5/12 lg:ml-1/12 flex items-center mt-4 md:mt-0">
                     <div className="bg-dots py-7 text-center w-full">
-                      <h1 className="stat-counter text-gradient text-6xl font-bold mb-4">
-                        59,595,935
+                      <h1 className="display-1 stat-counter text-gradient mb-4">
+                        <StatCounter target={59595935} />
                       </h1>
                       <h4 className="font-normal mx-5 xl:mx-8 text-purple text-xl">
-                        Rewards paid out to Steem users since June
+                        Rewards paid out to Steem <br/>users since June
                       </h4>
                     </div>
                   </div>
