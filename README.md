@@ -1,60 +1,55 @@
-# Steem.io Clone
+# Steem.com
 
-这是使用 Next.js 和 Tailwind CSS 克隆的 Steem.io 静态网站项目。
+This is a project using Next.js and Tailwind CSS for [https://steem.com](https://steem.com)
 
-## 功能特性
+## Features
 
-- 🚀 使用 Next.js 15 和 React 19
-- 🎨 使用 Tailwind CSS 4 进行样式设计
-- 📱 完全响应式设计
-- ⚡ 快速加载和优化的图片
-- 🔍 SEO 优化
-- 📄 TypeScript 支持
+- 🚀 Built with Next.js 15 and React 19
+- 🎨 Styled with Tailwind CSS 4
+- 📱 Fully responsive design
+- ⚡ Fast loading and optimized images
+- 🔍 SEO optimized
+- 📄 TypeScript support
 
-## 页面结构
+## Tech Stack
 
-- **首页** (`/`) - 主要介绍页面，包含英雄区域、功能展示和用户案例
-- **关于页面** (`/about`) - 公司历史和团队信息
-- **开发者页面** (`/developers`) - 针对开发者的信息和资源
-- **企业家页面** (`/entrepreneurs`) - 针对企业家的机会和工具
-- **社交用户页面** (`/social-users`) - 针对内容创作者的信息
-- **联系页面** (`/contact`) - 联系表单和联系信息
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Fonts**: Roboto (Google Fonts)
+- **Image Optimization**: Next.js Image component
 
-## 技术栈
+## Getting Started
 
-- **框架**: Next.js 15
-- **语言**: TypeScript
-- **样式**: Tailwind CSS 4
-- **字体**: Roboto (Google Fonts)
-- **图片优化**: Next.js Image 组件
-
-## 开始使用
-
-1. 安装依赖：
+1. Install dependencies:
 ```bash
 pnpm install
 ```
 
-2. 启动开发服务器：
+2. Start the development server:
 ```bash
 pnpm dev
 ```
 
-3. 在浏览器中打开 [http://localhost:3000](http://localhost:3000)
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 构建生产版本
+## Building for Production
 
 ```bash
 pnpm build
 pnpm start
 ```
 
-## 项目结构
+## Project Structure
 
 ```
 src/
 ├── app/
 │   ├── about/
+│   │   └── page.tsx
+│   ├── brand/
+│   │   └── page.tsx
+│   ├── buying-steem-tokens/
 │   │   └── page.tsx
 │   ├── contact/
 │   │   └── page.tsx
@@ -62,33 +57,59 @@ src/
 │   │   └── page.tsx
 │   ├── entrepreneurs/
 │   │   └── page.tsx
+│   ├── faq/
+│   │   └── page.tsx
 │   ├── social-users/
 │   │   └── page.tsx
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
 └── components/
+    ├── Carousel.tsx
+    ├── ContactSection.tsx
+    ├── Footer.tsx
     ├── Header.tsx
-    └── Footer.tsx
+    ├── Icon.tsx
+    ├── ResourcesSection.tsx
+    ├── StatCounter.tsx
+    ├── TopSection.tsx
+    └── TransactionComparison.tsx
 ```
 
-## 样式系统
+## Styling System
 
-项目使用自定义的 Steem 品牌色彩系统：
+The project uses a custom Steem brand color system:
 
-- `steem-blue`: #4BA3F3
-- `steem-lightblue`: #7BC4F4
-- `steem-purple`: #8B5CF6
-- `steem-grey`: #6B7280
-- `steem-offwhite`: #F9FAFB
-- `steem-offblack`: #1F2937
+- `steem-blue`: #161fc8
+- `steem-lightblue`: #11a7f1
+- `steem-purple`: #5f00de
+- `steem-grey`: #707070
+- `steem-offwhite`: #f5f5f5
+- `steem-offblack`: #343a40
 
-## 响应式设计
+## Responsive Design
 
-- 移动端优先设计
-- 支持平板和桌面端
-- 使用 Tailwind CSS 的响应式工具类
+- Mobile-first design approach
+- Support for tablet and desktop
+- Uses Tailwind CSS responsive utility classes
 
-## 许可证
+## Deployment
+
+The project is configured for static export and can be deployed to any static hosting service:
+
+1. Build the project: `pnpm build`
+2. The static files will be generated in the `out/` directory
+3. Deploy the contents of the `out/` directory to your hosting service
+
+## GitHub Actions
+
+The project includes automated CI/CD with GitHub Actions:
+
+- **Trigger**: Pushes to `master` branch
+- **Build**: Node.js 20 environment with pnpm
+- **Output**: Static files exported to `out/` directory
+- **Release**: Automatic release creation with ZIP attachment
+
+## License
 
 MIT License
