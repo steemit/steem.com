@@ -55,12 +55,12 @@ jobs:
         cd out
         zip -r ../steem-clone-build.zip . -x "*.DS_Store" "*.git*"
         
-    - name: Get version from package.json
+    - name: Generate timestamp tag
       id: version
       run: |
-        VERSION=$(node -p "require('./package.json').version")
-        echo "version=$VERSION" >> $GITHUB_OUTPUT
-        echo "tag=v$VERSION" >> $GITHUB_OUTPUT
+        TIMESTAMP=$(date +"%Y%m%d%H%M%S")
+        echo "version=$TIMESTAMP" >> $GITHUB_OUTPUT
+        echo "tag=$TIMESTAMP" >> $GITHUB_OUTPUT
         
     - name: Create Release
       id: create_release
@@ -69,7 +69,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.version.outputs.tag }}
-        release_name: Release ${{ steps.version.outputs.tag }}
+        release_name: Build ${{ steps.version.outputs.tag }}
         body: |
           ## Steem Clone Build Release
           
@@ -86,8 +86,9 @@ jobs:
           3. Configure your web server to serve the static files
           
           ### Build Info:
+          - Build timestamp: ${{ steps.version.outputs.tag }}
           - Node.js version: 20
-          - Build date: ${{ github.run_number }}
+          - Build number: ${{ github.run_number }}
           - Commit: ${{ github.sha }}
         draft: false
         prerelease: false
