@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Icon from "./Icon";
 
 export default function ContactSection() {
   return (
@@ -10,7 +11,7 @@ export default function ContactSection() {
           </div>
           <div className="col-md-5 col-lg-4 text-md-right">
             <Link href="/contact/" className="btn btn-blue">
-              <i className="fa fa-envelope mr-3"></i>Contact Us
+              <Icon name="envelope" className="mr-3" size="sm" />Contact Us
             </Link>
           </div>
         </div>

@@ -627,14 +627,12 @@ h6, .h6 {
 p {
   font-size: 1.0666666rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 1.25rem;
   -webkit-font-smoothing: antialiased;
 }
 
 @media (min-width: 1200px) {
   p {
     font-size: 1.1666666rem;
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -871,14 +869,6 @@ p {
 .btn {
   transition: all 0.3s ease;
 }
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-
-
 
 /* Fix text gradient effects */
 .text-gradient {

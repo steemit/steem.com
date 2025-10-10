@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import Image from "next/image";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 export default function Entrepreneurs() {
   return (
@@ -102,7 +103,7 @@ export default function Entrepreneurs() {
                       <h3 className="text-blue text-xl font-normal mb-0">1. Steemit</h3>
                       <p className="text-gray-600 mb-0">Social blogging platform</p>
                     </div>
-                    <i className="fa fa-angle-right text-lightblue"></i>
+                    <Icon name="angle-right" className="text-lightblue" />
                   </Link>
                   <Link 
                     href="https://www.steempro.com/" 
@@ -113,7 +114,7 @@ export default function Entrepreneurs() {
                       <h3 className="text-blue text-xl font-normal mb-0">2. SteemPro</h3>
                       <p className="text-gray-600 mb-0">Steem-based app</p>
                     </div>
-                    <i className="fa fa-angle-right text-lightblue"></i>
+                    <Icon name="angle-right" className="text-lightblue" />
                   </Link>
                   <Link 
                     href="https://hari-raid.h4lab.com/" 
@@ -124,7 +125,7 @@ export default function Entrepreneurs() {
                       <h3 className="text-blue text-xl font-normal mb-0">3. HARI RAID</h3>
                       <p className="text-gray-600 mb-0">Steem-based Tap2Earn game</p>
                     </div>
-                    <i className="fa fa-angle-right text-lightblue"></i>
+                    <Icon name="angle-right" className="text-lightblue" />
                   </Link>
                 </div>
                 <Link 

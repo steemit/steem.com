@@ -7,6 +7,7 @@ import Link from "next/link";
 import Carousel from "@/components/Carousel";
 import StatCounter from "@/components/StatCounter";
 import ContactSection from "@/components/ContactSection";
+import Icon from "@/components/Icon";
 
 export default function Home() {
   return (
@@ -108,9 +109,7 @@ export default function Home() {
                           >
                             <h5 className="text-xl font-bold mb-2">
                               For Developers{" "}
-                              <i className="fa fa-chevron-right ml-2 translucent">
-                                →
-                              </i>
+                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
                             </h5>
                             <p className="m-0 text-sm">
                               Find open source code & docs to help you start
@@ -141,9 +140,7 @@ export default function Home() {
                           >
                             <h5 className="text-xl font-bold mb-2">
                               For Entrepreneurs{" "}
-                              <i className="fa fa-chevron-right ml-2 translucent">
-                                →
-                              </i>
+                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
                             </h5>
                             <p className="m-0 text-sm">
                               Build apps, monetize content & grow your
@@ -174,9 +171,7 @@ export default function Home() {
                           >
                             <h5 className="text-xl font-bold mb-2">
                               For HODLers{" "}
-                              <i className="fa fa-chevron-right ml-2 translucent">
-                                →
-                              </i>
+                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
                             </h5>
                             <p className="m-0 text-sm">
                               Learn about tokens and where to buy & trade.
@@ -206,9 +201,7 @@ export default function Home() {
                           >
                             <h5 className="text-xl font-bold mb-2">
                               For Social Users{" "}
-                              <i className="fa fa-chevron-right ml-2 translucent">
-                                →
-                              </i>
+                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
                             </h5>
                             <p className="m-0 text-sm">
                               Get paid for good content & grow your following.
@@ -223,7 +216,7 @@ export default function Home() {
             </section>
 
             {/* Blockchain Technology Section */}
-            <section className="bg-offwhite py-6 py-lg-7 py-xl-10">
+            <section className="bg-offwhite py-12 lg:py-14 xl:py-20">
               <div className="container mx-auto px-4">
                 <div className="grid grid-cols-12 place-items-center my-18">
                   <div className="col-span-12 md:col-span-9 md:col-start-2 lg:col-span-7 lg:col-start-3 xl:col-span-6 xl:col-start-4 text-center">
@@ -301,7 +294,7 @@ export default function Home() {
             </section>
 
             {/* Transaction Comparison Section */}
-            <section className="py-6 py-lg-7 py-xl-10">
+            <section className="py-12 lg:py-14 xl:py-20">
               <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
                   <div className="order-1">
@@ -406,10 +399,10 @@ export default function Home() {
             </section>
 
             {/* Top Apps Section */}
-            <section className="bg-offwhite py-6 py-lg-7 py-xl-10">
+            <section className="bg-offwhite py-12 lg:py-14 xl:py-20">
               <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="order-1">
+                  <div>
                     <div className="py-xl-3">
                       <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
                         The top 3<br />
@@ -427,10 +420,10 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="order-2">
+                  <div>
                     <Link
                       href="https://steemit.com/"
-                      className="border border-white border-left-0 border-right-0 border-top-0 hover-shiftright flex items-center justify-between py-3"
+                      className="flex items-center justify-between py-3 pr-14 pl-4"
                     >
                       <div>
                         <h3 className="mb-0 font-normal text-blue text-xl">
@@ -440,23 +433,23 @@ export default function Home() {
                           Social blogging platform
                         </p>
                       </div>
-                      <i className="fa fa-angle-right text-lightblue">→</i>
+                      <Icon name="angle-right" className="text-lightblue" size="xl" />
                     </Link>
                     <Link
-                      href="https://esteem.app/"
-                      className="border border-white border-left-0 border-right-0 border-top-0 hover-shiftright flex items-center justify-between py-3"
+                      href="https://www.steempro.com/"
+                      className="flex items-center justify-between py-3 pr-14 pl-4"
                     >
                       <div>
                         <h3 className="mb-0 font-normal text-blue text-xl">
-                          2. eSteem
+                          2. SteemPro
                         </h3>
-                        <p className="mb-0 text-grey">Steem-based mobile app</p>
+                        <p className="mb-0 text-grey">Steem-based app</p>
                       </div>
-                      <i className="fa fa-angle-right text-lightblue">→</i>
+                      <Icon name="angle-right" className="text-lightblue" size="xl" />
                     </Link>
                     <Link
                       href="https://hari-raid.h4lab.com/"
-                      className="border border-white border-left-0 border-right-0 border-top-0 hover-shiftright flex items-center justify-between py-3"
+                      className="flex items-center justify-between py-3 pr-14 pl-4"
                     >
                       <div>
                         <h3 className="mb-0 font-normal text-blue text-xl">
@@ -466,13 +459,7 @@ export default function Home() {
                           Steem-based Tap2Earn game
                         </p>
                       </div>
-                      <i className="fa fa-angle-right text-lightblue">→</i>
-                    </Link>
-                    <Link
-                      className="btn btn-blue md:hidden mt-4"
-                      href="http://blocktivity.info/"
-                    >
-                      <span>View more Steem statistics</span>
+                      <Icon name="angle-right" className="text-lightblue" size="xl" />
                     </Link>
                   </div>
                 </div>
