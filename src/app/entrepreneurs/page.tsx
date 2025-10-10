@@ -15,7 +15,7 @@ export default function Entrepreneurs() {
         {/* Hero Section */}
         <section className="bg-page-landing py-7 lg:py-8 xl:py-10">
           <div className="container mx-auto px-4 mt-5 md:mt-7 mb-md-5 my-lg-8 my-xl-10">
-            <div className="flex flex-wrap items-center">
+            <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2 lg:w-5/12 xl:w-1/3">
                 <div className="nomargin-container text-white">
                   <h6 className="translucent text-uppercase text-sm font-bold mb-2">
@@ -29,33 +29,26 @@ export default function Entrepreneurs() {
                     content so you can build & grow your own social media
                     community on the blockchain.
                   </p>
-                  <div className="flex flex-wrap justify-center md:hidden mt-5">
+                  <div className="flex justify-center md:hidden mt-5">
                     <div className="w-3/4">
                       <Image
                         className="img-fluid"
                         src="/images/Steem_Landing_ForEntrepreneurs.png"
                         alt="Steem for Entrepreneurs"
-                        width={400}
-                        height={300}
+                        width={300}
+                        height={200}
                       />
                     </div>
                   </div>
-                  <Link
-                    href="https://developers.steem.io/"
-                    className="btn btn-white mt-4"
-                    target="_blank"
-                  >
-                    Start Building
-                  </Link>
                 </div>
               </div>
-              <div className="w-full md:w-5/12 lg:w-1/3 xl:w-1/4 md:ml-auto lg:ml-1/6 xl:ml-1/4 nomargin-container">
+              <div className="w-full md:w-5/12 lg:w-1/3 xl:w-1/4 md:ml-auto lg:ml-1/6 xl:ml-1/4 nomargin-container flex justify-center">
                 <Image
                   className="img-fluid hidden md:block"
                   src="/images/Steem_Landing_ForEntrepreneurs.png"
                   alt="Steem for Entrepreneurs"
-                  width={500}
-                  height={400}
+                  width={300}
+                  height={200}
                 />
               </div>
             </div>
