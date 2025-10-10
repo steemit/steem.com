@@ -54,187 +54,61 @@ export default function SocialUsers() {
         </section>
 
         {/* Features Section */}
-        <section className="bg-developers py-7 py-lg-8 py-xl-10">
+        <section className="border-t border-gray-200">
           <div className="container mx-auto px-4">
-            <div className="row justify-center">
-              <div className="w-full lg:w-10/12">
-                <div className="row justify-center">
-                  <div className="w-full md:w-5/12">
-                    <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">
-                      Earn Rewards
-                    </h2>
-                  </div>
-                  <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
-                  <div className="w-full md:w-5/12 mb-3 md:mb-0">
-                    <h3 className="text-2xl font-bold text-white">
-                      Get paid for creating and curating quality content
-                    </h3>
-                  </div>
-                  <div className="w-full md:w-1/2 md:ml-auto nomargin-container">
-                    <p className="text-lg text-white leading-relaxed mb-4">
-                      On Steem-based platforms, every user has the opportunity
-                      to earn cryptocurrency rewards for their contributions.
-                      Whether you&apos;re creating original content, curating
-                      posts, or engaging with the community, your participation
-                      is valued and rewarded.
-                    </p>
-                    <p className="text-lg text-white leading-relaxed">
-                      The more valuable your content is to the community, the
-                      more rewards you can earn. This creates a fair and
-                      transparent system where quality content rises to the top.
-                    </p>
-                  </div>
-                </div>
+            {/* Creators Section */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 py-12 lg:py-16">
+              <div className="w-full lg:w-1/2 flex justify-center">
+                <Image
+                  className="w-48 h-72 object-contain"
+                  src="/images/Steem_Icon_CoinFalling.png"
+                  alt="Creators"
+                  width={200}
+                  height={300}
+                />
               </div>
-
-              <div className="w-full lg:w-10/12">
-                <hr className="border border-steem-offblack w-full my-5 md:my-6 lg:my-7 xl:my-8" />
-              </div>
-
-              <div className="w-full lg:w-10/12">
-                <div className="row justify-center">
-                  <div className="w-full md:w-5/12">
-                    <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">
-                      Own Your Data
-                    </h2>
-                  </div>
-                  <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
-                  <div className="w-full md:w-5/12 mb-3 md:mb-0">
-                    <h3 className="text-2xl font-bold text-white">
-                      Your content, your data, your control
-                    </h3>
-                  </div>
-                  <div className="w-full md:w-1/2 md:ml-auto nomargin-container">
-                    <p className="text-lg text-white leading-relaxed">
-                      Unlike traditional social media platforms, Steem gives you
-                      complete control over your content and data. Your posts
-                      are stored on the blockchain, making them permanent and
-                      censorship-resistant. You can also export your content and
-                      take it with you to other Steem-based platforms.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full lg:w-10/12">
-                <hr className="border border-steem-offblack w-full my-5 md:my-6 lg:my-7 xl:my-8" />
-              </div>
-
-              <div className="w-full lg:w-10/12">
-                <div className="row justify-center">
-                  <div className="w-full md:w-5/12">
-                    <h2 className="mb-2 text-steem-blue text-3xl font-bold text-md-center">
-                      Community Driven
-                    </h2>
-                  </div>
-                  <div className="mt-md-3 mt-lg-4 mt-xl-5 w-full"></div>
-                  <div className="w-full md:w-5/12 mb-3 md:mb-0">
-                    <h3 className="text-2xl font-bold text-white">
-                      Be part of a decentralized community that values your
-                      input
-                    </h3>
-                  </div>
-                  <div className="w-full md:w-1/2 md:ml-auto nomargin-container">
-                    <p className="text-lg text-white leading-relaxed mb-4">
-                      Steem communities are governed by their users through a
-                      decentralized consensus mechanism. This means that the
-                      community itself decides what content is valuable and
-                      deserves rewards, rather than algorithms or corporate
-                      interests.
-                    </p>
-                    <p className="text-lg text-white leading-relaxed">
-                      As a user, you have a voice in how the platform evolves
-                      and grows. Your stake in the platform gives you voting
-                      power and influence over its direction.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Popular Apps Section */}
-        <section className="py-7 py-lg-8 py-xl-10 bg-offwhite">
-          <div className="container mx-auto px-4">
-            <div className="row justify-center">
-              <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 nomargin-container text-center">
-                <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold mb-6">
-                  Popular Steem Apps
-                </h2>
-                <p className="text-lg mb-8 leading-relaxed">
-                  Discover the most popular applications built on the Steem
-                  blockchain.
+              <div className="w-full lg:w-1/2">
+                <h2 className="text-blue text-2xl font-bold mb-2">Creators</h2>
+                <h3 className="text-3xl font-bold mb-6">Get paid to play.</h3>
+                <p className="text-lg mb-4 leading-relaxed">
+                  Everyone who contributes content on a Steem-based app has the same opportunity to earn money from the rewards pool. Steem apps enable creators to earn money for pursuing their passions via shared content.
                 </p>
-
-                <div className="space-y-4">
-                  <Link
-                    href="https://steemit.com/"
-                    className="block p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
-                    target="_blank"
-                  >
-                    <h3 className="text-xl font-bold text-steem-blue mb-2">
-                      Steemit
-                    </h3>
-                    <p className="text-steem-grey">
-                      The original social blogging platform on Steem
-                    </p>
-                  </Link>
-
-                  <Link
-                    href="https://esteem.app/"
-                    className="block p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
-                    target="_blank"
-                  >
-                    <h3 className="text-xl font-bold text-steem-blue mb-2">
-                      eSteem
-                    </h3>
-                    <p className="text-steem-grey">
-                      Mobile app for Steem content creation and curation
-                    </p>
-                  </Link>
-
-                  <Link
-                    href="https://steemretrogames.com/"
-                    className="block p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
-                    target="_blank"
-                  >
-                    <h3 className="text-xl font-bold text-steem-blue mb-2">
-                      Steem Retrogames
-                    </h3>
-                    <p className="text-steem-grey">
-                      Play retro games and earn rewards
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-7 py-lg-8 py-xl-10">
-          <div className="container mx-auto px-4">
-            <div className="row justify-center">
-              <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 nomargin-container text-center">
-                <h2 className="text-steem-blue text-3xl lg:text-4xl font-bold mb-6">
-                  Ready to start earning?
-                </h2>
                 <p className="text-lg mb-6 leading-relaxed">
-                  Join the Steem community and start earning rewards for your
-                  content today.
+                  By posting your content, you can earn upvotes from community members. The upvotes you receive entitle you to a portion of the &quot;rewards pool,&quot; which depends on how much Steem Power you have.
                 </p>
-                <Link
-                  href="https://steemit.com/"
-                  className="btn btn-blue"
-                  target="_blank"
-                >
-                  Get Started
+                <Link href="https://steemit.com/" className="btn btn-blue" target="_blank">
+                  Start Creating
+                </Link>
+              </div>
+            </div>
+
+            {/* Curators Section */}
+            <div className="flex flex-col lg:flex-row items-center gap-8 py-12 lg:py-16">
+              <div className="w-full lg:w-1/2 flex justify-center">
+                <Image
+                  className="w-48 h-72 object-contain"
+                  src="/images/Steem_Icon_CoinFunnel.png"
+                  alt="Curators"
+                  width={200}
+                  height={300}
+                />
+              </div>
+              <div className="w-full lg:w-1/2">
+                <h2 className="text-blue text-2xl font-bold mb-2">Curators</h2>
+                <h3 className="text-3xl font-bold mb-6">Help your community thrive and grow by upvoting high quality content.</h3>
+                <p className="text-lg mb-6 leading-relaxed">
+                  If you discover a post on a Steem-based app and upvote it before it becomes popular, you earn a curation reward. The reward amount will depend on the amount of rewards the post earns over time.
+                </p>
+                <Link href="https://steemit.com/" className="btn btn-blue" target="_blank">
+                  Start Curating
                 </Link>
               </div>
             </div>
           </div>
         </section>
+
+        {/* Divider */}
+        <hr className="border-t border-gray-200" />
 
         <ContactSection />
       </main>
