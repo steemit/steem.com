@@ -466,103 +466,21 @@ export default function Home() {
               </div>
             </section>
 
-            {/* SMT Section - Mobile Only */}
-            <section className="bg-gradient py-5 py-xl-10 md:hidden">
-              <div className="container text-white">
-                <div className="grid grid-cols-6 gap-2 justify-center items-center">
-                  <div className="flex justify-center">
-                    <Image
-                      className="img-fluid"
-                      src="/images/smt_circle@3x.png"
-                      alt="SMT Circle"
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                  <div className="flex justify-center">
-                    <Image
-                      className="img-fluid"
-                      src="/images/smt_triangle@3x.png"
-                      alt="SMT Triangle"
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                  <div className="flex justify-center">
-                    <Image
-                      className="img-fluid"
-                      src="/images/smt_square@3x.png"
-                      alt="SMT Square"
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                  <div className="flex justify-center">
-                    <Image
-                      className="img-fluid"
-                      src="/images/smt_diamond@3x.png"
-                      alt="SMT Diamond"
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                  <div className="flex justify-center">
-                    <Image
-                      className="img-fluid"
-                      src="/images/smt_penta@3x.png"
-                      alt="SMT Pentagon"
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                  <div className="flex justify-center">
-                    <Image
-                      className="img-fluid"
-                      src="/images/smt_hex@3x.png"
-                      alt="SMT Hexagon"
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <h2 className="text-3xl font-bold mb-4">
-                    Smart Media Tokens will revolutionize web applications.
-                  </h2>
-                  <p className="text-lg mb-6 leading-relaxed">
-                    A Smart Media Token (SMT) is a native digital asset on the
-                    Steem blockchain. SMTs are STEEM-like cryptocurrency
-                    tokens that can be integrated it into web applications and
-                    used to create incentives to entice your users to
-                    participate in, and grow, your platform.
-                  </p>
-                  <Link
-                    href="https://smt.steem.io/"
-                    className="btn btn-white"
-                  >
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-            </section>
-
             {/* Resources Section */}
-            <section className="py-4 pb-6 py-md-6 py-lg-7 py-xl-10 overflow-hidden border border-top-0">
+            <section className="py-12 lg:py-14 xl:py-20">
               <div className="container mx-auto px-4">
-                <div className="flex justify-center">
-                  <div className="w-full md:w-1/2 xl:w-5/12 2xl:w-1/3 text-center">
-                    <div className="nomargin-container">
-                      <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
-                        Go down the rabbit hole
-                      </h2>
-                      <p className="text-lg leading-relaxed">
-                        Learn about the features and technology underpinning the
-                        Steem blockchain.
-                      </p>
-                    </div>
+                <div className="grid grid-cols-12 place-items-center mb-8">
+                  <div className="col-span-12 md:col-span-6 xl:col-span-4 xl:col-start-5 text-center">
+                    <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
+                      Go down the rabbit hole
+                    </h2>
+                    <p className="text-lg leading-relaxed">
+                      Learn about the features and technology underpinning the
+                      Steem blockchain.
+                    </p>
                   </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 xl:mt-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center flex flex-col justify-between">
                     <div>
                       <figure className="figure-circle">
@@ -570,8 +488,9 @@ export default function Home() {
                           className="img-fluid img-icon"
                           src="/images/Steem_File.png"
                           alt="Steem Bluepaper"
-                          width={60}
+                          width={0}
                           height={60}
+                          style={{ width: 'auto' }}
                         />
                       </figure>
                       <h3 className="text-blue text-xl font-bold mb-3">
@@ -581,7 +500,7 @@ export default function Home() {
                         A high level overview of the Steem blockchain.
                       </p>
                     </div>
-                    <div>
+                    <div className="mt-4">
                       <Link
                         href="/steem-bluepaper.pdf"
                         className="btn btn-blue"
@@ -598,8 +517,9 @@ export default function Home() {
                           className="img-fluid img-icon"
                           src="/images/Steem_File.png"
                           alt="Steem Whitepaper"
-                          width={60}
+                          width={0}
                           height={60}
+                          style={{ width: 'auto' }}
                         />
                       </figure>
                       <h3 className="text-blue text-xl font-bold mb-3">
@@ -610,7 +530,7 @@ export default function Home() {
                         works.
                       </p>
                     </div>
-                    <div>
+                    <div className="mt-4">
                       <Link
                         href="/steem-whitepaper.pdf"
                         className="btn btn-blue"
@@ -627,8 +547,9 @@ export default function Home() {
                           className="img-fluid img-icon"
                           src="/images/Steem_File.png"
                           alt="SMT Whitepaper"
-                          width={60}
+                          width={0}
                           height={60}
+                          style={{ width: 'auto' }}
                         />
                       </figure>
                       <h3 className="text-blue text-xl font-bold mb-3">
@@ -639,7 +560,7 @@ export default function Home() {
                         protocol.
                       </p>
                     </div>
-                    <div>
+                    <div className="mt-4">
                       <Link
                         href="/smt-whitepaper.pdf"
                         className="btn btn-blue"
