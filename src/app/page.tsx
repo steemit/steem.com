@@ -236,12 +236,12 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 lg:mt-5 xl:mt-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-12 lg:my-6 xl:my-6">
                   <div className="text-center">
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
-                          className="img-fluid img-icon-bigger mb-3"
+                          className="img-fluid img-icon-bigger mb-3 mx-auto block"
                           src="/images/Steem_Free.png"
                           alt="Free Transactions"
                           width={80}
@@ -261,7 +261,7 @@ export default function Home() {
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
-                          className="img-fluid img-icon-bigger mb-3"
+                          className="img-fluid img-icon-bigger mb-3 mx-auto block"
                           src="/images/Steem_Timer.png"
                           alt="Fast Transactions"
                           width={80}
@@ -280,7 +280,7 @@ export default function Home() {
                     <div className="bg-white border-rounded box-shadow flex items-center h-full">
                       <div className="py-4 lg:py-5 px-3 xl:px-4 w-full">
                         <Image
-                          className="img-fluid img-icon-bigger mb-3"
+                          className="img-fluid img-icon-bigger mb-3 mx-auto block"
                           src="/images/Steem_People.png"
                           alt="Built to Scale"
                           width={80}
