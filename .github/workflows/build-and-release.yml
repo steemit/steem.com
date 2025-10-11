@@ -71,9 +71,9 @@ jobs:
         tag_name: ${{ steps.version.outputs.tag }}
         release_name: Build ${{ steps.version.outputs.tag }}
         body: |
-          ## Steem Clone Build Release
+          ## Steem Official Website Build Release
           
-          This release contains the built static files for the Steem clone website.
+          This release contains the built static files for the Steem official website.
           
           ### What's included:
           - Static HTML files
