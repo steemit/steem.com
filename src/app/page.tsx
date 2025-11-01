@@ -21,7 +21,7 @@ export default function Home() {
         <div className="content">
           <main className="main">
             {/* Hero Section */}
-            <section className="bg-landing py-7 lg:py-8 xl:py-10">
+            <section className="bg-landing hero-section py-7 lg:py-8 xl:py-10">
               <div className="container mx-auto px-4 lg:my-8 xl:my-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="order-1">
