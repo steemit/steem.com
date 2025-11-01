@@ -76,7 +76,7 @@ export default function Header({ variant = 'white' }: HeaderProps) {
         className={`text-white p-lg-3 ${isMobileMenuOpen ? 'state-active' : ''}`}
       >
         <div className="container">
-          <div className={`hidden lg:flex hamburger ml-auto mt-3 ${isMobileMenuOpen ? 'state-active' : ''}`} onClick={closeMobileMenu}>
+          <div className={`flex hamburger ml-auto mt-3 ${isMobileMenuOpen ? 'state-active' : ''}`} onClick={closeMobileMenu}>
             <span></span>
             <span></span>
             <span></span>
