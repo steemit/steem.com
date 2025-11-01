@@ -51,7 +51,7 @@ export default function BrandPage() {
       <div className="wrap" role="document">
         <div className="content">
           <main className="main">
-            <section className="bg-wave py-7 lg:py-8 xl:py-10">
+            <section className="bg-wave brand-section py-7 lg:py-8 xl:py-10">
               <div className="container mt-5 mt-md-7 mb-md-5 my-lg-8 my-xl-10">
                 <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-8">
                   <div className="w-full md:w-7/12 lg:w-1/2 xl:w-5/12">
@@ -68,7 +68,7 @@ export default function BrandPage() {
                         to transparently align incentives between all parties in
                         a social platform—from the founders to the end users.
                       </p>
-                      <p>
+                      <p className="mt-4">
                         <a
                           className="btn btn-blue"
                           href="/wp-content/uploads/2018/10/Steem-Logos-and-Usage-Guide.zip"
@@ -392,8 +392,8 @@ export default function BrandPage() {
                       Assets
                     </h2>
                     <p className="small mt-4">Background textures:</p>
-                    <div className="flex flex-row">
-                      <div className="md:w-1/4">
+                    <div className="flex flex-row gap-4">
+                      <div className="w-1/2 md:w-1/4">
                         <div
                           className="bg-image bg-landscape box-shadow border-rounded"
                           style={{
@@ -402,7 +402,7 @@ export default function BrandPage() {
                           }}
                         ></div>
                       </div>
-                      <div className="md:w-1/4">
+                      <div className="w-1/2 md:w-1/4">
                         <div
                           className="bg-image bg-landscape box-shadow border-rounded"
                           style={{
@@ -413,8 +413,8 @@ export default function BrandPage() {
                       </div>
                     </div>
                     <p className="small mt-4">Icons:</p>
-                    <div className="flex flex-wrap">
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                    <div className="flex flex-wrap gap-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -425,7 +425,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -436,7 +436,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -447,7 +447,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -458,7 +458,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -469,7 +469,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -480,7 +480,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -491,7 +491,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -502,7 +502,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -513,7 +513,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -524,7 +524,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -535,7 +535,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -546,7 +546,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -557,7 +557,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -568,7 +568,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
@@ -579,7 +579,7 @@ export default function BrandPage() {
                           ></div>
                         </div>
                       </div>
-                      <div className="w-1/3 md:w-1/4 lg:w-1/6 mb-4 mr-4">
+                      <div className="w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(16.666%-0.834rem)]">
                         <div className="box-shadow border-rounded bg-white p-4">
                           <div
                             className="bg-square bg-icon"
