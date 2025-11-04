@@ -483,7 +483,7 @@ h6, .h6 {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-  font-size: 1.0666666rem;
+  font-size: 1.25rem;
   transition: opacity 0.3s ease;
 }
 
@@ -757,6 +757,13 @@ p {
   width: 1.5rem;
   margin: 3px 0;
   transition: 0.5s;
+}
+
+/* Hamburger blue color on mobile for pages with blue header */
+@media (max-width: 991px) {
+  .hamburger.hamburger-blue > span {
+    background: #161fc8;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1257,10 +1264,23 @@ input[type="submit"] {
 }
 
 /* sidebar styles: mobile nav-footer link special style*/
+#mobileOverlay .nav-footer > .menu-item {
+  margin-bottom: 0.25rem;
+}
+
 #mobileOverlay .nav-footer > .menu-item > a {
   margin-left: 0;
-  margin-bottom: 0.25rem;
+  padding-left: 0;
+  padding-right: 0;
   color: white;
+}
+
+#mobileOverlay .nav-footer > .menu-item::after {
+  background-image: linear-gradient(to left, #11a7f2, white);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 0.25rem;
 }
 
 /* Mobile footer paragraph styles - consistent with original website */
@@ -2421,4 +2441,27 @@ input[type="submit"] {
 
 .transition {
   transition: 0.5s;
+}
+
+/* Fix for hero section to prevent content going under fixed header on mobile/tablet ONLY */
+@media (max-width: 991px) {
+  section.bg-landing.hero-section,
+  section.hero-section.bg-landing {
+    padding-top: 80px !important;
+  }
+  
+  section.bg-wave.faq-section,
+  section.faq-section.bg-wave {
+    padding-top: 80px !important;
+  }
+  
+  section.bg-wave.about-section,
+  section.about-section.bg-wave {
+    padding-top: 80px !important;
+  }
+  
+  section.bg-wave.brand-section,
+  section.brand-section.bg-wave {
+    padding-top: 80px !important;
+  }
 }

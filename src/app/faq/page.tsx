@@ -32,7 +32,7 @@ export default function FAQ() {
       <div className="wrap" role="document">
         <div className="content">
           <main className="main">
-            <section className="bg-wave py-7 lg:py-8 xl:py-10">
+            <section className="bg-wave faq-section py-7 lg:py-8 xl:py-10">
               <div id="faq" className="container">
                 <div className="flex flex-wrap">
                   <div className="w-full">

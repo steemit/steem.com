@@ -30,7 +30,7 @@ export default function Contact() {
                         </h4>
                       </div>
                       <Image
-                        className="img-fluid mt-10 px-3 px-md-5"
+                        className="img-fluid mt-10 px-3 px-md-5 mx-auto"
                         src="/images/icon-cube-dark.png"
                         alt="Contact Icon"
                         width={376}
