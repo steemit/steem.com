@@ -10,7 +10,7 @@ import ContactSection from "@/components/ContactSection";
 export default function BrandPage() {
   // Color theme state
   const [currentTheme, setCurrentTheme] = useState(0);
-  
+
   // Color themes data - matching original website
   const themes = [
     {
@@ -18,30 +18,30 @@ export default function BrandPage() {
       backgroundValue: "", // 使用bg-gradient背景图片
       borderColor: "#FFFFFF", // 白色标题
       arrowColor: "", // 默认箭头颜色
-      iconColor: "white"
+      iconColor: "white",
     },
     {
       colorValue: "#171FC9", // 深蓝色logo和文字
       backgroundValue: "#FFFFFF", // 纯白色背景
       borderColor: "#171FC9", // 深蓝色标题
       arrowColor: "#11A7F2", // 蓝色箭头
-      iconColor: "#11A7F2"
+      iconColor: "#11A7F2",
     },
     {
       colorValue: "#212529", // 黑色logo和文字
       backgroundValue: "#F2F2F2", // rgb(242, 242, 242)背景
       borderColor: "#171FC9", // 深蓝色标题
       arrowColor: "#11A7F2", // 蓝色箭头
-      iconColor: "#11A7F2"
-    }
+      iconColor: "#11A7F2",
+    },
   ];
 
   const handlePrevTheme = () => {
-    setCurrentTheme(prev => prev === 0 ? themes.length - 1 : prev - 1);
+    setCurrentTheme((prev) => (prev === 0 ? themes.length - 1 : prev - 1));
   };
 
   const handleNextTheme = () => {
-    setCurrentTheme(prev => prev === themes.length - 1 ? 0 : prev + 1);
+    setCurrentTheme((prev) => (prev === themes.length - 1 ? 0 : prev + 1));
   };
 
   const currentThemeData = themes[currentTheme];
@@ -97,10 +97,13 @@ export default function BrandPage() {
             <section
               id="Steem_Background"
               className={`py-7 py-lg-8 py-xl-10 text-white transition ${
-                currentTheme === 0 ? 'bg-gradient' : ''
+                currentTheme === 0 ? "bg-gradient" : ""
               }`}
-              style={{ 
-                background: currentTheme !== 0 ? currentThemeData.backgroundValue : undefined 
+              style={{
+                background:
+                  currentTheme !== 0
+                    ? currentThemeData.backgroundValue
+                    : undefined,
               }}
             >
               <div className="container">
@@ -158,48 +161,48 @@ export default function BrandPage() {
                       </div>
                     </div>
                     <div className="flex justify-center">
-                      <button 
-                        className="arrow-icon mx-3 transition" 
+                      <button
+                        className="arrow-icon mx-3 transition"
                         onClick={handlePrevTheme}
-                        style={{ 
+                        style={{
                           borderColor: currentThemeData.arrowColor || "white",
-                          color: currentThemeData.iconColor
+                          color: currentThemeData.iconColor,
                         }}
                         aria-label="Previous theme"
                       >
-                        <svg 
-                          width="16" 
-                          height="16" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         >
-                          <path d="m15 18-6-6 6-6"/>
+                          <path d="m15 18-6-6 6-6" />
                         </svg>
                       </button>
-                      <button 
-                        className="arrow-icon mx-3 transition" 
+                      <button
+                        className="arrow-icon mx-3 transition"
                         onClick={handleNextTheme}
-                        style={{ 
+                        style={{
                           borderColor: currentThemeData.arrowColor || "white",
-                          color: currentThemeData.iconColor
+                          color: currentThemeData.iconColor,
                         }}
                         aria-label="Next theme"
                       >
-                        <svg 
-                          width="16" 
-                          height="16" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         >
-                          <path d="m9 18 6-6-6-6"/>
+                          <path d="m9 18 6-6-6-6" />
                         </svg>
                       </button>
                     </div>

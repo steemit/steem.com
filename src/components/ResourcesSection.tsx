@@ -16,11 +16,11 @@ interface ResourcesSectionProps {
   className?: string;
 }
 
-export default function ResourcesSection({ 
-  title, 
-  subtitle, 
-  resources, 
-  className = "" 
+export default function ResourcesSection({
+  title,
+  subtitle,
+  resources,
+  className = "",
 }: ResourcesSectionProps) {
   return (
     <section className={`py-12 lg:py-14 xl:py-20 ${className}`}>
@@ -30,14 +30,15 @@ export default function ResourcesSection({
             <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
               {title}
             </h2>
-            <p className="text-lg leading-relaxed">
-              {subtitle}
-            </p>
+            <p className="text-lg leading-relaxed">{subtitle}</p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {resources.map((resource, index) => (
-            <div key={index} className="text-center flex flex-col justify-between">
+            <div
+              key={index}
+              className="text-center flex flex-col justify-between"
+            >
               <div>
                 <figure className="figure-circle">
                   <Image
@@ -46,7 +47,7 @@ export default function ResourcesSection({
                     alt={resource.alt}
                     width={0}
                     height={60}
-                    style={{ width: 'auto' }}
+                    style={{ width: "auto" }}
                   />
                 </figure>
                 <h3 className="text-blue text-xl font-bold mb-3">
@@ -57,11 +58,7 @@ export default function ResourcesSection({
                 </p>
               </div>
               <div className="mt-4">
-                <Link
-                  href={resource.href}
-                  className="btn btn-blue"
-                  download
-                >
+                <Link href={resource.href} className="btn btn-blue" download>
                   Download PDF
                 </Link>
               </div>

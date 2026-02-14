@@ -1,14 +1,16 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [initialLoad, setInitialLoad] = useState(true);
-  const [animationPhase, setAnimationPhase] = useState<'idle' | 'sliding'>('idle');
+  const [animationPhase, setAnimationPhase] = useState<"idle" | "sliding">(
+    "idle",
+  );
 
   // Animation parameters
   const fadeTime = 1000;
@@ -25,7 +27,7 @@ export default function Carousel() {
       platform: "Steem Retrogames",
       platformUrl: "https://steem-retrogames.com/",
       mobileLogo: "/images/steem-retrogames-mobile.png",
-      desktopLogo: "/images/steem-retrogames.png"
+      desktopLogo: "/images/steem-retrogames.png",
     },
     {
       id: 1,
@@ -34,7 +36,7 @@ export default function Carousel() {
       platform: "SteemAtlas",
       platformUrl: "https://steematlas.com/",
       mobileLogo: "/images/steematlas-mobile.png",
-      desktopLogo: "/images/steematlas.png"
+      desktopLogo: "/images/steematlas.png",
     },
     {
       id: 2,
@@ -43,7 +45,7 @@ export default function Carousel() {
       platform: "Steemit",
       platformUrl: "https://steemit.com/",
       mobileLogo: "/images/SteemIt-Mobile.jpg",
-      desktopLogo: "/images/SteemIt.jpg"
+      desktopLogo: "/images/SteemIt.jpg",
     },
     {
       id: 3,
@@ -52,7 +54,7 @@ export default function Carousel() {
       platform: "HARI RAID",
       platformUrl: "https://hari-raid.h4lab.com/",
       mobileLogo: "/images/hari-raid-logo-mobile.webp",
-      desktopLogo: "/images/hari-raid-logo.webp"
+      desktopLogo: "/images/hari-raid-logo.webp",
     },
   ];
 
@@ -68,7 +70,7 @@ export default function Carousel() {
         isFirst: i === 0,
         isLast: i === visible - 1,
         isPreload: i === visible, // 4th is preloaded
-        animationClass: getAnimationClass(i)
+        animationClass: getAnimationClass(i),
       });
     }
     return visibleFigures;
@@ -79,35 +81,35 @@ export default function Carousel() {
     if (initialLoad) {
       // During initial load, only first 3 figures fade in, 4th is hidden
       if (displayIndex < visible) {
-        return 'fade-in';
+        return "fade-in";
       }
-      return 'hidden';
+      return "hidden";
     }
-    
-    if (animationPhase === 'sliding') {
+
+    if (animationPhase === "sliding") {
       if (displayIndex === 0) {
-        return 'slide-up'; // First figure slides up and fades out
+        return "slide-up"; // First figure slides up and fades out
       } else {
-        return 'slide-move'; // Other figures (including 4th) slide up
+        return "slide-move"; // Other figures (including 4th) slide up
       }
     }
-    
+
     // In non-sliding state, 4th figure is hidden
     if (displayIndex === visible) {
-      return 'hidden';
+      return "hidden";
     }
-    
-    return '';
+
+    return "";
   };
 
   // Get figure style class name
   const getFigureClassName = (figure: { animationClass?: string }) => {
     let className = "figure-social flex box-shadow";
-    
+
     if (figure.animationClass) {
       className += ` ${figure.animationClass}`;
     }
-    
+
     return className;
   };
 
@@ -120,11 +122,14 @@ export default function Carousel() {
           // CSS animation will handle fade-in effect automatically
         }, i * fadeTimeDelay);
       }
-      
+
       // Start carousel after initial load completes
-      setTimeout(() => {
-        setInitialLoad(false);
-      }, visible * fadeTimeDelay + fadeTime);
+      setTimeout(
+        () => {
+          setInitialLoad(false);
+        },
+        visible * fadeTimeDelay + fadeTime,
+      );
     }
   }, [initialLoad, fadeTime, fadeTimeDelay, visible]);
 
@@ -133,13 +138,13 @@ export default function Carousel() {
     if (!initialLoad && !isAnimating) {
       const timer = setInterval(() => {
         setIsAnimating(true);
-        setAnimationPhase('sliding');
-        
+        setAnimationPhase("sliding");
+
         // Update index after slide animation completes (simulate DOM movement)
         setTimeout(() => {
           setCurrentIndex((prev) => (prev + 1) % figures.length);
           setIsAnimating(false);
-          setAnimationPhase('idle');
+          setAnimationPhase("idle");
         }, fadeTime);
       }, interval);
 
@@ -150,7 +155,10 @@ export default function Carousel() {
   return (
     <div className="carousel-vertical">
       {getVisibleFigures().map((figure) => (
-        <figure key={`${figure.id}-${currentIndex}`} className={getFigureClassName(figure)}>
+        <figure
+          key={`${figure.id}-${currentIndex}`}
+          className={getFigureClassName(figure)}
+        >
           <div className="meta flex items-center">
             <Image
               className="img-fluid img-profile rounded-full mr-3"
@@ -160,18 +168,30 @@ export default function Carousel() {
               height={40}
             />
             <div className="meta-text">
-              <p className="m-0 small font-weight-bold text-blue">{figure.username}</p>
+              <p className="m-0 small font-weight-bold text-blue">
+                {figure.username}
+              </p>
               <p className="m-0 small text-grey">
-                {figure.platform === "Steem Retrogames" || figure.platform === "HARI RAID" ? "Played on" : 
-                 figure.platform === "SteemAtlas" ? "Shared on" : "Posted on"}{" "}
+                {figure.platform === "Steem Retrogames" ||
+                figure.platform === "HARI RAID"
+                  ? "Played on"
+                  : figure.platform === "SteemAtlas"
+                    ? "Shared on"
+                    : "Posted on"}{" "}
                 <Link href={figure.platformUrl} target="_blank" rel="noopener">
                   <u>{figure.platform}</u>
                 </Link>
               </p>
             </div>
           </div>
-          <div className="bg-image logo block lg:hidden" style={{backgroundImage: `url(${figure.mobileLogo})`}}></div>
-          <div className="bg-image logo hidden lg:block" style={{backgroundImage: `url(${figure.desktopLogo})`}}></div>
+          <div
+            className="bg-image logo block lg:hidden"
+            style={{ backgroundImage: `url(${figure.mobileLogo})` }}
+          ></div>
+          <div
+            className="bg-image logo hidden lg:block"
+            style={{ backgroundImage: `url(${figure.desktopLogo})` }}
+          ></div>
         </figure>
       ))}
     </div>

@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 interface HeaderProps {
-  variant?: 'white' | 'blue';
+  variant?: "white" | "blue";
 }
 
-export default function Header({ variant = 'white' }: HeaderProps) {
+export default function Header({ variant = "white" }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -19,10 +19,12 @@ export default function Header({ variant = 'white' }: HeaderProps) {
     setIsMobileMenuOpen(false);
   };
 
-  const isBlueVariant = variant === 'blue';
-  const logoColor = isBlueVariant ? 'Steem_Logo_Blue.png' : 'Steem_Logo_White.png';
-  const textColor = isBlueVariant ? 'text-blue' : 'text-white';
-  const hamburgerClass = isBlueVariant ? 'hamburger-blue' : '';
+  const isBlueVariant = variant === "blue";
+  const logoColor = isBlueVariant
+    ? "Steem_Logo_Blue.png"
+    : "Steem_Logo_White.png";
+  const textColor = isBlueVariant ? "text-blue" : "text-white";
+  const hamburgerClass = isBlueVariant ? "hamburger-blue" : "";
 
   return (
     <header className="banner py-4 my-lg-2">
@@ -31,11 +33,12 @@ export default function Header({ variant = 'white' }: HeaderProps) {
           <div className="w-full flex items-center justify-between px-4">
             <Link href="/" className="brand">
               <Image
-                className="img-fluid img-brand"
+                className="img-fluid"
                 src={`/images/${logoColor}`}
                 alt="Steem Logo"
                 width={120}
-                height={40}
+                height={37}
+                style={{ width: "auto", height: "37px" }}
               />
             </Link>
             <div className="flex items-center">
@@ -43,24 +46,21 @@ export default function Header({ variant = 'white' }: HeaderProps) {
                 <div className="menu-primary-container">
                   <ul className="nav flex">
                     <li>
-                      <Link href="/developers/">
-                        Developers
-                      </Link>
+                      <Link href="/developers/">Developers</Link>
                     </li>
                     <li>
-                      <Link href="/entrepreneurs/">
-                        Entrepreneurs
-                      </Link>
+                      <Link href="/entrepreneurs/">Entrepreneurs</Link>
                     </li>
                     <li>
-                      <Link href="/social-users/">
-                        Social Users
-                      </Link>
+                      <Link href="/social-users/">Social Users</Link>
                     </li>
                   </ul>
                 </div>
               </nav>
-              <div className={`hamburger ${hamburgerClass} ${isMobileMenuOpen ? 'state-active' : ''}`} onClick={toggleMobileMenu}>
+              <div
+                className={`hamburger ${hamburgerClass} ${isMobileMenuOpen ? "state-active" : ""}`}
+                onClick={toggleMobileMenu}
+              >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -69,14 +69,17 @@ export default function Header({ variant = 'white' }: HeaderProps) {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile Overlay */}
-      <div 
-        id="mobileOverlay" 
-        className={`text-white p-lg-3 ${isMobileMenuOpen ? 'state-active' : ''}`}
+      <div
+        id="mobileOverlay"
+        className={`text-white p-lg-3 ${isMobileMenuOpen ? "state-active" : ""}`}
       >
         <div className="container">
-          <div className={`flex hamburger ml-auto mt-3 ${isMobileMenuOpen ? 'state-active' : ''}`} onClick={closeMobileMenu}>
+          <div
+            className={`flex hamburger ml-auto mt-3 ${isMobileMenuOpen ? "state-active" : ""}`}
+            onClick={closeMobileMenu}
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -130,10 +133,14 @@ export default function Header({ variant = 'white' }: HeaderProps) {
           </nav>
         </div>
         <div id="mobileFooter" className="container">
-          <hr className="border border-bottom-0 border-offwhite w-full hidden lg:hidden"/>
+          <hr className="border border-bottom-0 border-offwhite w-full hidden lg:hidden" />
           <div className="flex flex-wrap justify-center lg:justify-start text-center lg:text-left">
             <div className="w-10/12 md:w-3/12 lg:w-10/12 mt-5 lg:mt-5">
-              <Link href="https://steemit.com/" target="_blank" onClick={closeMobileMenu}>
+              <Link
+                href="https://steemit.com/"
+                target="_blank"
+                onClick={closeMobileMenu}
+              >
                 <Image
                   className="img-fluid img-brand mb-3"
                   src="/images/Steem_Icon_News_Temp.png"
@@ -141,10 +148,12 @@ export default function Header({ variant = 'white' }: HeaderProps) {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
+                  style={{ width: "100%", height: "auto" }}
                 />
               </Link>
-              <p className="smaller translucent">Keep updated through our social platform.</p>
+              <p className="smaller translucent">
+                Keep updated through our social platform.
+              </p>
             </div>
           </div>
         </div>

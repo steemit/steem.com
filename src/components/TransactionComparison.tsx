@@ -21,35 +21,35 @@ const TransactionComparison = () => {
 
       const rect = transactionsRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      
+
       // 检查组件是否完全在视口内显示
       const isFullyVisible = rect.top >= 0 && rect.bottom <= windowHeight;
 
       if (isFullyVisible) {
         hasAnimated.current = true;
-        
+
         blockchainRefs.current.forEach((blockchain) => {
           if (blockchain) {
-            blockchain.style.transition = '1s';
-            
-            const line = blockchain.querySelector('.line') as HTMLElement;
-            const text = blockchain.querySelector('.text') as HTMLElement;
-            const textTx = blockchain.querySelector('.text-tx') as HTMLElement;
-            
+            blockchain.style.transition = "1s";
+
+            const line = blockchain.querySelector(".line") as HTMLElement;
+            const text = blockchain.querySelector(".text") as HTMLElement;
+            const textTx = blockchain.querySelector(".text-tx") as HTMLElement;
+
             if (line) {
-              line.style.transition = '1s';
+              line.style.transition = "1s";
             }
-            
+
             if (text) {
-              text.style.transition = '1s';
+              text.style.transition = "1s";
             }
 
             // Animate to final state
             setTimeout(() => {
-              blockchain.style.transform = 'translateY(0px)';
-              if (line) line.style.transform = 'scaleY(1)';
-              if (text) text.style.opacity = '1';
-              
+              blockchain.style.transform = "translateY(0px)";
+              if (line) line.style.transform = "scaleY(1)";
+              if (text) text.style.opacity = "1";
+
               // Start count animation
               if (textTx) {
                 startCountAnimation(textTx);
@@ -65,39 +65,39 @@ const TransactionComparison = () => {
       if (blockchain) {
         const marginBottom = getComputedStyle(blockchain).marginBottom;
         blockchain.style.transform = `translateY(${marginBottom})`;
-        
-        const line = blockchain.querySelector('.line') as HTMLElement;
-        const text = blockchain.querySelector('.text') as HTMLElement;
-        
+
+        const line = blockchain.querySelector(".line") as HTMLElement;
+        const text = blockchain.querySelector(".text") as HTMLElement;
+
         if (line) {
-          line.style.transform = 'scaleY(0)';
+          line.style.transform = "scaleY(0)";
         }
-        
+
         if (text) {
-          text.style.opacity = '0';
+          text.style.opacity = "0";
         }
       }
     });
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Check on mount
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const startCountAnimation = (element: HTMLElement) => {
     if (element.dataset.triggered) return;
-    
-    const countTo = parseFloat(element.textContent?.replace(/,/g, '') || '0');
-    const startAt = Math.floor(4 * countTo / 5);
-    
-    element.dataset.triggered = 'true';
-    
+
+    const countTo = parseFloat(element.textContent?.replace(/,/g, "") || "0");
+    const startAt = Math.floor((4 * countTo) / 5);
+
+    element.dataset.triggered = "true";
+
     let current = startAt;
     const increment = (countTo - startAt) / 100;
-    
+
     const timer = setInterval(() => {
       current += increment;
       if (current >= countTo) {
@@ -113,20 +113,20 @@ const TransactionComparison = () => {
       name: "Steem",
       count: 1169182,
       icon: "/images/Steem_Icon_Blue-e1537216818812.png",
-      alt: "Steem"
+      alt: "Steem",
     },
     {
-      name: "Ethereum", 
+      name: "Ethereum",
       count: 545224,
       icon: "/images/Ethereum_Icon-e1537216851935.png",
-      alt: "Ethereum"
+      alt: "Ethereum",
     },
     {
       name: "Bitcoin",
       count: 530125,
       icon: "/images/Bitcoin_Icon-e1537216865628.png",
-      alt: "Bitcoin"
-    }
+      alt: "Bitcoin",
+    },
   ];
 
   return (
