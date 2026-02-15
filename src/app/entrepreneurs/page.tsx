@@ -23,10 +23,15 @@ export default function Entrepreneurs() {
                     Entrepreneurs
                   </h6>
                   <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                    <span className="md:whitespace-nowrap">Welcome to the blockchain</span> of opportunity
+                    <span className="md:whitespace-nowrap">
+                      Welcome to the blockchain
+                    </span>{" "}
+                    of opportunity
                   </h2>
                   <p className="text-lg mb-6 leading-relaxed">
-                    Steem enables entrepreneurs to build apps and monetize content so you can build & grow your own social media community on the blockchain.
+                    Steem enables entrepreneurs to build apps and monetize
+                    content so you can build & grow your own social media
+                    community on the blockchain.
                   </p>
                   <div className="flex justify-center md:hidden mt-5">
                     <div className="w-3/4">
@@ -63,7 +68,9 @@ export default function Entrepreneurs() {
                   More transactions than any blockchain in the world
                 </h2>
                 <p className="text-lg leading-relaxed">
-                  Steem processes more transactions than every other blockchain combined. It has been battle tested by over 1 million people on more than 324 Steem-based apps.
+                  Steem processes more transactions than every other blockchain
+                  combined. It has been battle tested by over 1 million people
+                  on more than 324 Steem-based apps.
                 </p>
               </div>
             </div>
@@ -78,20 +85,20 @@ export default function Entrepreneurs() {
               title: "Steemit",
               description: "Social blogging platform",
               href: "https://steemit.com/",
-              rank: 1
+              rank: 1,
             },
             {
               title: "SteemPro",
               description: "Steem-based app",
               href: "https://www.steempro.com/",
-              rank: 2
+              rank: 2,
             },
             {
               title: "HARI RAID",
               description: "Steem-based Tap2Earn game",
               href: "https://hari-raid.h4lab.com/",
-              rank: 3
-            }
+              rank: 3,
+            },
           ]}
           statsLink="http://blocktivity.info/"
           statsLinkText="View more Steem statistics"
@@ -102,16 +109,29 @@ export default function Entrepreneurs() {
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="w-full lg:w-5/12 xl:w-1/3">
-                <h5 className="text-sm font-bold uppercase mb-2 opacity-70">Case Study</h5>
-                <h2 className="text-3xl lg:text-4xl font-bold">Steem Whitepaper</h2>
+                <h5 className="text-sm font-bold uppercase mb-2 opacity-70">
+                  Case Study
+                </h5>
+                <h2 className="text-3xl lg:text-4xl font-bold">
+                  Steem Whitepaper
+                </h2>
               </div>
               <div className="w-full lg:w-7/12 xl:w-2/3">
                 <p className="text-lg leading-relaxed">
-                  Running a rewards-based decentralized social network required new advances in blockchain technology. 
-                  Steem is a next-generation blockchain, uniquely designed to run real-time applications with near instant, 
-                  fee-free transactions. Steem has been battled-tested over the last 18 months, already processing 
-                  more transactions per second than Bitcoin and Ethereum. 
-                  <Link className="text-lightblue underline" href="/steem-whitepaper.pdf" target="_blank">Continue Reading</Link>
+                  Running a rewards-based decentralized social network required
+                  new advances in blockchain technology. Steem is a
+                  next-generation blockchain, uniquely designed to run real-time
+                  applications with near instant, fee-free transactions. Steem
+                  has been battled-tested over the last 18 months, already
+                  processing more transactions per second than Bitcoin and
+                  Ethereum.
+                  <Link
+                    className="text-lightblue underline"
+                    href="/steem-whitepaper.pdf"
+                    target="_blank"
+                  >
+                    Continue Reading
+                  </Link>
                 </p>
               </div>
             </div>
@@ -127,10 +147,14 @@ export default function Entrepreneurs() {
                   A social network that pays its community
                 </h2>
                 <p className="text-lg mb-4 leading-relaxed">
-                  Steemit was the first app built on the Steem blockchain. It&apos;s an open source blogging platform that pays people for good content.
+                  Steemit was the first app built on the Steem blockchain.
+                  It&apos;s an open source blogging platform that pays people
+                  for good content.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Powered by Steem&apos;s &apos;proof-of-brain&apos; rewards, Steemit has grown to become a top 1000 website by global traffic within 2 years.
+                  Powered by Steem&apos;s &apos;proof-of-brain&apos; rewards,
+                  Steemit has grown to become a top 1000 website by global
+                  traffic within 2 years.
                 </p>
               </div>
               <div className="w-full lg:w-4/12 xl:w-1/3">
@@ -159,14 +183,28 @@ export default function Entrepreneurs() {
                   height={60}
                 />
                 <h2 className="text-3xl lg:text-4xl font-bold">
-                  The social network <br/>
-                  doling out millions <br/>
+                  The social network <br />
+                  doling out millions <br />
                   in ephemeral money
                 </h2>
               </div>
               <div className="w-full lg:w-7/12 xl:w-2/3">
                 <h4 className="text-xl font-normal leading-relaxed">
-                  &quot;Steemit is a nascent social media platform&hellip; it rewards its users with cold, hard cash in the form of a cryptocurrency. Everything that you do on Steemit—every post, every comment, and every like—translates to a fraction of a digital currency called Steem. Over time, as Steem accumulates, it can be cashed out for normal currency.&quot; <span className="text-sm"><Link className="text-offwhite underline" href="https://www.wired.com/story/the-social-network-doling-out-millions-in-ephemeral-money" target="_blank">wired.com</Link></span>
+                  &quot;Steemit is a nascent social media platform&hellip; it
+                  rewards its users with cold, hard cash in the form of a
+                  cryptocurrency. Everything that you do on Steemit—every post,
+                  every comment, and every like—translates to a fraction of a
+                  digital currency called Steem. Over time, as Steem
+                  accumulates, it can be cashed out for normal currency.&quot;{" "}
+                  <span className="text-sm">
+                    <Link
+                      className="text-offwhite underline"
+                      href="https://www.wired.com/story/the-social-network-doling-out-millions-in-ephemeral-money"
+                      target="_blank"
+                    >
+                      wired.com
+                    </Link>
+                  </span>
                 </h4>
               </div>
             </div>

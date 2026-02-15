@@ -25,7 +25,9 @@ export default function SocialUsers() {
                     Create, share, curate
                   </h2>
                   <p className="text-lg mb-6 leading-relaxed">
-                    Here&apos;s why Steem is a great place for social users to create, share, and curate content on the Steem blockchain for their community.
+                    Here&apos;s why Steem is a great place for social users to
+                    create, share, and curate content on the Steem blockchain
+                    for their community.
                   </p>
                   <div className="flex justify-center md:hidden mt-5">
                     <div className="w-3/4">
@@ -71,12 +73,22 @@ export default function SocialUsers() {
                 <h2 className="text-blue text-2xl font-bold mb-2">Creators</h2>
                 <h3 className="text-3xl font-bold mb-6">Get paid to play.</h3>
                 <p className="text-lg mb-4 leading-relaxed">
-                  Everyone who contributes content on a Steem-based app has the same opportunity to earn money from the rewards pool. Steem apps enable creators to earn money for pursuing their passions via shared content.
+                  Everyone who contributes content on a Steem-based app has the
+                  same opportunity to earn money from the rewards pool. Steem
+                  apps enable creators to earn money for pursuing their passions
+                  via shared content.
                 </p>
                 <p className="text-lg mb-6 leading-relaxed">
-                  By posting your content, you can earn upvotes from community members. The upvotes you receive entitle you to a portion of the &quot;rewards pool,&quot; which depends on how much Steem Power you have.
+                  By posting your content, you can earn upvotes from community
+                  members. The upvotes you receive entitle you to a portion of
+                  the &quot;rewards pool,&quot; which depends on how much Steem
+                  Power you have.
                 </p>
-                <Link href="https://steemit.com/" className="btn btn-blue" target="_blank">
+                <Link
+                  href="https://steemit.com/"
+                  className="btn btn-blue"
+                  target="_blank"
+                >
                   Start Creating
                 </Link>
               </div>
@@ -95,11 +107,21 @@ export default function SocialUsers() {
               </div>
               <div className="w-full lg:w-1/2">
                 <h2 className="text-blue text-2xl font-bold mb-2">Curators</h2>
-                <h3 className="text-3xl font-bold mb-6">Help your community thrive and grow by upvoting high quality content.</h3>
+                <h3 className="text-3xl font-bold mb-6">
+                  Help your community thrive and grow by upvoting high quality
+                  content.
+                </h3>
                 <p className="text-lg mb-6 leading-relaxed">
-                  If you discover a post on a Steem-based app and upvote it before it becomes popular, you earn a curation reward. The reward amount will depend on the amount of rewards the post earns over time.
+                  If you discover a post on a Steem-based app and upvote it
+                  before it becomes popular, you earn a curation reward. The
+                  reward amount will depend on the amount of rewards the post
+                  earns over time.
                 </p>
-                <Link href="https://steemit.com/" className="btn btn-blue" target="_blank">
+                <Link
+                  href="https://steemit.com/"
+                  className="btn btn-blue"
+                  target="_blank"
+                >
                   Start Curating
                 </Link>
               </div>

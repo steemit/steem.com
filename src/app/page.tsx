@@ -64,15 +64,27 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div className="order-1">
                     <h2 className="text-blue text-3xl lg:text-4xl font-bold mb-6">
-                      <span className="whitespace-nowrap">A new social media model</span><br />
-                      <span className="whitespace-nowrap">where contributors get</span><br />
+                      <span className="whitespace-nowrap">
+                        A new social media model
+                      </span>
+                      <br />
+                      <span className="whitespace-nowrap">
+                        where contributors get
+                      </span>
+                      <br />
                       big perks
                     </h2>
                     <p className="text-lg mb-4 leading-relaxed">
-                      Shareholders of social media platforms made billions of dollars from user-generated content. The content creators? They made nothing.
+                      Shareholders of social media platforms made billions of
+                      dollars from user-generated content. The content creators?
+                      They made nothing.
                     </p>
                     <p className="text-lg leading-relaxed">
-                      Steem flips the model and returns the value to the people who contribute the most. Users become platform stakeholders, maintaining control over their data, and earning cryptocurrency rewards for each contribution they make.
+                      Steem flips the model and returns the value to the people
+                      who contribute the most. Users become platform
+                      stakeholders, maintaining control over their data, and
+                      earning cryptocurrency rewards for each contribution they
+                      make.
                     </p>
                   </div>
                   <div className="order-2 flex items-center">
@@ -81,7 +93,8 @@ export default function Home() {
                         <StatCounter target={59595935} />
                       </h1>
                       <h4 className="font-normal mx-5 xl:mx-8 text-purple text-xl">
-                        Rewards paid out to Steem <br/>users since June
+                        Rewards paid out to Steem <br />
+                        users since June
                       </h4>
                     </div>
                   </div>
@@ -106,13 +119,14 @@ export default function Home() {
                           />
                         </div>
                         <div className="w-3/4 xl:w-full">
-                          <Link
-                            href="/developers/"
-                            className="block"
-                          >
+                          <Link href="/developers/" className="block">
                             <h5 className="text-xl font-bold mb-2">
                               For Developers{" "}
-                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
+                              <Icon
+                                name="angle-right"
+                                className="text-lightblue ml-2"
+                                size="sm"
+                              />
                             </h5>
                             <p className="m-0 text-sm">
                               Find open source code & docs to help you start
@@ -137,13 +151,14 @@ export default function Home() {
                           />
                         </div>
                         <div className="w-3/4 xl:w-full">
-                          <Link
-                            href="/entrepreneurs/"
-                            className="block"
-                          >
+                          <Link href="/entrepreneurs/" className="block">
                             <h5 className="text-xl font-bold mb-2">
                               For Entrepreneurs{" "}
-                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
+                              <Icon
+                                name="angle-right"
+                                className="text-lightblue ml-2"
+                                size="sm"
+                              />
                             </h5>
                             <p className="m-0 text-sm">
                               Build apps, monetize content & grow your
@@ -168,13 +183,14 @@ export default function Home() {
                           />
                         </div>
                         <div className="w-3/4 xl:w-full">
-                          <Link
-                            href="/buying-steem-tokens/"
-                            className="block"
-                          >
+                          <Link href="/buying-steem-tokens/" className="block">
                             <h5 className="text-xl font-bold mb-2">
                               For HODLers{" "}
-                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
+                              <Icon
+                                name="angle-right"
+                                className="text-lightblue ml-2"
+                                size="sm"
+                              />
                             </h5>
                             <p className="m-0 text-sm">
                               Learn about tokens and where to buy & trade.
@@ -198,13 +214,14 @@ export default function Home() {
                           />
                         </div>
                         <div className="w-3/4 xl:w-full">
-                          <Link
-                            href="/social-users/"
-                            className="block"
-                          >
+                          <Link href="/social-users/" className="block">
                             <h5 className="text-xl font-bold mb-2">
                               For Social Users{" "}
-                              <Icon name="angle-right" className="text-lightblue ml-2" size="sm" />
+                              <Icon
+                                name="angle-right"
+                                className="text-lightblue ml-2"
+                                size="sm"
+                              />
                             </h5>
                             <p className="m-0 text-sm">
                               Get paid for good content & grow your following.
@@ -227,8 +244,8 @@ export default function Home() {
                       Welcome to the next generation of blockchain technology
                     </h2>
                     <p className="text-lg leading-relaxed">
-                      Unlike most blockchains that are too slow and expensive
-                      to be used for apps, Steem is fast, free, and scalable.
+                      Unlike most blockchains that are too slow and expensive to
+                      be used for apps, Steem is fast, free, and scalable.
                     </p>
                   </div>
                 </div>
@@ -333,20 +350,20 @@ export default function Home() {
                   title: "Steemit",
                   description: "Social blogging platform",
                   href: "https://steemit.com/",
-                  rank: 1
+                  rank: 1,
                 },
                 {
                   title: "SteemPro",
                   description: "Steem-based app",
                   href: "https://www.steempro.com/",
-                  rank: 2
+                  rank: 2,
                 },
                 {
                   title: "HARI RAID",
                   description: "Steem-based Tap2Earn game",
                   href: "https://hari-raid.h4lab.com/",
-                  rank: 3
-                }
+                  rank: 3,
+                },
               ]}
               statsLink="http://blocktivity.info/"
               statsLinkText="View more Steem statistics"
@@ -360,20 +377,22 @@ export default function Home() {
                   title: "Steem Bluepaper",
                   description: "A high level overview of the Steem blockchain.",
                   href: "/steem-bluepaper.pdf?t=20250711",
-                  alt: "Steem Bluepaper"
+                  alt: "Steem Bluepaper",
                 },
                 {
                   title: "Steem Whitepaper",
-                  description: "A technical explanation of how the Steem blockchain works.",
+                  description:
+                    "A technical explanation of how the Steem blockchain works.",
                   href: "/steem-whitepaper.pdf?t=20250711",
-                  alt: "Steem Whitepaper"
+                  alt: "Steem Whitepaper",
                 },
                 {
                   title: "SMT Whitepaper",
-                  description: "A technical paper on the proposed Smart Media Tokens protocol.",
+                  description:
+                    "A technical paper on the proposed Smart Media Tokens protocol.",
                   href: "/smt-whitepaper.pdf?t=20250711",
-                  alt: "SMT Whitepaper"
-                }
+                  alt: "SMT Whitepaper",
+                },
               ]}
             />
 
