@@ -788,7 +788,9 @@ export default function FAQ() {
                       </p>
                       <div className="small-container">
                         <p>
-                          STEEM tokens can be traded on exchanges, converted to
+                          STEEM tokens can be traded on exchanges (such as
+                          Binance, Upbit, Gate, MEXC, HTX and Bithumb). Within
+                          the Steem ecosystem, they can also be converted to
                           Steem Power (SP) for increased voting power and
                           rewards, converted to SBD, or used for various
                           blockchain operations.
