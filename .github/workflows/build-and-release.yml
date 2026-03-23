@@ -5,6 +5,12 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
@@ -62,43 +68,33 @@ jobs:
         echo "version=$TIMESTAMP" >> $GITHUB_OUTPUT
         echo "tag=$TIMESTAMP" >> $GITHUB_OUTPUT
         
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create Release and upload asset
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ steps.version.outputs.tag }}
-        release_name: Build ${{ steps.version.outputs.tag }}
+        name: Build ${{ steps.version.outputs.tag }}
         body: |
           ## Steem Official Website Build Release
-          
+
           This release contains the built static files for the Steem official website.
-          
+
           ### What's included:
           - Static HTML files
           - CSS and JavaScript assets
           - Images and other static resources
-          
+
           ### Installation:
           1. Download the `steem-com-build.zip` file
           2. Extract the contents to your web server
           3. Configure your web server to serve the static files
-          
+
           ### Build Info:
           - Build timestamp: ${{ steps.version.outputs.tag }}
           - Node.js version: 20
           - Build number: ${{ github.run_number }}
           - Commit: ${{ github.sha }}
+        files: steem-com-build.zip
         draft: false
         prerelease: false
-        
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./steem-com-build.zip
-        asset_name: steem-com-build.zip
-        asset_content_type: application/zip
