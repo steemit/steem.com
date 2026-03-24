@@ -56,8 +56,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # Custom domain (steem.com) is served from site root; do not set a repo
+      # subpath here or static assets resolve to /<repo>/... on the apex host
+      # (e.g. steem.com/steem.com/_next/...). To preview only the GitHub project
+      # URL, set NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
       - name: Build with Next.js
         run: pnpm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ""
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
