@@ -15,6 +15,27 @@ const TransactionComparison = () => {
   const blockchainRefs = useRef<(HTMLDivElement | null)[]>([]);
   const hasAnimated = useRef(false);
 
+  const startCountAnimation = (element: HTMLElement) => {
+    if (element.dataset.triggered) return;
+
+    const countTo = parseFloat(element.textContent?.replace(/,/g, "") || "0");
+    const startAt = Math.floor((4 * countTo) / 5);
+
+    element.dataset.triggered = "true";
+
+    let current = startAt;
+    const increment = (countTo - startAt) / 100;
+
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= countTo) {
+        current = countTo;
+        clearInterval(timer);
+      }
+      element.textContent = Math.floor(current).toLocaleString();
+    }, 20);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (!transactionsRef.current || hasAnimated.current) return;
@@ -86,27 +107,6 @@ const TransactionComparison = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const startCountAnimation = (element: HTMLElement) => {
-    if (element.dataset.triggered) return;
-
-    const countTo = parseFloat(element.textContent?.replace(/,/g, "") || "0");
-    const startAt = Math.floor((4 * countTo) / 5);
-
-    element.dataset.triggered = "true";
-
-    let current = startAt;
-    const increment = (countTo - startAt) / 100;
-
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= countTo) {
-        current = countTo;
-        clearInterval(timer);
-      }
-      element.textContent = Math.floor(current).toLocaleString();
-    }, 20);
-  };
 
   const transactions: TransactionData[] = [
     {
